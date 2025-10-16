@@ -1,0 +1,89 @@
+{
+  "$FAQSection": {
+    "additionalInfo": {
+      "1": "Aradığınız cevabı bulamadınız mı?",
+      "2": "Bizimle doğrudan iletişime geçin,",
+      "3": "ve ekibimiz size yardımcı olmaktan memnuniyet duyacaktır!"
+    },
+    "faq1": {
+      "answer": "Cubee, uzmanlık ve konforun benzersiz bir kombinasyonunu sunar. Konteynerlerimiz Almanya ve tüm Avrupa'da stratejik olarak dağıtılmıştır, böylece yakınınızda hızlı, kolay ve profesyonel değerlendirmeler sağlanır.",
+      "question": "Cubee'yi diğer araç değerlendirme hizmetlerinden farklı kılan nedir?"
+    },
+    "faq10": {
+      "answer": {
+        "1": "Web sitemizdeki arama işlevini kullanarak,",
+        "2": "en yakın Cubee konumunu bulun. Geniş ağımız sayesinde asla uzakta değiliz."
+      },
+      "question": "Yakınımda bir Cubee konteynerini nerede bulabilirim?"
+    },
+    "faq2": {
+      "answer": "Çok basit! Web sitemizi ziyaret edin ve 'Randevu al' butonuna tıklayın. Size uygun Cubee konumunu ve saati seçin. Yardıma ihtiyacınız olursa bizimle doğrudan iletişime geçebilirsiniz.",
+      "question": "Bir araç değerlendirmesi için nasıl randevu alabilirim?"
+    },
+    "faq3": {
+      "answer": "Evet, hasarlı araçlar için mobil hizmet sunuyoruz. Ekibimiz doğrudan size gelir ve özel bir uygulama kullanarak kapsamlı bir hasar değerlendirmesi yapar. Araç nerede olursa olsun.",
+      "question": "Cubee, konteynere getirilemeyen araçları da değerlendirebilir mi?"
+    },
+    "faq4": {
+      "answer": "Değerlendirme sürecimiz hızlı ve verimlidir. Araç değerlendirmesi genellikle bir saatten az sürer ve detaylı raporu 3 iş günü içinde alırsınız.",
+      "question": "Değerlendirme süreci ne kadar sürer?"
+    },
+    "faq5": {
+      "answer": "Binek araçlar, kamyonlar, motosikletler ve hatta klasik arabalar dahil olmak üzere tüm araç türlerini değerlendiriyoruz. Hizmetimiz, araç değerlendirmesi ile ilgili tüm ihtiyaçlarınızı karşılar.",
+      "question": "Cubee hangi araç türlerini değerlendirebilir?"
+    },
+    "faq6": {
+      "answer": "Evet, profesyonel değerlendirmelerimiz çoğu sigorta şirketi tarafından kabul edilir ve sigorta taleplerinizde veya onarım kararlarınızda size destek olur.",
+      "question": "Cubee'nin değerlendirmesi sigortalar tarafından kabul ediliyor mu?"
+    },
+    "faq7": {
+      "answer": "Aracınızı sadece bir Cubee konumuna getirin. Uzmanlarımız her şeyi halleder ve en son piyasa verilerine dayalı olarak doğru bir değerleme raporu hazırlar.",
+      "question": "Bir araç değerlendirmesi için hangi bilgilere ihtiyacım var?"
+    },
+    "faq8": {
+      "answer": "Uzmanlarımız, yerinde veri toplama ve fotoğraf çekimi için özel bir uygulama kullanır. Bu bilgiler daha sonra merkezimizde dikkatlice analiz edilir, böylece doğru ve güvenilir bir değerlendirme sağlanır.",
+      "question": "Cubee, değerlendirmelerinin doğruluğunu nasıl sağlar?"
+    },
+    "faq9": {
+      "answer": "Evet, klasik araçların tarihi ve duygusal değerini dikkate alan ve gerçek piyasa değerini yansıtan özel klasik araç değerlendirmeleri sunuyoruz.",
+      "question": "Cubee, klasik araçlar için de değerlendirme sunuyor mu?"
+    },
+    "title": "Araç Değerlendirmelerimiz Hakkında Sıkça Sorulan Sorular"
+  },
+  "$contactSection": {
+    "paragraph1": "Cubee'de, dijital değerlendirme hizmetlerimizle otomotiv uzmanlığının geleceğini şekillendiriyoruz. İster araç hasarlarını değerlendirmek, ister aracınızın değerini belirlemek, ister klasik aracınız için uzman değerlendirmesi almak isteyin. Ekibimiz hızlı ve doğru çözümler sunar.",
+    "paragraph2": "Sorularınız mı var? Aşağıdaki SSS bölümümüze göz atın veya doğrudan formumuz aracılığıyla bizimle iletişime geçin. Uzmanlarımız, araç değerlendirmesi ile ilgili tüm konularda size yardımcı olmaya hazır.",
+    "title": "Bizimle İletişime Geçin"
+  },
+  "$form": {
+    "contentError": "İçerik en az 100 karakter uzunluğunda olmalıdır.",
+    "emailError": "E-posta boş.",
+    "emailNotValid": "E-posta geçerli değil.",
+    "nameError": "İsim boş.",
+    "nameMinLengthError": "İsim en az 5 karakter uzunluğunda olmalıdır.",
+    "nameInvalidCharsError": "İsim sadece harfler, boşluklar, tire ve apostroflar içerebilir.",
+    "telError": "Telefon numarası boş.",
+    "telInvalidFormat": "Lütfen geçerli bir Alman telefon numarası girin (örn. 0151 2345678).",
+    "locationError": "Konum gerekli.",
+    "submissionError": "İsteğiniz gönderilirken bir hata oluştu. Lütfen tekrar deneyin."
+  },
+  "$getInTouchSection": {
+    "description": "Lütfen talebinizin türünü seçin ve aşağıdaki formu doldurun. Ekibimiz, sorularınızı yanıtlamak ve size yardımcı olmak için en kısa sürede sizinle iletişime geçecektir.",
+    "footer": "Cubee'ye olan güveniniz bizim için önemlidir ve size her zaman birinci sınıf hizmet sunmayı taahhüt ediyoruz.",
+    "generalInquiry": "Genel Talep",
+    "becomePartner": "Partner Ol",
+    "inputEmailPlaceholder": "E-posta",
+    "inputMessagePlaceholder": "Mesajınız",
+    "inputNamePlaceholder": "İsim",
+    "inputTelPlaceholder": "Telefon numarası",
+    "inputLocationPlaceholder": "Konum",
+    "selectPlaceholder": "Talep türünü seçin",
+    "submitButton": "Talebi Gönder",
+    "successMessage": "İletişim e-postası gönderme başarılı.",
+    "title": "İletişime Geçin"
+  },
+  "$seo": {
+    "desc": "Cubee ile profesyonel araç değerlendirmeleri, klasik araç değerlendirmeleri, franchise talepleri ve daha fazlası için iletişime geçin. Almanya ve tüm Avrupa'da hızlı ve güvenilir hizmet sunuyoruz – şimdi talep edin!",
+    "title": "Cubee ile İletişime Geçin {'|'} Araç Değerlendirme ve Ekspertiz Uzmanları"
+  }
+}

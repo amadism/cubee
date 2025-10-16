@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  @apply font-poppins antialiased;
+}
+
+
+.link {
+  @apply font-medium text-yellow-900 hover:text-yellow-950 hover:underline;
+}
+
+ @layer base {
+  .content h1 {
+    @apply my-4 text-3xl font-semibold md:my-8 md:text-5xl;
+  }
+
+  .content h2,
+  .content h3 {
+    @apply my-2 text-xl font-semibold md:my-4 md:text-3xl;
+  }
+
+  .content h4 {
+    @apply text-lg font-semibold;
+  }
+
+  .content h5 {
+    @apply text-lg;
+  }
+
+  .content .no-deco {
+    @apply text-gray-950 no-underline hover:text-gray-950 hover:no-underline hover:font-medium;
+  }
+
+  .content.page-container {
+    @apply mx-auto px-6 md:max-w-6xl;
+  }
+
+  .content div.section {
+    @apply my-16 xl:my-24;
+  }
+
+  .content div.two-col-container {
+    @apply grid grid-rows-1 gap-y-4 md:grid-cols-2 md:gap-4;
+  }
+
+  .content body {
+    @apply w-full overflow-x-hidden text-gray-950;
+  }
+
+  .content li {
+    @apply my-4 ml-12 list-disc;
+  }
+/*
+  & .mapboxgl-ctrl-attrib-inner {
+    @apply hidden;
+  }*/
+}
+
+.mapboxgl-ctrl-attrib-inner {
+  @apply hidden;
+}

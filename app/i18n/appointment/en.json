@@ -1,0 +1,38 @@
+{
+  "$drivers": {
+    "back": "Use another location",
+    "cta": "Request mobile appraiser",
+    "desc": "These mobile appraisers are currently in your area!",
+    "distance": "This appraiser is approximately {distance} away from you.",
+    "name": "Mobile Appraiser ({name})",
+    "not-found": "Unfortunately, we couldn't find any appraisers near you. Please choose another location or try again later.",
+    "title": "Mobile Appraisers Near You"
+  },
+  "$schedule": {
+    "desc": "Please select one of the nearest Cubee vehicles below to schedule your appointment with our Cubee staff at your location.",
+    "title": "Schedule Your Appointment with a Cubee Staff Member"
+  },
+  "$stations": {
+    "back": "Search other locations",
+    "desc": "Please select one of the locations below to schedule your appointment at a Cubee container.",
+    "distance": "{distance} away",
+    "google-maps": "Open in Google Maps",
+    "name": "Appraiser Center {name}",
+    "opening-hours": "open from {hours}",
+    "schedule-now": "Schedule appointment",
+    "title": "Appointment Scheduling",
+    "viewMore": "View More"
+  },
+  "$vehicle-condition": {
+    "desc": "Please select the current condition of your vehicle below.",
+    "title": "What is the condition of your vehicle? {'|'} Vehicle Condition"
+  },
+  "$vehicle-location": {
+    "custom": "Enter location",
+    "desc:driver": "Please enter the address of your vehicle's current location so we can find the nearest mobile appraisers in your area.",
+    "desc:station": "Please enter the address of your vehicle's current location so we can find the nearest facility in your area.",
+    "title": "Where is your vehicle located?",
+    "use-current": "Use my current location"
+  },
+  "back": "Back"
+}

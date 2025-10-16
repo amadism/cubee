@@ -1,0 +1,17 @@
+{
+  "$hero": {
+    "title": "Der CUBEE Blog",
+    "desc": "Bleiben Sie auf dem neuesten Stand in Sachen Fahrzeugbewertungen, Schadensgutachten, Verkehrsrecht und mehr. Im CUBEE Blog finden Sie alles Wichtige rund ums Auto. Verständlich, verlässlich und immer aktuell."
+  },
+  "$seo": {
+    "title": "CUBEE Blog: Fachwissen zu KFZ-Gutachten, Schadensbewertungen und Verkehrsrecht",
+    "description": "Der CUBEE Blog bietet Ihnen wertvolle Informationen und praktische Tipps zu schnellen KFZ-Gutachten, unabhängigen Schadensbewertungen und vielem mehr. Erfahren Sie alles, was Sie über Fahrzeugbewertungen in Deutschland und ganz Europa wissen müssen."
+  },
+  "$blog": {
+    "title": "Unsere neuesten Artikel",
+    "desc": "Entdecken Sie unsere aktuellen Beiträge zu KFZ-Gutachten in Deutschland und erhalten Sie alle wichtigen Informationen rund um Fahrzeugbewertungen."
+  },
+  "relatedArticles": "Ähnliche Artikel",
+  "readMore": "Mehr erfahren",
+  "backToBlogs": "Zurück zum Blog"
+}

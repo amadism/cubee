@@ -1,0 +1,16 @@
+{
+  "$hero": {
+    "title": "Trouvez votre prochain conteneur CUBEE"
+  },
+  "$search": {
+    "input:placeholder": "Recherchez des emplacements (code postal, ville, rue)",
+    "station-cta": "Prendre rendez-vous"
+  },
+  "$seo": {
+    "desc": "Découvrez le conteneur Cubee le plus proche pour des expertises automobiles rapides et professionnelles en Allemagne et dans toute l'Europe. Utilisez notre localisateur pour réserver facilement une inspection près de chez vous. Fiable, rapide et simple.",
+    "title": "Trouvez votre emplacement Cubee le plus proche {'|'} Réservez une expertise automobile rapide"
+  },
+  "appointment": "Rendez-vous",
+  "comingSoon": "Bientôt disponible ...",
+  "notFound": "Aucun emplacement trouvé"
+}

@@ -1,0 +1,46 @@
+{
+  "$concept": {
+    "imageAlt": "Cubee beehive container.",
+    "imageCaption": "Our Cubee beehive",
+    "paragraph": "Finding a location for your vehicle assessment should not be an obstacle. With our yellow-black containers at easily accessible locations in Germany and soon all over Europe, a Cubee expert is always near you when you need them.",
+    "title": "Our Concept"
+  },
+  "$imageAlts": {
+    "carTalk": "Cubee expert assessing a vehicle with a customer.",
+    "computer": "Cubee-stylized computer.",
+    "handshake": "Cubee beehive container.",
+    "mail": "Cubee-stylized envelope."
+  },
+  "$join-us": {
+    "becomeFranchiseeButton": "Become a Franchisee",
+    "content": "As we expand our network across Europe, we invite you to experience the future of vehicle assessments. At Cubee, efficiency, precision, and customer satisfaction are at the forefront – right in your vicinity. Join us on our journey and see how we are setting new standards in the automotive industry.",
+    "title": "Join Us"
+  },
+  "$process": {
+    "$step-1": {
+      "content": "Easily find the nearest Cubee location. Book your appointment conveniently online in just a few minutes.",
+      "findLocationButton": "Find Location",
+      "scheduleAppointmentButton": "Book Appointment",
+      "title": "Step 1: Schedule an Appointment"
+    },
+    "$step-2": {
+      "content": "Drive to your nearest Cubee location and have your vehicle assessed quickly and efficiently. If your vehicle is not drivable, our mobile team will come directly to you.",
+      "title": "Step 2: Stress-Free Vehicle Assessment"
+    },
+    "$step-3": {
+      "content": "Our experts will create a detailed report about your vehicle. You will receive the final report conveniently via email or mail. The entire process usually takes only 3 business days.",
+      "title": "Step 3: Receive Your Report"
+    },
+    "title": "How the Assessment Process Works at CUBEE"
+  },
+  "$seo": {
+    "desc": "Learn how CUBEE makes vehicle assessments and damage reports easier, faster, and more reliable. Discover our innovative approach and become part of our growing network in Germany and all over Europe.",
+    "title": "About Cubee {'|'} How We Are Changing Vehicle Assessments in Europe"
+  },
+  "$welcome": {
+    "imageAlt": "Cubee headquarters in Frankfurt am Main",
+    "location": "CUBEE Expert AG - Opernplatz 14, Frankfurt am Main",
+    "paragraph": "We have made it our mission to change the way vehicle assessments and damage reports are conducted in Europe. As a growing franchise, we aim to make the entire process easier, faster, and accessible to everyone.",
+    "title": "Welcome to Cubee"
+  }
+}

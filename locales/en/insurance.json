@@ -1,0 +1,9 @@
+{
+  "accidentCauser": {
+    "title": "Who caused the accident?",
+    "subtitle": "Please select who was responsible for causing the accident",
+    "me": "I caused the accident",
+    "other": "Another person caused the accident",
+    "unknown": "I'm not sure who caused the accident"
+  }
+}

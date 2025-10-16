@@ -1,0 +1,112 @@
+{
+  "$contact": {
+    "navigate": "Navigasyonu başlat"
+  },
+  "$faq": {
+    "items": [
+      {
+        "answer": "Bir araç eksperi, araç hasarlarında rapor hazırlar, hasar miktarını değerlendirir ve her şeyi yasal olarak belgeler. Bu, sigorta karşısında hakkınızı savunmanız için bir temel sağlar.",
+        "question": "Bir araç eksperi ne yapar?"
+      },
+      {
+        "answer": "Bir rapor gereklidir: Sorumluluk hasarlarında (örneğin, başkasının hatasıyla kaza), kasko hasarlarında (kendi hatanız), satış veya kiralama sonu için araç değerlendirmelerinde.",
+        "question": "Ne zaman bir araç raporuna ihtiyacım var?"
+      },
+      {
+        "answer": "Bir araç raporunun maliyeti hasarın büyüklüğüne bağlıdır. Kusursuz kazalarda genellikle karşı tarafın sigortası masrafları karşılar.",
+        "question": "Bir araç raporu ne kadar tutar?"
+      },
+      {
+        "answer": "{cityName} şehrindeki araç eksperlerimiz, araç incelemesinden sonraki 24 saat içinde rapor hazırlar.",
+        "question": "Raporumu ne kadar hızlı alabilirim?"
+      },
+      {
+        "answer": "Bağımsız bir rapor, sigorta tarafından yapılan kesintilere karşı sizi korur ve adil bir tazminat almanızı sağlar.",
+        "question": "Bağımsız bir rapor neden önemlidir?"
+      }
+    ],
+    "title": "SSS - Sıkça Sorulan Sorular"
+  },
+  "$hero": {
+    "driverTitle": "CUBEE Mobil Eksper {city} – Randevu Al",
+    "title": "CUBEE Ekspertiz Merkezi {city} – Randevu Alın"
+  },
+  "$section1": {
+    "description": "Bir kaza veya araç hasarı yeterince streslidir. {cityName} şehrindeki araç ekspertiz ve bilirkişi hizmetimize güvenin. Size profesyonel hasar raporları, net hasar analizleri ve hasar yönetiminde tam destek sunuyoruz – hızlı, adil ve bağımsız.",
+    "title": "{cityName} şehrindeki bağımsız araç eksperiniz ve bilirkişiniz – Hızlı, güvenilir ve yetkin"
+  },
+  "$section2": {
+    "items": [
+      {
+        "content": "Sorumluluk ve kasko hasarlarında hassas ve tarafsız değerlendirmeler.",
+        "title": "Uzmanlar Tarafından Hasar Raporları"
+      },
+      {
+        "content": "Satın alma, satış veya kiralama iadesi için değer raporları.",
+        "title": "Araç Değerlendirmesi"
+      },
+      {
+        "content": "Yasal güvence için hasarların profesyonel belgelenmesi.",
+        "title": "Delil Tespiti"
+      },
+      {
+        "content": "Sigortalar ve avukatlarla iletişimde destek.",
+        "title": "Tam Hizmet"
+      },
+      {
+        "content": "Güvenebileceğiniz yasal geçerliliği olan araç raporları.",
+        "title": "Bilirkişi Raporları"
+      }
+    ],
+    "title": "{cityName} şehrindeki Hizmetlerimiz"
+  },
+  "$section3": {
+    "items": [
+      {
+        "content": "{cityName} şehrinde doğrudan erişilebilir – kısa yanıt süreleri ve hızlı yardım.",
+        "title": "Yerel Uzmanlık"
+      },
+      {
+        "content": "Üçüncü şahıslar veya sigortaların etkisi olmadan tarafsız değerlendirme.",
+        "title": "Bağımsız Bilirkişiler"
+      },
+      {
+        "content": "Araç eksperlerimiz, kaza ve hasar raporlarında yılların deneyimine sahiptir.",
+        "title": "Kapsamlı Deneyim"
+      },
+      {
+        "content": "Şeffaf süreçler ve net iletişim bizim önceliğimizdir.",
+        "title": "Müşteri Yakınlığı ve Güven"
+      }
+    ],
+    "title": "{cityName} şehrindeki doğru araç eksperi ve bilirkişi neden biziz"
+  },
+  "$section4": {
+    "items": [
+      {
+        "content": "7/24 ulaşılabiliriz.",
+        "title": "İletişim"
+      },
+      {
+        "content": "Araç eksperimiz size gelir veya aracı atölyede inceler. Alternatif olarak, aracınız {cityName} şehrindeki ekspertiz merkezimizde incelenebilir.",
+        "title": "Yerinde İnceleme"
+      },
+      {
+        "content": "Detaylı, bağımsız bir hasar raporu alırsınız.",
+        "title": "Rapor Hazırlama"
+      },
+      {
+        "content": "Sigorta ile iletişimde size destek oluruz ve hakkınızı savunmanızı sağlarız.",
+        "title": "Hasar Yönetimi"
+      }
+    ],
+    "title": "Rapor Hazırlama Süreci"
+  },
+  "$section5": {
+    "title": "İletişim – Araç Eksperi ve Bilirkişi {cityName}"
+  },
+  "$seo": {
+    "desc": "{city} şehrindeki CUBEE Ekspertiz Merkezi, deneyimli bilirkişiler tarafından profesyonel araç raporları ve hasar değerlendirmeleri sunar. Hızlı randevu ve Almanya genelinde mobil hizmet.",
+    "title": "Ekspertiz Merkezi {city} {'|'} Araç Hasar Değerlendirmesi"
+  }
+}

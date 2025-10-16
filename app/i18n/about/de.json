@@ -1,0 +1,46 @@
+{
+  "$seo": {
+    "title": "Über Cubee {'|'} Wie wir KFZ-Gutachten in Europa verändern",
+    "desc": "Erfahren Sie, wie CUBEE Fahrzeugbewertungen und Schadensgutachten einfacher, schneller und verlässlicher macht. Lernen Sie unseren innovativen Ansatz kennen und werden Sie Teil unseres wachsenden Netzwerks in Deutschland und ganz Europa."
+  },
+  "$welcome": {
+    "title": "Willkommen bei Cubee",
+    "paragraph": "Wir haben es uns zur Aufgabe gemacht, die Art und Weise, wie Fahrzeugbewertungen und Schadensgutachten in Europa durchgeführt werden, zu verändern. Als wachsendes Franchise möchten wir den gesamten Prozess einfacher, schneller und für alle zugänglich machen.",
+    "location": "CUBEE Sachverständigen AG - Opernplatz 14, Frankfurt am Main",
+    "imageAlt": "Cubee-Zentrale in Frankfurt am Main"
+  },
+  "$concept": {
+    "title": "Unser Konzept",
+    "paragraph": "Einen Standort für Ihre Fahrzeugbewertung zu finden, sollte kein Hindernis sein. Mit unseren gelb-schwarzen Containern an gut erreichbaren Standorten in Deutschland und bald auch in ganz Europa, ist ein Cubee-Experte immer in Ihrer Nähe, wenn Sie ihn brauchen.",
+    "imageAlt": "Cubee-Bienenstock-Container.",
+    "imageCaption": "Unser Cubee-Bienenstock"
+  },
+  "$process": {
+    "title": "So funktioniert der Begutachtungsprozess bei CUBEE",
+    "$step-1": {
+      "title": "Schritt 1: Termin vereinbaren",
+      "content": "Finden Sie ganz leicht den nächsten Cubee-Standort. Buchen Sie Ihren Termin bequem online in wenigen Minuten.",
+      "findLocationButton": "Standort finden",
+      "scheduleAppointmentButton": "Termin buchen"
+    },
+    "$step-2": {
+      "title": "Schritt 2: Stressfreie Fahrzeugbewertung",
+      "content": "Fahren Sie zu Ihrem nächstgelegenen Cubee-Standort und lassen Sie Ihr Fahrzeug schnell und effizient bewerten. Falls Ihr Fahrzeug nicht fahrbereit ist, kommt unser mobiles Team direkt zu Ihnen."
+    },
+    "$step-3": {
+      "title": "Schritt 3: Erhalten Sie Ihr Gutachten",
+      "content": "Unsere Fachleute erstellen einen ausführlichen Bericht über Ihr Fahrzeug. Den finalen Bericht erhalten Sie bequem per E-Mail oder Post. Der gesamte Prozess dauert in der Regel nur 3 Werktage."
+    }
+  },
+  "$join-us": {
+    "title": "Begleiten Sie uns",
+    "content": "Während wir unser Netzwerk in ganz Europa ausbauen, laden wir Sie ein, die Zukunft der Fahrzeugbewertungen zu erleben. Bei Cubee steht Effizienz, Präzision und Kundenzufriedenheit im Mittelpunkt – und das direkt in Ihrer Nähe. Werden Sie Teil unserer Reise und erleben Sie, wie wir neue Maßstäbe in der Automobilbranche setzen.",
+    "becomeFranchiseeButton": "Franchisee werden"
+  },
+  "$imageAlts": {
+    "computer": "Cubee-stilisierter Computer.",
+    "carTalk": "Cubee-Experte bei der Fahrzeugbewertung mit einem Kunden.",
+    "mail": "Cubee-stilisierter Briefumschlag.",
+    "handshake": "Cubee-Bienenstock-Container."
+  }
+}

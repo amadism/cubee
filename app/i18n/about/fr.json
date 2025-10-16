@@ -1,0 +1,46 @@
+{
+  "$concept": {
+    "imageAlt": "Conteneur de ruche Cubee.",
+    "imageCaption": "Notre ruche Cubee",
+    "paragraph": "Trouver un emplacement pour l'évaluation de votre véhicule ne devrait pas être un obstacle. Avec nos conteneurs jaune et noir situés à des emplacements facilement accessibles en Allemagne et bientôt dans toute l'Europe, un expert Cubee est toujours à proximité lorsque vous en avez besoin.",
+    "title": "Notre concept"
+  },
+  "$imageAlts": {
+    "carTalk": "Expert Cubee évaluant un véhicule avec un client.",
+    "computer": "Ordinateur stylisé Cubee.",
+    "handshake": "Conteneur de ruche Cubee.",
+    "mail": "Enveloppe stylisée Cubee."
+  },
+  "$join-us": {
+    "becomeFranchiseeButton": "Devenir franchisee",
+    "content": "Alors que nous étendons notre réseau à travers l'Europe, nous vous invitons à découvrir l'avenir des évaluations de véhicules. Chez Cubee, l'efficacité, la précision et la satisfaction du client sont au cœur de nos préoccupations – et ce, directement près de chez vous. Rejoignez notre aventure et découvrez comment nous établissons de nouvelles normes dans l'industrie automobile.",
+    "title": "Rejoignez-nous"
+  },
+  "$process": {
+    "$step-1": {
+      "content": "Trouvez facilement le prochain emplacement Cubee. Réservez votre rendez-vous en ligne en quelques minutes.",
+      "findLocationButton": "Trouver un emplacement",
+      "scheduleAppointmentButton": "Prendre rendez-vous",
+      "title": "Étape 1 : Prendre rendez-vous"
+    },
+    "$step-2": {
+      "content": "Rendez-vous à votre emplacement Cubee le plus proche et faites évaluer votre véhicule rapidement et efficacement. Si votre véhicule n'est pas en état de marche, notre équipe mobile viendra directement chez vous.",
+      "title": "Étape 2 : Évaluation sans stress du véhicule"
+    },
+    "$step-3": {
+      "content": "Nos experts rédigent un rapport détaillé sur votre véhicule. Vous recevrez le rapport final par e-mail ou par courrier. Le processus complet prend généralement seulement 3 jours ouvrables.",
+      "title": "Étape 3 : Recevez votre rapport"
+    },
+    "title": "Comment fonctionne le processus d'évaluation chez CUBEE"
+  },
+  "$seo": {
+    "desc": "Découvrez comment CUBEE rend les évaluations de véhicules et les rapports de dommages plus simples, plus rapides et plus fiables. Apprenez à connaître notre approche innovante et rejoignez notre réseau en pleine expansion en Allemagne et dans toute l'Europe.",
+    "title": "À propos de Cubee {'|'} Comment nous transformons les rapports de véhicules en Europe"
+  },
+  "$welcome": {
+    "imageAlt": "Siège de Cubee à Francfort-sur-le-Main",
+    "location": "CUBEE Sachverständigen AG - Opernplatz 14, Francfort-sur-le-Main",
+    "paragraph": "Nous nous sommes donné pour mission de changer la manière dont les évaluations de véhicules et les rapports de dommages sont réalisés en Europe. En tant que franchise en pleine croissance, nous souhaitons rendre l'ensemble du processus plus simple, plus rapide et accessible à tous.",
+    "title": "Bienvenue chez Cubee"
+  }
+}

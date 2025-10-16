@@ -1,0 +1,17 @@
+{
+  "$blog": {
+    "desc": "Découvrez nos articles récents sur les expertises automobiles en Allemagne et obtenez toutes les informations importantes sur les évaluations de véhicules.",
+    "title": "Nos derniers articles"
+  },
+  "$hero": {
+    "desc": "Restez à jour sur les évaluations de véhicules, les expertises de dommages, le droit de la circulation et plus encore. Sur le blog CUBEE, vous trouverez tout ce qui est important autour de la voiture. Compréhensible, fiable et toujours actuel.",
+    "title": "Le blog CUBEE"
+  },
+  "$seo": {
+    "description": "Le blog CUBEE vous offre des informations précieuses et des conseils pratiques sur les expertises automobiles rapides, les évaluations de dommages indépendantes et bien plus encore. Découvrez tout ce que vous devez savoir sur les évaluations de véhicules en Allemagne et dans toute l'Europe.",
+    "title": "Blog CUBEE : Expertise en expertises automobiles, évaluations de dommages et droit de la circulation"
+  },
+  "backToBlogs": "Retour au blog",
+  "readMore": "En savoir plus",
+  "relatedArticles": "Articles similaires"
+}

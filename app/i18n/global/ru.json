@@ -1,0 +1,67 @@
+{
+  "$contact": {
+    "email": "Электронная почта",
+    "phone": "Телефон",
+    "web": "Веб"
+  },
+  "$cookies": {
+    "$consents": {
+      "essential": "Основные файлы cookie",
+      "marketing": "Маркетинг",
+      "personalized": "Персонализированный контент",
+      "statistics": "Статистика"
+    },
+    "accept": "Принять",
+    "accept-all": "Принять все",
+    "accept-selection": "Принять выбор",
+    "customize": "Настроить параметры",
+    "subtitle": "Мы используем файлы cookie, чтобы улучшить ваш пользовательский опыт и оптимизировать наш контент и услуги для вас.",
+    "text": "Нажимая «Принять», вы соглашаетесь на использование аналитических файлов cookie и нашу {privacy}. Вы можете в любое время отозвать свое согласие.",
+    "text:privacy": "Политика конфиденциальности",
+    "title": "Настройки конфиденциальности"
+  },
+  "$footer": {
+    "aboutCubee": "О Cubee",
+    "becomeFranchisee": "Стать франшизой",
+    "company": "Cubee",
+    "companyHeading": "Компания",
+    "contact": "Контакт",
+    "contactUs": "Свяжитесь с нами",
+    "copyright": "Авторское право Cubee | Все права защищены",
+    "dataPrivacy": "Не продавать и не передавать мои персональные данные",
+    "emailAddress": "hello{'@'}cubee.expert",
+    "followUs": "Следите за нами",
+    "jobs": "Работа",
+    "legalNotice": "Правовая информация",
+    "locationFinder": "Поиск местоположения",
+    "phone": "0800 - 2823333",
+    "phoneAvailability": "Пн - Пт с 09:00 до 16:00",
+    "privacyPolicy": "Конфиденциальность",
+    "tos": "Условия использования"
+  },
+  "$lang": {
+    "de": "Немецкий",
+    "en": "Английский",
+    "fr": "Французский",
+    "it": "Итальянский",
+    "ru": "Русский",
+    "tr": "Турецкий"
+  },
+  "$socialMedia": {
+    "facebook": "Facebook",
+    "twitter": "Twitter"
+  },
+  "$uiElements": {
+    "buttonContact": "Свяжитесь с нами",
+    "contactUsFull": {
+      "buttonAccessibility": "Нажмите, чтобы связаться с нами",
+      "buttonText": "Свяжитесь с нами"
+    }
+  },
+  "about": "О нас",
+  "blog": "Блог",
+  "contact": "Контакт",
+  "finder": "Местоположения",
+  "home": "Главная страница",
+  "lang": "Язык"
+}

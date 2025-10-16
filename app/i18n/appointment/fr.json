@@ -1,0 +1,37 @@
+{
+  "$drivers": {
+    "back": "Utiliser un autre emplacement",
+    "cta": "Demander un expert mobile",
+    "desc": "Ces experts mobiles se trouvent actuellement dans votre région !",
+    "distance": "Cet expert est à environ {distance} de vous.",
+    "name": "Expert mobile ({name})",
+    "not-found": "Malheureusement, nous n'avons pas pu trouver d'experts près de chez vous. Veuillez choisir un autre emplacement ou réessayer plus tard.",
+    "title": "Experts mobiles près de chez vous"
+  },
+  "$schedule": {
+    "desc": "Veuillez choisir l'un des véhicules Cubee les plus proches ci-dessous pour planifier votre rendez-vous avec notre employé Cubee à votre emplacement.",
+    "title": "Planifiez votre rendez-vous avec un employé Cubee"
+  },
+  "$stations": {
+    "back": "Rechercher d'autres emplacements",
+    "desc": "Veuillez choisir l'un des emplacements ci-dessous pour planifier votre rendez-vous dans un conteneur Cubee.",
+    "distance": "{distance} de distance",
+    "google-maps": "Ouvrir dans Google Maps",
+    "name": "Centre d'expertise {name}",
+    "opening-hours": "ouvert de {hours}",
+    "schedule-now": "Planifier un rendez-vous",
+    "title": "Planification de rendez-vous"
+  },
+  "$vehicle-condition": {
+    "desc": "Veuillez choisir l'état actuel de votre véhicule ci-dessous.",
+    "title": "Quel est l'état de votre véhicule ? {'|'} État du véhicule"
+  },
+  "$vehicle-location": {
+    "custom": "Entrer l'emplacement",
+    "desc:driver": "Veuillez entrer l'adresse de l'emplacement actuel de votre véhicule afin que nous puissions trouver les experts mobiles les plus proches dans votre région.",
+    "desc:station": "Veuillez entrer l'adresse de l'emplacement actuel de votre véhicule afin que nous puissions trouver l'établissement le plus proche dans votre région.",
+    "title": "Où se trouve votre véhicule ?",
+    "use-current": "Utiliser ma position actuelle"
+  },
+  "back": "Retour"
+}

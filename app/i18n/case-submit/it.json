@@ -1,0 +1,84 @@
+{
+  "$form": {
+    "title": "Modulo di segnalazione danni",
+    "steps": {
+      "1": "Info rapporto",
+      "2": "Dettagli del danno",
+      "3": "Contatto"
+    },
+    "actions": {
+      "back": "Indietro",
+      "next": "Avanti",
+      "submit": "Invia",
+      "submitting": "Invio in corso...",
+      "success": "Modulo inviato con successo!",
+      "error": "Errore durante l'invio. Riprova."
+    }
+  },
+  "$report": {
+    "title": "Informazioni sul rapporto",
+    "reportType": {
+      "label": "Tipo di rapporto",
+      "placeholder": "Seleziona tipo di rapporto",
+      "required": "Seleziona un tipo di rapporto",
+      "options": {
+        "accident": "Rapporto di incidente e danni",
+        "repair": "Conferma di riparazione",
+        "other": "Altro rapporto"
+      }
+    },
+    "vehicleMakeModel": {
+      "label": "Marca / Modello veicolo",
+      "placeholder": "es.: Toyota Camry",
+      "required": "Marca/modello obbligatorio",
+      "minLength": "Marca/modello: minimo 1 carattere"
+    }
+  },
+  "$details": {
+    "title": "Dettagli del danno",
+    "detailedInformation": {
+      "label": "Informazioni dettagliate",
+      "placeholder": "Fornisci informazioni dettagliate sul danno...",
+      "required": "Informazioni dettagliate obbligatorie",
+      "minLength": "Minimo 10 caratteri"
+    },
+    "uploads": {
+      "label": "Carica immagini/PDF (opzionale)",
+      "cta": "Clicca per caricare file",
+      "hint": "Puoi caricare immagini o PDF",
+      "listTitle": "File caricati:",
+      "remove": "Rimuovi"
+    }
+  },
+  "$contact": {
+    "title": "Informazioni di contatto",
+    "fullName": {
+      "label": "Nome e cognome",
+      "placeholder": "Il tuo nome completo",
+      "required": "Nome obbligatorio",
+      "minLength": "Minimo 3 caratteri"
+    },
+    "email": {
+      "label": "Indirizzo email",
+      "placeholder": "tua.email{'@'}esempio.com",
+      "optional": "opzionale",
+      "required": "Indirizzo email obbligatorio",
+      "invalid": "Inserisci un indirizzo email valido"
+    },
+    "mobile": {
+      "label": "Numero di cellulare",
+      "placeholder": "151 12345678",
+      "required": "Numero di cellulare obbligatorio",
+      "invalid": "Inserisci un numero di cellulare tedesco valido",
+      "helper": "Inserisci 10 cifre senza 0 iniziale, es. 151 2345678"
+    },
+    "whatsapp": {
+      "label": "Disponibile su WhatsApp",
+      "yes": "Sì",
+      "no": "No",
+      "required": "Seleziona la disponibilità WhatsApp"
+    }
+  }
+}
+
+

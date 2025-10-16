@@ -1,0 +1,67 @@
+{
+  "$contact": {
+    "email": "E-mail",
+    "phone": "Telefono",
+    "web": "Web"
+  },
+  "$cookies": {
+    "$consents": {
+      "essential": "Cookie essenziali",
+      "marketing": "Marketing",
+      "personalized": "Contenuti personalizzati",
+      "statistics": "Statistiche"
+    },
+    "accept": "Accetta",
+    "accept-all": "Accetta tutto",
+    "accept-selection": "Accetta selezione",
+    "customize": "Personalizza impostazioni",
+    "subtitle": "Utilizziamo i cookie per migliorare la tua esperienza utente e ottimizzare i nostri contenuti e servizi per te.",
+    "text": "Cliccando su \"Accetta\", acconsenti all'uso dei cookie analitici e alla nostra {privacy}. Puoi revocare il tuo consenso in qualsiasi momento.",
+    "text:privacy": "Informativa sulla privacy",
+    "title": "Impostazioni della privacy"
+  },
+  "$footer": {
+    "aboutCubee": "Su Cubee",
+    "becomeFranchisee": "Diventa un franchising",
+    "company": "Cubee",
+    "companyHeading": "Azienda",
+    "contact": "Contatto",
+    "contactUs": "Contattaci",
+    "copyright": "Copyright di Cubee | Tutti i diritti riservati",
+    "dataPrivacy": "Non vendere o condividere i miei dati personali",
+    "emailAddress": "hello{'@'}cubee.expert",
+    "followUs": "Seguici",
+    "jobs": "Lavori",
+    "legalNotice": "Note legali",
+    "locationFinder": "Ricerca sedi",
+    "phone": "0800 - 2823333",
+    "phoneAvailability": "Lun - Ven dalle 09:00 alle 16:00",
+    "privacyPolicy": "Privacy",
+    "tos": "Termini di servizio"
+  },
+  "$lang": {
+    "de": "Tedesco",
+    "en": "Inglese",
+    "fr": "Francese",
+    "it": "Italiano",
+    "ru": "Russo",
+    "tr": "Turco"
+  },
+  "$socialMedia": {
+    "facebook": "Facebook",
+    "twitter": "Twitter"
+  },
+  "$uiElements": {
+    "buttonContact": "Contattaci",
+    "contactUsFull": {
+      "buttonAccessibility": "Premi per contattarci",
+      "buttonText": "Contattaci"
+    }
+  },
+  "about": "Chi siamo",
+  "blog": "Blog",
+  "contact": "Contatto",
+  "finder": "Sedi",
+  "home": "Home",
+  "lang": "Lingua"
+}

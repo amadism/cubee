@@ -1,0 +1,84 @@
+{
+  "$form": {
+    "title": "Formulaire de soumission de dommage",
+    "steps": {
+      "1": "Infos rapport",
+      "2": "Détails du dommage",
+      "3": "Contact"
+    },
+    "actions": {
+      "back": "Retour",
+      "next": "Suivant",
+      "submit": "Envoyer",
+      "submitting": "Envoi en cours...",
+      "success": "Formulaire envoyé avec succès !",
+      "error": "Erreur lors de l'envoi. Veuillez réessayer."
+    }
+  },
+  "$report": {
+    "title": "Informations du rapport",
+    "reportType": {
+      "label": "Type de rapport",
+      "placeholder": "Sélectionner un type de rapport",
+      "required": "Veuillez sélectionner un type de rapport",
+      "options": {
+        "accident": "Rapport d'accident et de dommage",
+        "repair": "Confirmation de réparation",
+        "other": "Autre rapport"
+      }
+    },
+    "vehicleMakeModel": {
+      "label": "Marque / Modèle du véhicule",
+      "placeholder": "ex.: Toyota Camry",
+      "required": "Marque/modèle requis",
+      "minLength": "Marque/modèle: minimum 1 caractère"
+    }
+  },
+  "$details": {
+    "title": "Détails du dommage",
+    "detailedInformation": {
+      "label": "Informations détaillées",
+      "placeholder": "Veuillez fournir des informations détaillées sur le dommage...",
+      "required": "Informations détaillées requises",
+      "minLength": "Minimum 10 caractères"
+    },
+    "uploads": {
+      "label": "Télécharger des images/PDF (optionnel)",
+      "cta": "Cliquez pour télécharger des fichiers",
+      "hint": "Vous pouvez télécharger des images ou des PDF",
+      "listTitle": "Fichiers téléchargés :",
+      "remove": "Supprimer"
+    }
+  },
+  "$contact": {
+    "title": "Informations de contact",
+    "fullName": {
+      "label": "Nom complet",
+      "placeholder": "Votre nom complet",
+      "required": "Nom requis",
+      "minLength": "Minimum 3 caractères"
+    },
+    "email": {
+      "label": "Adresse e-mail",
+      "placeholder": "votre.email{'@'}exemple.com",
+      "optional": "optionnel",
+      "required": "Adresse e-mail requise",
+      "invalid": "Veuillez saisir une adresse e-mail valide"
+    },
+    "mobile": {
+      "label": "Numéro de mobile",
+      "placeholder": "151 12345678",
+      "required": "Numéro de mobile requis",
+      "invalid": "Veuillez saisir un numéro de mobile allemand valide",
+      "helper": "Saisir 10 chiffres sans 0 initial, ex. 151 2345678"
+    },
+    "whatsapp": {
+      "label": "Disponible sur WhatsApp",
+      "yes": "Oui",
+      "no": "Non",
+      "required": "Veuillez sélectionner la disponibilité WhatsApp"
+    }
+  }
+}
+
+

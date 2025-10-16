@@ -1,0 +1,112 @@
+{
+  "$contact": {
+    "navigate": "Start navigation"
+  },
+  "$faq": {
+    "items": [
+      {
+        "answer": "A motor vehicle expert prepares reports in the event of vehicle damage, assesses the extent of the damage, and documents everything in a legally sound manner. This provides you with the basis to assert your claim against the insurance company.",
+        "question": "What does a motor vehicle expert do?"
+      },
+      {
+        "answer": "An appraisal is necessary for: liability damages (e.g., accident with third-party fault), comprehensive damages (own fault), vehicle appraisals for sale or end of leasing.",
+        "question": "When do I need a motor vehicle appraisal?"
+      },
+      {
+        "answer": "The cost of a motor vehicle appraisal depends on the extent of the damage. In the case of accidents not caused by you, the opposing insurance company usually covers the costs.",
+        "question": "What does a motor vehicle appraisal cost?"
+      },
+      {
+        "answer": "Our motor vehicle experts in {cityName} prepare reports within 24 hours after the vehicle inspection.",
+        "question": "How quickly will I receive my report?"
+      },
+      {
+        "answer": "An independent report protects you from reductions by insurance companies and ensures that you receive fair compensation.",
+        "question": "Why is an independent report important?"
+      }
+    ],
+    "title": "FAQ - Frequently Asked Questions"
+  },
+  "$hero": {
+    "driverTitle": "CUBEE Mobile Appraiser in {city} – Schedule an Appointment",
+    "title": "CUBEE Appraisal Center {city} – Schedule an Appointment"
+  },
+  "$section1": {
+    "description": "An accident or vehicle damage is stressful enough. Rely on our motor vehicle appraisal and expert service in {cityName}. We offer you professional damage appraisals, clear damage analyses, and complete support in damage processing – fast, fair, and independent.",
+    "title": "Your Independent Motor Vehicle Appraiser & Expert in {cityName} – Fast, Reliable & Competent"
+  },
+  "$section2": {
+    "items": [
+      {
+        "content": "Precise and neutral assessments for liability and comprehensive damages.",
+        "title": "Damage Appraisals by Experts"
+      },
+      {
+        "content": "Value appraisals for purchase, sale, or lease return.",
+        "title": "Vehicle Appraisal"
+      },
+      {
+        "content": "Professional documentation of damages for legal protection.",
+        "title": "Evidence Preservation"
+      },
+      {
+        "content": "Support in communication with insurance companies and lawyers.",
+        "title": "Complete Service"
+      },
+      {
+        "content": "Legally sound motor vehicle appraisals you can rely on.",
+        "title": "Appraisals by Experts"
+      }
+    ],
+    "title": "Our Services in {cityName}"
+  },
+  "$section3": {
+    "items": [
+      {
+        "content": "Directly available in {cityName} – short response times and quick assistance.",
+        "title": "Local Expertise"
+      },
+      {
+        "content": "Neutral assessment without influence from third parties or insurance companies.",
+        "title": "Independent Experts"
+      },
+      {
+        "content": "Our motor vehicle experts have years of experience in accident and damage appraisals.",
+        "title": "Comprehensive Experience"
+      },
+      {
+        "content": "Transparent processes and clear communication are our top priorities.",
+        "title": "Customer Proximity & Trust"
+      }
+    ],
+    "title": "Why We Are the Right Motor Vehicle Appraiser & Expert in {cityName}"
+  },
+  "$section4": {
+    "items": [
+      {
+        "content": "We are available for you 24/7.",
+        "title": "Contact"
+      },
+      {
+        "content": "Our motor vehicle expert comes to you or inspects the vehicle in the workshop. Alternatively, your vehicle can be inspected at our appraisal center on-site in {cityName}.",
+        "title": "On-Site Inspection"
+      },
+      {
+        "content": "You will receive a detailed, independent damage appraisal.",
+        "title": "Appraisal Creation"
+      },
+      {
+        "content": "We support you in communication with the insurance company and ensure that you assert your rights.",
+        "title": "Damage Processing"
+      }
+    ],
+    "title": "Process of Appraisal Creation"
+  },
+  "$section5": {
+    "title": "Contact – Motor Vehicle Appraiser & Expert {cityName}"
+  },
+  "$seo": {
+    "desc": "The CUBEE Appraisal Center in {city} offers professional motor vehicle appraisals and damage assessments by experienced experts. Quick appointment scheduling and mobile service throughout Germany.",
+    "title": "Appraisal Center {city} {'|'} Motor Vehicle Damage Assessment"
+  }
+}

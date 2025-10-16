@@ -1,0 +1,16 @@
+{
+  "$seo": {
+    "title": "Finden Sie Ihren nächstgelegenen Cubee-Standort {'|'} Schnelles KFZ-Gutachten buchen",
+    "desc": "Entdecken Sie den nächstgelegenen Cubee-Container für schnelle und professionelle KFZ-Gutachten in Deutschland und ganz Europa. Nutzen Sie unseren Standortfinder, um bequem eine Inspektion in Ihrer Nähe zu buchen. Zuverlässig, schnell und unkompliziert."
+  },
+  "$hero": {
+    "title": "Finde deinen nächsten CUBEE-Container"
+  },
+  "$search": {
+    "input:placeholder": "Suche nach Standorten (PLZ, Ort, Straße)",
+    "station-cta": "Termin vereinbaren"
+  },
+  "appointment": "Termin",
+  "notFound": "Kein Standort gefunden",
+  "comingSoon": "Bald verfügbar ..."
+}

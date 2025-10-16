@@ -1,0 +1,17 @@
+{
+  "$blog": {
+    "desc": "Scopri i nostri articoli attuali sulle perizie automobilistiche in Germania e ottieni tutte le informazioni importanti sulle valutazioni dei veicoli.",
+    "title": "I nostri articoli più recenti"
+  },
+  "$hero": {
+    "desc": "Rimani aggiornato sulle valutazioni dei veicoli, perizie sui danni, diritto del traffico e altro ancora. Nel blog di CUBEE trovi tutto ciò che è importante riguardo alle auto. Comprensibile, affidabile e sempre aggiornato.",
+    "title": "Il blog di CUBEE"
+  },
+  "$seo": {
+    "description": "Il blog di CUBEE ti offre informazioni preziose e consigli pratici su perizie automobilistiche rapide, valutazioni indipendenti dei danni e molto altro. Scopri tutto ciò che devi sapere sulle valutazioni dei veicoli in Germania e in tutta Europa.",
+    "title": "Blog di CUBEE: Conoscenze specialistiche su perizie automobilistiche, valutazioni dei danni e diritto del traffico"
+  },
+  "backToBlogs": "Torna al blog",
+  "readMore": "Scopri di più",
+  "relatedArticles": "Articoli correlati"
+}

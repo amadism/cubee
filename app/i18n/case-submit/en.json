@@ -1,0 +1,99 @@
+{
+  "$form": {
+    "title": "Damage Submission Form",
+    "steps": {
+      "1": "Location",
+      "2": "Report Info",
+      "3": "Damage Details",
+      "4": "Contact Info"
+    },
+    "actions": {
+      "back": "Back",
+      "next": "Next",
+      "submit": "Submit",
+      "submitting": "Submitting...",
+      "success": "Form submitted successfully!",
+      "error": "Error submitting form. Please try again."
+    }
+  },
+  "$report": {
+    "title": "Report Information",
+    "reportType": {
+      "label": "Report Type",
+      "placeholder": "Select report type",
+      "required": "Please select a report type",
+      "options": {
+        "accident": "Accident and Damage Report",
+        "repair": "Repair Confirmation",
+        "other": "Other Report"
+      }
+    },
+    "vehicleMakeModel": {
+      "label": "Vehicle Make / Model",
+      "placeholder": "e.g., Toyota Camry",
+      "required": "Vehicle make/model is required",
+      "minLength": "Vehicle make/model must be at least 1 character"
+    },
+    "location": {
+      "label": "Incident Location",
+      "required": "Please select a location"
+    }
+  },
+  "$location": {
+    "title": "Select Your Location",
+    "subtitle": "Help us locate the nearest partners to assist you",
+    "or": "or",
+    "custom": {
+      "label": "Search for a specific address"
+    },
+    "selected": "Location Selected",
+    "required": "Please select a location"
+  },
+  "$details": {
+    "title": "Damage Details",
+    "detailedInformation": {
+      "label": "Detailed Information",
+      "placeholder": "Please provide detailed information about the damage...",
+      "required": "Detailed information is required",
+      "minLength": "Detailed information must be at least 10 characters"
+    },
+    "uploads": {
+      "label": "Upload Images/PDFs (Optional)",
+      "cta": "Click to upload files",
+      "hint": "You can upload images or PDFs",
+      "listTitle": "Uploaded Files:",
+      "remove": "Remove"
+    }
+  },
+  "$contact": {
+    "title": "Contact Information",
+    "fullName": {
+      "label": "Full Name",
+      "placeholder": "Your full name",
+      "required": "Full name is required",
+      "minLength": "Full name must be at least 3 characters"
+    },
+    "email": {
+      "label": "Email Address",
+      "placeholder": "your.email{'@'}example.com",
+      "optional": "optional",
+      "required": "Email address is required",
+      "invalid": "Please enter a valid email address"
+    },
+    "mobile": {
+      "label": "Mobile Number",
+      "placeholder": "151 12345678",
+      "required": "Mobile number is required",
+      "invalid": "Please enter a valid German mobile number",
+      "helper": "Enter 10 digits without leading 0, e.g. 151 2345678"
+    },
+    "whatsapp": {
+      "label": "Available on WhatsApp",
+      "yes": "Yes",
+      "no": "No",
+      "required": "Please select WhatsApp availability"
+    }
+  }
+}
+
+

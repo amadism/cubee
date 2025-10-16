@@ -1,0 +1,37 @@
+{
+  "$drivers": {
+    "back": "Usa un'altra posizione",
+    "cta": "Richiedi un perito mobile",
+    "desc": "Questi periti mobili si trovano attualmente nella tua zona!",
+    "distance": "Questo perito è a circa {distance} da te.",
+    "name": "Perito mobile ({name})",
+    "not-found": "Purtroppo non siamo riusciti a trovare periti nella tua zona. Si prega di scegliere un'altra posizione o riprovare più tardi.",
+    "title": "Periti mobili vicino a te"
+  },
+  "$schedule": {
+    "desc": "Si prega di selezionare uno dei veicoli Cubee più vicini qui sotto per pianificare il tuo appuntamento con il nostro collaboratore Cubee nella tua posizione.",
+    "title": "Fissa il tuo appuntamento con un collaboratore Cubee"
+  },
+  "$stations": {
+    "back": "Cerca altre posizioni",
+    "desc": "Si prega di selezionare una delle posizioni sottostanti per pianificare il tuo appuntamento presso un container Cubee.",
+    "distance": "{distance} di distanza",
+    "google-maps": "Apri in Google Maps",
+    "name": "Centro peritale {name}",
+    "opening-hours": "aperto dalle {hours}",
+    "schedule-now": "Fissa un appuntamento",
+    "title": "Pianificazione appuntamento"
+  },
+  "$vehicle-condition": {
+    "desc": "Si prega di selezionare lo stato attuale del tuo veicolo qui sotto.",
+    "title": "Qual è lo stato del tuo veicolo? {'|'} Condizione del veicolo"
+  },
+  "$vehicle-location": {
+    "custom": "Inserisci posizione",
+    "desc:driver": "Si prega di inserire l'indirizzo della posizione attuale del tuo veicolo, in modo che possiamo trovare i periti mobili più vicini nella tua zona.",
+    "desc:station": "Si prega di inserire l'indirizzo della posizione attuale del tuo veicolo, in modo che possiamo trovare la struttura più vicina nella tua zona.",
+    "title": "Dove si trova il tuo veicolo?",
+    "use-current": "Usa la mia posizione attuale"
+  },
+  "back": "Indietro"
+}

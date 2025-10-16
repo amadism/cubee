@@ -1,0 +1,827 @@
+[
+  {
+    "name": "ADAC Autoversicherung",
+    "slug": "adac-autoversicherung-ag",
+    "imageUrl": "/img/insurance/adac.png",
+    "email": "contact@adac.com",
+    "colors": {
+      "primary": "#ffcf00",
+      "secondary": "#F4C414"
+    },
+    "headerStyle": "color"
+  },
+  {
+    "name": "Allianz Versicherung",
+    "slug": "allianz-versicherungs-ag",
+    "imageUrl": "/img/insurance/allianz.svg",
+    "email": "contact@allianz.com",
+    "colors": {
+      "primary": "#14367c",
+      "secondary": "#285f8e"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "Allianz Direct Versicherung",
+    "slug": "allianz-direct-versicherungs-ag",
+    "imageUrl": "/img/insurance/allianz-direct.svg",
+    "email": "contact@allianz.com",
+    "colors": {
+      "primary": "#182a51",
+      "secondary": "#6fc7e9"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "ALTE LEIPZIGER Versicherung",
+    "slug": "alte-leipziger-versicherung-aktiengesellschaft",
+    "imageUrl": "/img/insurance/alte-leipziger.svg",
+    "email": "contact@alte-leipziger.com",
+    "colors": {
+      "primary": "#af3c3c",
+      "secondary": "#af3c3c"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "ARAG Allgemeine Versicherung",
+    "slug": "arag-allgemeine-versicherungs-ag",
+    "imageUrl": "/img/insurance/arag.svg",
+    "email": "contact@arag.com",
+    "colors": {
+      "primary": "#F0C002",
+      "secondary": "#407888"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "AXA Versicherung",
+    "slug": "axa-versicherung-ag",
+    "imageUrl": "/img/insurance/axa.svg",
+    "email": "contact@axa.com",
+    "colors": {
+      "primary": "#000089",
+      "secondary": "#31466f"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "Badische Allgemeine Versicherung",
+    "slug": "badische-allgemeine-versicherung-ag",
+    "imageUrl": "/img/insurance/badische.svg",
+    "email": "contact@badische.com",
+    "colors": {
+      "primary": "#0d2873",
+      "secondary": "#3a8367"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "Barmenia Allgemeine Versicherung",
+    "slug": "barmenia-allgemeine-versicherungs-ag",
+    "imageUrl": "/img/insurance/barmenia.svg",
+    "email": "contact@barmenia.com",
+    "colors": {
+      "primary": "#469ddd",
+      "secondary": "#B6E501"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "Baloise Sachversicherung",
+    "slug": "baloise-sachversicherung-deutschland-ag",
+    "imageUrl": "/img/insurance/baloise.svg",
+    "email": "contact@basler-securitas.com",
+    "colors": {
+      "primary": "#020d69",
+      "secondary": "#020d69"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "Basler Versicherungs-Gesellschaft",
+    "slug": "basler-versicherungs-gesellschaft-basel-direktion-fuer-deutschland",
+    "imageUrl": "/img/insurance/baloise.svg",
+    "email": "contact@basler.com",
+    "colors": {
+      "primary": "#020d69",
+      "secondary": "#020d69"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "BavariaDirekt Versicherung AG",
+    "slug": "bavaria-direkt-versicherung-ag",
+    "imageUrl": "/img/insurance/bavaria-direkt.svg",
+    "email": "contact@ovag.com",
+    "colors": {
+      "primary": "#2756a1",
+      "secondary": "#2756a1"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "Bayerische Beamten Versicherung AG",
+    "slug": "bayerische-beamten-versicherung-aktiengesellschaft",
+    "imageUrl": "/img/insurance/bayerische.svg",
+    "email": "contact@bayerische-beamten.com",
+    "colors": {
+      "primary": "#3273a7",
+      "secondary": "#65c8f3"
+    },
+    "headerStyle": "color-white"
+  },
+  {
+    "name": "VRK AG",
+    "slug": "vrk-versicherer-im-raum-der-kirchen-sachversicherung-ag",
+    "imageUrl": "/img/insurance/vrk.svg",
+    "email": "contact@bruderhilfe.com",
+    "colors": {
+      "primary": "#2d6ab1",
+      "secondary": "#a4cf4c"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "Concordia Versicherungen",
+    "slug": "concordia-versicherungs-gesellschaft-auf-gegenseitigkeit",
+    "imageUrl": "/img/insurance/concordia.svg",
+    "email": "contact@concordia.com",
+    "colors": {
+      "primary": "#004b96",
+      "secondary": "#004b96"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "Condor Allgemeine Versicherung",
+    "slug": "condor-allgemeine-versicherungs-aktiengesellschaft",
+    "imageUrl": "/img/insurance/condor.svg",
+    "email": "contact@condor.com",
+    "colors": {
+      "primary": "#013b75",
+      "secondary": "#013b75"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "Continentale",
+    "slug": "continentale",
+    "imageUrl": "/img/insurance/continentale.jpg",
+    "email": "contact@continentale.com",
+    "colors": {
+      "primary": "#062d5c",
+      "secondary": "#bf1a53"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "COSMOS Direkt Versicherung",
+    "slug": "cosmos-versicherung-aktiengesellschaft",
+    "imageUrl": "/img/insurance/cosmos-direkt.svg",
+    "email": "contact@cosmos.com",
+    "colors": {
+      "primary": "#000099",
+      "secondary": "#03ff67"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "DA Direkt",
+    "slug": "da-deutsche-allgemeine-versicherung-aktiengesellschaft",
+    "imageUrl": "/img/insurance/da-direkt.svg",
+    "email": "contact@da.com",
+    "colors": {
+      "primary": "#003264",
+      "secondary": "#ffe45e"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "DBV (Deutsche Beamten-Versicherung)",
+    "slug": "dbv-deutsche-beamten-versicherung-aktiengesellschaft",
+    "imageUrl": "/img/insurance/dbv.png",
+    "email": "contact@dbv.com",
+    "colors": {
+      "primary": "#1a181d",
+      "secondary": "#f08700"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "Debeka Allgemeine Versicherung",
+    "slug": "debeka-allgemeine-versicherung-aktiengesellschaft",
+    "imageUrl": "/img/insurance/debeka.svg",
+    "email": "contact@debeka.com",
+    "colors": {
+      "primary": "#019ee3",
+      "secondary": "#004b6f"
+    },
+    "headerStyle": "color-white"
+  },
+  {
+    "name": "DEVK Fast Lane",
+    "slug": "devk-fast-lane",
+    "imageUrl": "/img/insurance/devk.svg",
+    "email": "contact@devk.com",
+    "colors": {
+      "primary": "#038747",
+      "secondary": "#038747"
+    },
+    "headerStyle": "color-white"
+  },
+  {
+    "name": "ERGO Versicherung",
+    "slug": "ergo-versicherung-aktiengesellschaft",
+    "imageUrl": "/img/insurance/ergo.svg",
+    "email": "contact@ergo.com",
+    "colors": {
+      "primary": "#bf1428",
+      "secondary": "#89435"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "EUROPA Sachversicherung",
+    "slug": "europa-sachversicherung-ag",
+    "imageUrl": "/img/insurance/europa.svg",
+    "email": "contact@europa.com",
+    "colors": {
+      "primary": "#002a54",
+      "secondary": "#89057"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "FV (Fahrlehrerversicherung)",
+    "slug": "fahrlehrerversicherung-vag",
+    "imageUrl": "/img/insurance/fv-versicherung.png",
+    "email": "contact@fahrlehrerversicherung.com",
+    "colors": {
+      "primary": "#565655",
+      "secondary": "#b0161a"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "Feuersozietät Berlin Brandenburg",
+    "slug": "feuersozietaet-berlin-brandenburg",
+    "imageUrl": "/img/insurance/feuersozietaet.svg",
+    "email": "contact@feuersozietaet.com",
+    "colors": {
+      "primary": "#1d1d1b",
+      "secondary": "#de2820"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "GVO Versicherung",
+    "slug": "gvo-versicherung-oldenburg-vvag",
+    "imageUrl": "/img/insurance/gvo.svg",
+    "email": "contact@gegenseitigkeit.com",
+    "colors": {
+      "primary": "#004b9c",
+      "secondary": "#f9bb02"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "Generali Deutschland Versicherung",
+    "slug": "generali-deutschland-versicherung-ag",
+    "imageUrl": "/img/insurance/generali.svg",
+    "email": "contact@generali.com",
+    "colors": {
+      "primary": "#c11b17",
+      "secondary": "#c5291b"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "Gothaer Allgemeine Versicherung",
+    "slug": "gothaer-allgemeine-versicherung-ag",
+    "imageUrl": "/img/insurance/gothaer.webp",
+    "email": "contact@gothaer.com",
+    "colors": {
+      "primary": "#03668a",
+      "secondary": "#89431"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "GVV Kommunal",
+    "slug": "gvv-kommunalversicherung-vvag",
+    "imageUrl": "/img/insurance/gvv_kommunal.svg",
+    "email": "contact@gvv.com",
+    "colors": {
+      "primary": "#005546",
+      "secondary": "#02b987"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "GVV Direkt",
+    "slug": "gvv-privatversicherung-ag",
+    "imageUrl": "/img/insurance/gvv_direkt.svg",
+    "email": "contact@gvv-privat.com",
+    "colors": {
+      "primary": "#003c6e",
+      "secondary": "#05aad2"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "HDNA",
+    "slug": "haftpflichtgemeinschaft-dt-nahverkehrs-u-versorgungsuntern-allg-vvag",
+    "imageUrl": "/img/insurance/HDNA.svg",
+    "email": "contact@haftpflichtgemeinschaft.com",
+    "colors": {
+      "primary": "#013399",
+      "secondary": "#02b3dc"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "Hannoversche Direktversicherung",
+    "slug": "hannoversche-direktversicherung-ag",
+    "imageUrl": "/img/insurance/hannoversche.svg",
+    "email": "contact@hannoversche.com",
+    "colors": {
+      "primary": "#012d5d",
+      "secondary": "#3cb7e3"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "HanseMerkur Allgemeine Versicherung",
+    "slug": "hansemerkur-allgemeine-versicherung-ag",
+    "imageUrl": "/img/insurance/hansemerkur.svg",
+    "email": "contact@hansemerkur.com",
+    "colors": {
+      "primary": "#015f52",
+      "secondary": "#01a075"
+    },
+    "headerStyle": "color-white"
+  },
+  {
+    "name": "HDI Global",
+    "slug": "hdi-global-se",
+    "imageUrl": "/img/insurance/hdi.svg",
+    "email": "contact@hdi-global.com",
+    "colors": {
+      "primary": "#016b2d",
+      "secondary": "#e30614"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "HDI Versicherung",
+    "slug": "hdi-versicherung-ag",
+    "imageUrl": "/img/insurance/hdi.svg",
+    "email": "contact@hdi.com",
+    "colors": {
+      "primary": "#016b2d",
+      "secondary": "#66a519"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "Helvetia Versicherungen",
+    "slug": "helvetia-schweizerische-versicherungsgesellschaft",
+    "imageUrl": "/img/insurance/helvetia.svg",
+    "email": "contact@helvetia.com",
+    "colors": {
+      "primary": "#108289",
+      "secondary": "#8761a8"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "HUK24",
+    "slug": "huk-24-aktiengesellschaft",
+    "imageUrl": "/img/insurance/HUK24.svg",
+    "email": "contact@huk24.com",
+    "colors": {
+      "primary": "#35444c",
+      "secondary": "#f49b07"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "HUK-COBURG-Allgemeine Versicherung",
+    "slug": "huk-coburg-allgemeine-versicherungs-ag",
+    "imageUrl": "/img/insurance/HUK-Coburg.svg",
+    "email": "contact@huk-coburg.com",
+    "colors": {
+      "primary": "#011531",
+      "secondary": "#ffed00"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "Itzehoer Versicherung",
+    "slug": "itzehoer-versicherung-brandgilde-von-1691-vvag",
+    "imageUrl": "/img/insurance/itzehoer.svg",
+    "email": "contact@itzehoer.com",
+    "colors": {
+      "primary": "#65b32e",
+      "secondary": "#65b32e"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "KRAVAG-ALLGEMEINE Versicherung",
+    "slug": "kravag-allgemeine-versicherungs-aktiengesellschaft",
+    "imageUrl": "/img/insurance/kravag.svg",
+    "email": "contact@kravag-allgemeine.com",
+    "colors": {
+      "primary": "#231f20",
+      "secondary": "#ed1c25"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "KRAVAG-LOGISTIC Versicherung",
+    "slug": "kravag-logistic-versicherungs-aktiengesellschaft",
+    "imageUrl": "/img/insurance/kravag.svg",
+    "email": "contact@kravag-logistic.com",
+    "colors": {
+      "primary": "#231f20",
+      "secondary": "#ed1c25"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "KRAVAG-SACH Versicherung",
+    "slug": "kravag-sach-versicherung-des-deutschen-kraftverkehrs-vag",
+    "imageUrl": "/img/insurance/kravag.svg",
+    "email": "contact@kravag-sach.com",
+    "colors": {
+      "primary": "#231f20",
+      "secondary": "#ed1c25"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "Landesschadenhilfe Versicherung",
+    "slug": "landesschadenhilfe-versicherung-vag",
+    "imageUrl": "/img/insurance/lsh.png",
+    "email": "contact@landesschadenhilfe.com",
+    "colors": {
+      "primary": "#004953",
+      "secondary": "#004953"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "Lippische Landesbrandversicherung",
+    "slug": "lippische-landesbrandversicherung-ag",
+    "imageUrl": "/img/insurance/lippische.png",
+    "email": "contact@lippische.com",
+    "colors": {
+      "primary": "#1d1d1b",
+      "secondary": "#e30614"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "LVM Versicherung",
+    "slug": "lvm-landwirtschaftlicher-versicherungsverein-muenster-ag",
+    "imageUrl": "/img/insurance/lvm.svg",
+    "email": "contact@lvm.com",
+    "colors": {
+      "primary": "#009b30",
+      "secondary": "#009b30"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "Mannheimer Versicherung",
+    "slug": "mannheimer-versicherung-aktiengesellschaft",
+    "imageUrl": "/img/insurance/mannheimer.png",
+    "email": "contact@mannheimer.com",
+    "colors": {
+      "primary": "#303131",
+      "secondary": "#f7b421"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "Mecklenburgische Versicherung",
+    "slug": "mecklenburgische-versicherungs-gesellschaft-ag",
+    "imageUrl": "/img/insurance/mecklenburgische.svg",
+    "email": "contact@mecklenburgische.com",
+    "colors": {
+      "primary": "#434343",
+      "secondary": "#ffb800"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "MÜNCHENER VEREIN Versicherung",
+    "slug": "muenchener-verein-allgemeine-versicherungs-ag",
+    "imageUrl": "/img/insurance/muenchener_verein.svg",
+    "email": "contact@muenchener-verein.com",
+    "colors": {
+      "primary": "#1893d7",
+      "secondary": "#89450"
+    },
+    "headerStyle": "color-white"
+  },
+  {
+    "name": "NÜRNBERGER Versicherung",
+    "slug": "nuernberger-allgemeine-versicherungs-ag",
+    "imageUrl": "/img/insurance/nuernberger.svg",
+    "email": "contact@nuernberger.com",
+    "colors": {
+      "primary": "#0e2c4f",
+      "secondary": "#89454"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "NÜRNBERGER Beamten Versicherung",
+    "slug": "nuernberger-beamten-allgemeine-versicherungs-ag",
+    "imageUrl": "/img/insurance/nuernberger.svg",
+    "email": "contact@nuernberger-beamten.com",
+    "colors": {
+      "primary": "#0e2c4f",
+      "secondary": "#89454"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "Optima Versicherung",
+    "slug": "optima-versicherungs-aktiengesellschaft",
+    "imageUrl": "/img/insurance/optima.svg",
+    "email": "contact@optima.com",
+    "colors": {
+      "primary": "#36362f",
+      "secondary": "#47747d"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "Öffentliche Oldenburg Versicherung",
+    "slug": "oeffentliche-oldenburg-versicherung",
+    "imageUrl": "/img/insurance/oeffentliche-oldenburg.svg",
+    "email": "contact@oldenburgische.com",
+    "colors": {
+      "primary": "#004494",
+      "secondary": "#e20018"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "Öffentliche Versicherung Braunschweig",
+    "slug": "oeffentliche-versicherung-braunschweig",
+    "imageUrl": "/img/insurance/oeffentliche.svg",
+    "email": "contact@oeffentliche-braunschweig.com",
+    "colors": {
+      "primary": "#002ea7",
+      "secondary": null
+    },
+    "headerStyle": "color-white"
+  },
+  {
+    "name": "ÖSA Versicherung",
+    "slug": "oeffentliche-feuerversicherung-sachsen-anhalt",
+    "imageUrl": "/img/insurance/ösa.svg",
+    "email": "contact@oeffentliche-feuerversicherung.com",
+    "colors": {
+      "primary": "#016b42",
+      "secondary": null
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "Provinzial Versicherung",
+    "slug": "provinzial-versicherung-aktiengesellschaft",
+    "imageUrl": "/img/insurance/provinzial.svg",
+    "email": "contact@provinzial-nord.com",
+    "colors": {
+      "primary": "#005940",
+      "secondary": "#ffdd04"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "R+V Allgemeine Versicherung",
+    "slug": "rv-allgemeine-versicherung-ag",
+    "imageUrl": "/img/insurance/r+v.svg",
+    "email": "contact@rv.com",
+    "colors": {
+      "primary": "#011957",
+      "secondary": "#01e6e6"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "R+V Direktversicherung",
+    "slug": "rv-direktversicherung-ag",
+    "imageUrl": "/img/insurance/r+v.svg",
+    "email": "contact@rv.com",
+    "colors": {
+      "primary": "#011957",
+      "secondary": "#01e6e6"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "Sparkasse Direkt Versicherung",
+    "slug": "sparkasse-direkt-versicherung-ag",
+    "imageUrl": "/img/insurance/sparkasse_direkt.svg",
+    "email": "contact@s-direkt.com",
+    "colors": {
+      "primary": "#e30614",
+      "secondary": "#e30614"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "SAARLAND Versicherungen",
+    "slug": "saarland-feuerversicherung-ag",
+    "imageUrl": "/img/insurance/saarland_versicherung.svg",
+    "email": "contact@saarland.com",
+    "colors": {
+      "primary": "#014589",
+      "secondary": "#e30614"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "SOVAG Versicherungen",
+    "slug": "schwarzmeer-und-ostsee-versicherungs-aktiengesellschaftsovag",
+    "imageUrl": "/img/insurance/sovag.png",
+    "email": "contact@sovag.com",
+    "colors": {
+      "primary": "#0f2b57",
+      "secondary": "#3377a9"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "Signal Iduna Allgemeine",
+    "slug": "signal-iduna-allgemeine-versicherung-ag",
+    "imageUrl": "/img/insurance/signal-iduna.svg",
+    "email": "contact@signal-iduna.com",
+    "colors": {
+      "primary": "#1a3691",
+      "secondary": "#1a3691"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "SIGNAL Unfallversicherung",
+    "slug": "signal-unfallversicherung-ag",
+    "imageUrl": "/img/insurance/signal-iduna.svg",
+    "email": "contact@signal-iduna.com",
+    "colors": {
+      "primary": "#1a3691",
+      "secondary": "#1a3691"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "SV Sparkassen-Versicherung",
+    "slug": "sv-sparkassen-versicherung-holding-ag",
+    "imageUrl": "/img/insurance/sv-sparkassen.png",
+    "email": "contact@sv-sparkassen.com",
+    "colors": {
+      "primary": "#e30614",
+      "secondary": "#e30614"
+    },
+    "headerStyle": "color-white"
+  },
+  {
+    "name": "USAA United Services Automobile Association",
+    "slug": "usaa-united-services-automobile-association-direktion-fuer-deutschland",
+    "imageUrl": "/img/insurance/usaa.svg",
+    "email": "contact@usaa.com",
+    "colors": {
+      "primary": "#12395b",
+      "secondary": "#006ec8"
+    },
+    "headerStyle": "color-white"
+  },
+  {
+    "name": "UniVersa Allgemeine Versicherung",
+    "slug": "universa-allgemeine-versicherung-ag",
+    "imageUrl": "/img/insurance/universa.svg",
+    "email": "contact@universa.com",
+    "colors": {
+      "primary": "#4770b4",
+      "secondary": "#4770b4"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "Versicherungskammer Bayern",
+    "slug": "versicherungskammer-bayern",
+    "imageUrl": "/img/insurance/versicherungskammer-bayern.svg",
+    "email": "contact@bayerischer.com",
+    "colors": {
+      "primary": "#1b4484",
+      "secondary": "#b9ce52"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "Verti Versicherung",
+    "slug": "verti-versicherung",
+    "imageUrl": "/img/insurance/verti.svg",
+    "email": "contact@verti.com",
+    "colors": {
+      "primary": "#4d5d66",
+      "secondary": "#ff9100"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "VGH Versicherungen",
+    "slug": "vgh-versicherungen-landschaftliche-brandkasse-hannover",
+    "imageUrl": "/img/insurance/vgh.svg",
+    "email": "contact@vgh.com",
+    "colors": {
+      "primary": "#1c1d1b",
+      "secondary": "#0445be"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "VHV Versicherungen",
+    "slug": "vhv-allgemeine-versicherung-ag",
+    "imageUrl": "/img/insurance/vhv.png",
+    "email": "contact@vhv.com",
+    "colors": {
+      "primary": "#fcaf18",
+      "secondary": "#f08100"
+    },
+    "headerStyle": "color-white"
+  },
+  {
+    "name": "VHV Vereinigte Hannoversche",
+    "slug": "vhv-vereinigte-hannoversche-versicherung-ag",
+    "imageUrl": "/img/insurance/vhv.png",
+    "email": "contact@vhv.com",
+    "colors": {
+      "primary": "#fcaf18",
+      "secondary": "#f08100"
+    },
+    "headerStyle": "color-white"
+  },
+  {
+    "name": "VOLKSWOHL-BUND Versicherungen",
+    "slug": "volkswohl-bund-sachversicherung-aktiengesellschaft",
+    "imageUrl": "/img/insurance/volkswohl_bund.svg",
+    "email": "contact@volkswohl-bund.com",
+    "colors": {
+      "primary": "#0169b4",
+      "secondary": "#019a93"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "WGV-Versicherung",
+    "slug": "wgv-versicherung-ag",
+    "imageUrl": "/img/insurance/wgv.svg",
+    "email": "contact@wgv.com",
+    "colors": {
+      "primary": "#008f93",
+      "secondary": "#f59c00"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "Württembergische Versicherung AG",
+    "slug": "wuerttembergische-versicherung-ag",
+    "imageUrl": "/img/insurance/wuerttembergische.svg",
+    "email": "contact@wuerttembergische-gemeinde.com",
+    "colors": {
+      "primary": "#000000",
+      "secondary": "#f84914"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "WWK Allgemeine Versicherung AG",
+    "slug": "wwk-allgemeine-versicherung-ag",
+    "imageUrl": "/img/insurance/wwk.svg",
+    "email": "contact@wwk.com",
+    "colors": {
+      "primary": "#009037",
+      "secondary": "#ee7d00"
+    },
+    "headerStyle": "white"
+  },
+  {
+    "name": "Zurich Insurance plc",
+    "slug": "zurich-insurance-plc",
+    "imageUrl": "/img/insurance/zurich.svg",
+    "email": "contact@zurich.com",
+    "colors": {
+      "primary": "#2b73c2",
+      "secondary": "#2b73c2"
+    },
+    "headerStyle": "white"
+  }
+]

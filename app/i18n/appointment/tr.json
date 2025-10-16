@@ -1,0 +1,37 @@
+{
+  "$drivers": {
+    "back": "Başka bir konum kullan",
+    "cta": "Mobil eksper talep et",
+    "desc": "Bu mobil eksperler şu anda bulunduğun bölgede!",
+    "distance": "Bu eksper sana yaklaşık {distance} uzaklıkta.",
+    "name": "Mobil Eksper ({name})",
+    "not-found": "Maalesef yakınında eksper bulamadık. Lütfen başka bir konum seç veya daha sonra tekrar dene.",
+    "title": "Yakınındaki Mobil Eksperler"
+  },
+  "$schedule": {
+    "desc": "Lütfen aşağıdaki en yakın Cubee araçlarından birini seçerek, konumundaki Cubee çalışanımızla randevunu planla.",
+    "title": "Cubee Çalışanı ile Randevunu Planla"
+  },
+  "$stations": {
+    "back": "Diğer konumları ara",
+    "desc": "Lütfen bir Cubee konteynerinde randevunuzu planlamak için aşağıdaki konumlardan birini seçin.",
+    "distance": "{distance} uzaklıkta",
+    "google-maps": "Google Haritalar'da aç",
+    "name": "Eksper Merkezi {name}",
+    "opening-hours": "{hours} saatleri arasında açık",
+    "schedule-now": "Randevu al",
+    "title": "Randevu Planlama"
+  },
+  "$vehicle-condition": {
+    "desc": "Lütfen aşağıdan aracınızın mevcut durumunu seçin.",
+    "title": "Aracınızın durumu nedir? {'|'} Araç Durumu"
+  },
+  "$vehicle-location": {
+    "custom": "Konum gir",
+    "desc:driver": "Lütfen aracınızın mevcut konumunun adresini girin, böylece çevrenizdeki en yakın mobil eksperleri bulabiliriz.",
+    "desc:station": "Lütfen aracınızın mevcut konumunun adresini girin, böylece çevrenizdeki en yakın tesisi bulabiliriz.",
+    "title": "Aracınız nerede bulunuyor?",
+    "use-current": "Mevcut konumumu kullan"
+  },
+  "back": "Geri"
+}

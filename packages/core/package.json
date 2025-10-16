@@ -1,0 +1,36 @@
+{
+  "name": "@cubee/core",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "Core library",
+  "author": "Saman Hosseini <saman@modernice.ltd>",
+  "license": "proprietary",
+  "keywords": [],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs"
+    },
+    "./schemas": {
+      "types": "./dist/schemas.d.ts",
+      "import": "./dist/schemas.mjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vite build",
+    "watch": "vite build -w"
+  },
+  "peerDependencies": {
+    "pinia": "^2.0.32"
+  },
+  "dependencies": {
+    "@modernice/vue-fetch": "workspace:^"
+  },
+  "devDependencies": {
+    "pinia": "^2.2.4"
+  }
+}

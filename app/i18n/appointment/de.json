@@ -1,0 +1,38 @@
+{
+  "$vehicle-condition": {
+    "title": "Was ist der Zustand deines Fahrzeugs? {'|'} Fahrzeugzustand",
+    "desc": "Bitte wähle den aktuellen Zustand deines Fahrzeugs unten aus."
+  },
+  "$vehicle-location": {
+    "title": "Wo befindet sich dein Fahrzeug?",
+    "desc:station": "Bitte gib die Adresse des aktuellen Standorts deines Fahrzeugs ein, damit wir die nächstgelegene Einrichtung in deiner Umgebung finden können.",
+    "desc:driver": "Bitte gib die Adresse des aktuellen Standorts deines Fahrzeugs ein, damit wir die nächstgelegenen mobilen Gutachter in deiner Umgebung finden können.",
+    "use-current": "Meinen aktuellen Standort verwenden",
+    "custom": "Standort eingeben"
+  },
+  "$drivers": {
+    "title": "Mobile Gutachter in deiner Nähe",
+    "desc": "Diese mobilen Gutachter befinden sich derzeit in deinem Gebiet!",
+    "back": "Anderen Standort verwenden",
+    "name": "Mobiler Gutachter ({name})",
+    "cta": "Mobilen Gutachter anfordern",
+    "distance": "Dieser Gutachter ist ca. {distance} von dir entfernt.",
+    "not-found": "Leider konnten wir keine Gutachter in deiner Nähe finden. Bitte wähle einen anderen Standort oder versuche es später nochmal."
+  },
+  "$stations": {
+    "title": "Terminvereinbarung",
+    "desc": "Bitte wähle einen der unten stehenden Standorte aus, um deinen Termin bei einem Cubee-Container zu planen.",
+    "name": "{name}",
+    "opening-hours": "geöffnet von {hours}",
+    "distance": "{distance} entfernt",
+    "schedule-now": "Termin vereinbaren",
+    "google-maps": "In Google Maps öffnen",
+    "back": "Andere Standorte suchen",
+    "viewMore": "Mehr anzeigen"
+  },
+  "$schedule": {
+    "title": "Vereinbare deinen Termin mit einem Cubee-Mitarbeiter",
+    "desc": "Bitte wähle eines der nächstgelegenen Cubee-Fahrzeuge unten aus, um deinen Termin mit unserem Cubee-Mitarbeiter an deinem Standort zu planen."
+  },
+  "back": "Zurück"
+}

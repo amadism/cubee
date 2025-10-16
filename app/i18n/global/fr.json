@@ -1,0 +1,67 @@
+{
+  "$contact": {
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "web": "Web"
+  },
+  "$cookies": {
+    "$consents": {
+      "essential": "Cookies essentiels",
+      "marketing": "Marketing",
+      "personalized": "Contenus personnalisés",
+      "statistics": "Statistiques"
+    },
+    "accept": "Accepter",
+    "accept-all": "Tout accepter",
+    "accept-selection": "Accepter la sélection",
+    "customize": "Personnaliser les paramètres",
+    "subtitle": "Nous utilisons des cookies pour améliorer votre expérience utilisateur et optimiser nos contenus et services pour vous.",
+    "text": "En cliquant sur \"Accepter\", vous acceptez l'utilisation de cookies analytiques et notre {privacy}. Vous pouvez retirer votre consentement à tout moment.",
+    "text:privacy": "politique de confidentialité",
+    "title": "Paramètres de confidentialité"
+  },
+  "$footer": {
+    "aboutCubee": "À propos de Cubee",
+    "becomeFranchisee": "Devenir une franchisee",
+    "company": "Cubee",
+    "companyHeading": "Entreprise",
+    "contact": "Contact",
+    "contactUs": "Contactez-nous",
+    "copyright": "Droits d'auteur de Cubee | Tous droits réservés",
+    "dataPrivacy": "Ne pas vendre ou partager mes données personnelles",
+    "emailAddress": "hello{'@'}cubee.expert",
+    "followUs": "Suivez-nous",
+    "jobs": "Emplois",
+    "legalNotice": "Mentions légales",
+    "locationFinder": "Recherche de site",
+    "phone": "0800 - 2823333",
+    "phoneAvailability": "Lun - Ven de 09:00 à 16:00",
+    "privacyPolicy": "Confidentialité",
+    "tos": "Conditions d'utilisation"
+  },
+  "$lang": {
+    "de": "Allemand",
+    "en": "Anglais",
+    "fr": "Français",
+    "it": "Italien",
+    "ru": "Russe",
+    "tr": "Turc"
+  },
+  "$socialMedia": {
+    "facebook": "Facebook",
+    "twitter": "Twitter"
+  },
+  "$uiElements": {
+    "buttonContact": "Contactez-nous",
+    "contactUsFull": {
+      "buttonAccessibility": "Appuyez pour nous contacter",
+      "buttonText": "Contactez-nous"
+    }
+  },
+  "about": "À propos de nous",
+  "blog": "Blog",
+  "contact": "Contact",
+  "finder": "Sites",
+  "home": "Accueil",
+  "lang": "Langue"
+}

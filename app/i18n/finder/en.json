@@ -1,0 +1,16 @@
+{
+  "$hero": {
+    "title": "Find your next CUBEE container"
+  },
+  "$search": {
+    "input:placeholder": "Search for locations (ZIP, city, street)",
+    "station-cta": "Schedule an appointment"
+  },
+  "$seo": {
+    "desc": "Discover the nearest Cubee container for fast and professional vehicle assessments in Germany and all over Europe. Use our location finder to conveniently book an inspection near you. Reliable, fast, and straightforward.",
+    "title": "Find your nearest Cubee location {'|'} Book a quick vehicle assessment"
+  },
+  "appointment": "Appointment",
+  "comingSoon": "Coming soon ...",
+  "notFound": "No location found"
+}

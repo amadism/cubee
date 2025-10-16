@@ -1,0 +1,89 @@
+{
+  "$seo": {
+    "title": "Kontaktieren Sie Cubee {'|'} Experten für KFZ-Gutachten und Fahrzeugbewertungen",
+    "desc": "Kontaktieren Sie Cubee für professionelle KFZ-Gutachten, Oldtimer-Bewertungen, Franchise-Anfragen und mehr. Wir bieten schnellen und zuverlässigen Service in Deutschland und ganz Europa – jetzt anfragen!"
+  },
+  "$form": {
+    "nameError": "Name ist leer.",
+    "nameMinLengthError": "Name muss mindestens 5 Zeichen lang sein.",
+    "nameInvalidCharsError": "Name darf nur Buchstaben, Leerzeichen, Bindestriche und Apostrophe enthalten.",
+    "emailError": "E-Mail ist leer.",
+    "emailNotValid": "E-Mail ist nicht gültig.",
+    "contentError": "Inhalt muss mindestens 100 Zeichen lang sein.",
+    "telError": "Telefonnummer ist leer.",
+    "telInvalidFormat": "Bitte geben Sie eine gültige deutsche Telefonnummer ein (z.B. 0151 2345678).",
+    "locationError": "Standort ist erforderlich.",
+    "submissionError": "Beim Senden Ihrer Anfrage ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."
+  },
+  "$contactSection": {
+    "title": "Kontaktieren Sie uns",
+    "paragraph1": "Bei Cubee gestalten wir die Zukunft der automobilen Expertise mit unseren digitalen Bewertungsdiensten. Egal, ob Sie Fahrzeugschäden begutachten lassen, den Wert Ihres Autos ermitteln oder eine Expertenbewertung für Ihren Oldtimer benötigen. Unser Team bietet schnelle und präzise Lösungen.",
+    "paragraph2": "Haben Sie Fragen? Werfen Sie einen Blick in unsere FAQ unten oder kontaktieren Sie uns direkt über unser Formular. Unsere Spezialisten sind bereit, Ihnen bei allen Anliegen rund um die Fahrzeugbewertung zu helfen."
+  },
+  "$getInTouchSection": {
+    "title": "In Kontakt treten",
+    "description": "Bitte wählen Sie den Typ Ihrer Anfrage aus und füllen Sie das untenstehende Formular aus. Unser Team wird sich so schnell wie möglich mit Ihnen in Verbindung setzen, um Ihre Fragen zu beantworten und Ihnen weiterzuhelfen.",
+    "generalInquiry": "Allgemeine Anfrage",
+    "becomePartner": "Partner werden",
+    "selectPlaceholder": "Anfrageart auswählen",
+    "inputNamePlaceholder": "Name",
+    "inputEmailPlaceholder": "E-Mail",
+    "inputMessagePlaceholder": "Ihre Nachricht",
+    "inputTelPlaceholder": "Telefonnummer",
+    "inputLocationPlaceholder": "Standort",
+    "submitButton": "Anfrage senden",
+    "footer": "Ihr Vertrauen in Cubee ist uns wichtig, und wir sind verpflichtet, Ihnen jederzeit einen erstklassigen Service zu bieten.",
+    "successMessage": "Erfolg beim Senden der Kontakt-E-Mail."
+  },
+  "$FAQSection": {
+    "title": "Häufig gestellte Fragen zu unseren KFZ-Gutachten",
+    "faq1": {
+      "question": "Was macht Cubee anders als andere Fahrzeugbewertungsdienste?",
+      "answer": "Cubee bietet eine einzigartige Kombination aus Fachwissen und Komfort. Unsere Container sind strategisch in Deutschland und ganz Europa verteilt, um schnelle, einfache und professionelle Gutachten in Ihrer Nähe zu gewährleisten."
+    },
+    "faq2": {
+      "question": "Wie vereinbare ich einen Termin für ein KFZ-Gutachten?",
+      "answer": "Es ist ganz einfach! Besuchen Sie unsere Webseite und klicken Sie auf 'Termin vereinbaren'. Wählen Sie den für Sie passenden Cubee-Standort und die Uhrzeit aus. Sie können uns auch direkt kontaktieren, falls Sie Unterstützung benötigen."
+    },
+    "faq3": {
+      "question": "Kann Cubee auch Fahrzeuge bewerten, die nicht zum Container gebracht werden können?",
+      "answer": "Ja, für beschädigte Fahrzeuge bieten wir einen mobilen Service an. Unser Team kommt direkt zu Ihnen und nutzt eine spezialisierte App, um eine gründliche Schadensbewertung durchzuführen. Egal, wo das Fahrzeug steht."
+    },
+    "faq4": {
+      "question": "Wie lange dauert der Bewertungsprozess?",
+      "answer": "Unser Bewertungsprozess ist schnell und effizient. Die Fahrzeugbewertung dauert in der Regel weniger als eine Stunde, und den detaillierten Bericht erhalten Sie innerhalb von 3 Werktagen."
+    },
+    "faq5": {
+      "question": "Welche Fahrzeugtypen kann Cubee bewerten?",
+      "answer": "Wir bewerten alle Fahrzeugtypen, darunter PKW, LKW, Motorräder und auch Oldtimer. Unser Service deckt alle Ihre Anforderungen rund um KFZ-Gutachten ab."
+    },
+    "faq6": {
+      "question": "Wird das Gutachten von Cubee von Versicherungen akzeptiert?",
+      "answer": "Ja, unsere professionellen Gutachten werden von den meisten Versicherungen anerkannt und unterstützen Sie bei Ihren Versicherungsansprüchen oder Reparaturentscheidungen."
+    },
+    "faq7": {
+      "question": "Welche Informationen benötige ich für eine Fahrzeugbewertung?",
+      "answer": "Bringen Sie Ihr Fahrzeug einfach zu einem unserer Cubee-Standorte. Unsere Experten kümmern sich um alles Weitere und erstellen ein präzises Wertgutachten auf Basis der neuesten Marktdaten."
+    },
+    "faq8": {
+      "question": "Wie stellt Cubee die Genauigkeit seiner Gutachten sicher?",
+      "answer": "Unsere Experten verwenden eine spezialisierte App zur Datenerfassung und Bildaufnahme vor Ort. Diese Informationen werden anschließend in unserer Zentrale sorgfältig analysiert, um eine präzise und verlässliche Bewertung zu gewährleisten."
+    },
+    "faq9": {
+      "question": "Bietet Cubee auch Bewertungen für Oldtimer an?",
+      "answer": "Ja, wir bieten spezielle Oldtimer-Gutachten an, die den historischen und emotionalen Wert von Vintage-Fahrzeugen berücksichtigen und deren echten Marktwert widerspiegeln."
+    },
+    "faq10": {
+      "question": "Wo finde ich einen Cubee-Container in meiner Nähe?",
+      "answer": {
+        "1": "Nutzen Sie unsere Suchfunktion auf der Webseite,",
+        "2": "um den nächsten Cubee-Standort zu finden. Dank unseres umfangreichen Netzwerks sind wir nie weit entfernt."
+      }
+    },
+    "additionalInfo": {
+      "1": "Haben Sie nicht die Antwort gefunden, die Sie gesucht haben?",
+      "2": "Kontaktieren Sie uns direkt,",
+      "3": "und unser Team hilft Ihnen gerne weiter!"
+    }
+  }
+}

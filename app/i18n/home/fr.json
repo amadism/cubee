@@ -1,0 +1,124 @@
+{
+  "$contact": {
+    "button": "Prendre contact",
+    "subtitle": "Découvrez la différence Cubee. Réservez une expertise ou découvrez-en plus sur nos services complets.",
+    "title": "Contacter Cubee"
+  },
+  "$hero": {
+    "appointment": "Prendre rendez-vous",
+    "cta:subtitle": "dans un conteneur CUBEE à proximité",
+    "cta:title": "Rendez-vous immédiat",
+    "mobile:subtitle": "Soumettez votre dossier pour recevoir une évaluation professionnelle.",
+    "mobile:title": "Soumettre le rapport",
+    "subtitle": "Rapide, professionnel et orienté client.",
+    "title": "Expertises indépendantes et évaluations des dommages après accidents."
+  },
+  "$introduction": {
+    "finder": "Trouver un emplacement",
+    "more": "En savoir plus",
+    "paragraph": "Toujours là où le soutien est nécessaire. Avec les conteneurs noir et jaune à de nombreux emplacements à travers l'Allemagne, il est assuré que des expertises automobiles professionnelles ne sont jamais loin. En tant que franchise avec une présence locale, CUBEE offre la combinaison parfaite de service local et d'expertise nationale. Peu importe où en Allemagne. CUBEE est toujours à proximité pour offrir des expertises rapides et fiables.",
+    "title": "Pourquoi Cubee™ est le partenaire idéal pour les expertises automobiles"
+  },
+  "$process": {
+    "cta": "Comment ça fonctionne",
+    "paragraph": "CUBEE simplifie le processus d'expertise – rapide, numérique et adapté à vos besoins. Les véhicules en état de marche peuvent être expertisés directement sur nos sites, tandis que les véhicules gravement endommagés sont évalués via notre service mobile. Nos experts utilisent la technologie la plus moderne pour la collecte de données et la documentation photographique, qui est soigneusement évaluée dans notre bureau central pour vous fournir une expertise détaillée dans les plus brefs délais.",
+    "title": "Notre processus d'expertise efficace"
+  },
+  "$reviews": {
+    "list": [
+      {
+        "content": "J'ai utilisé le service de Cubee pour faire évaluer ma voiture après un petit accident. Le rapport était vraiment détaillé et le service client très sympathique. Cela a pris un peu plus de temps que je ne le pensais, mais sinon tout était parfait.",
+        "date": "15.09.24",
+        "name": "Ayşe D.",
+        "stars": "5",
+        "title": "Très satisfait, bon service"
+      },
+      {
+        "content": "Je n'étais pas sûr de la valeur de ma voiture, mais Cubee m'a vraiment aidé. Tout le processus était super simple, et l'équipe était vraiment amicale.",
+        "date": "12.09.24",
+        "name": "Slawomir K.",
+        "stars": "4",
+        "title": "Utile et simple"
+      },
+      {
+        "content": "J'avais besoin d'une évaluation de véhicule et Cubee a vraiment fait du bon travail. Tout s'est passé rapidement et l'équipe m'a bien expliqué comment tout cela fonctionne. Je ne peux que recommander si vous avez besoin d'une évaluation.",
+        "date": "10.09.24",
+        "name": "Paul F.",
+        "stars": "5",
+        "title": "Bon service, prix équitable"
+      },
+      {
+        "content": "L'évaluation en elle-même était correcte, mais j'ai dû attendre un peu plus longtemps pour le rapport que ce qui m'avait été dit. Le service client était gentil et s'est excusé, mais l'attente était un peu agaçante. À la fin, tout s'est bien passé.",
+        "date": "08.09.24",
+        "name": "Sophie W.",
+        "stars": "4",
+        "title": "C'était correct"
+      },
+      {
+        "content": "J'ai dû faire évaluer ma voiture et Cubee l'a fait vraiment rapidement et professionnellement. L'équipe était aussi très amicale et serviable. Volontiers à nouveau !",
+        "date": "07.09.24",
+        "name": "Maximilian K.",
+        "stars": "5",
+        "title": "Tout s'est bien passé"
+      },
+      {
+        "content": "L'évaluation était précise et l'équipe a pris le temps de tout m'expliquer. Le rapport est également arrivé rapidement. Super service.",
+        "date": "06.09.24",
+        "name": "Anna Becker",
+        "stars": "5",
+        "title": "Satisfait de la consultation"
+      },
+      {
+        "content": "Après mon accident, je n'étais pas sûr de la valeur des dommages sur ma voiture. Cubee m'a aidé rapidement et le rapport était très détaillé. Les employés étaient sympathiques !",
+        "date": "05.09.24",
+        "name": "Mehmet K.",
+        "stars": "4",
+        "title": "Bonne expérience"
+      },
+      {
+        "content": "Le service était vraiment super. J'avais besoin rapidement d'une évaluation pour ma voiture et Cubee l'a fait vraiment bien et rapidement.",
+        "date": "04.09.24",
+        "name": "Mia H.",
+        "stars": "5",
+        "title": "Bonne et rapide exécution"
+      },
+      {
+        "content": "J'ai utilisé Cubee pour une évaluation des dommages après un petit accident. Le rapport était détaillé et l'équipe était très gentille. J'ai dû attendre plus longtemps que prévu, mais à la fin, j'étais satisfait du service.",
+        "date": "03.09.24",
+        "name": "Johannes S.",
+        "stars": "4",
+        "title": "Sympathique et compétent"
+      },
+      {
+        "content": "Cubee m'a aidé à trouver le bon prix pour ma voiture. L'évaluation était rapide et bien faite.",
+        "date": "02.09.24",
+        "name": "Leonie K.",
+        "stars": "5",
+        "title": "Bon service pour la vente"
+      }
+    ],
+    "more": "Voir plus d'avis",
+    "title": "Ce que disent nos clients"
+  },
+  "$seo": {
+    "desc": "Expertises automobiles rapides et professionnelles et évaluations des dommages par CUBEE. Grâce aux emplacements en Allemagne et dans toute l'Europe, le service est toujours à proximité.",
+    "title": "Expertises automobiles et évaluations des dommages à proximité {'|'} CUBEE Allemagne"
+  },
+  "$services": {
+    "$damage": {
+      "description": "Après un accident, des évaluations des dommages rapides et détaillées sont essentielles. Les experts effectuent des inspections approfondies pour soutenir les réclamations d'assurance et les décisions de réparation avec des expertises complètes.",
+      "title": "Évaluation des dommages"
+    },
+    "$oldtimer": {
+      "description": "L'évaluation des voitures anciennes nécessite des connaissances spécialisées particulières. Le service reconnaît la valeur historique et émotionnelle unique de ces véhicules.",
+      "title": "Expertise de voitures anciennes"
+    },
+    "$value": {
+      "description": "Que ce soit pour la vente ou l'assurance – connaître la valeur exacte du véhicule est essentiel. Les expertises sont basées sur des données de marché actuelles et une expertise complète.",
+      "title": "Évaluation de la valeur"
+    },
+    "getInTouch": "Prendre contact",
+    "subtitle": "CUBEE propose une variété de services autour des expertises automobiles.",
+    "title": "Services"
+  }
+}

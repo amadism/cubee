@@ -1,0 +1,124 @@
+{
+  "$contact": {
+    "button": "Contattare",
+    "subtitle": "Scopri la differenza Cubee. Prenota una perizia o scopri di più sui servizi completi.",
+    "title": "Contatta Cubee"
+  },
+  "$hero": {
+    "appointment": "Fissa un appuntamento",
+    "cta:subtitle": "in un container CUBEE vicino",
+    "cta:title": "Appuntamento immediato",
+    "mobile:subtitle": "Invia il tuo caso per ricevere una valutazione professionale.",
+    "mobile:title": "Invia rapporto",
+    "subtitle": "Veloce, professionale e orientato al cliente.",
+    "title": "Perizie indipendenti e valutazioni dei danni dopo incidenti."
+  },
+  "$introduction": {
+    "finder": "Trova una sede",
+    "more": "Scopri di più",
+    "paragraph": "Sempre dove c'è bisogno di supporto. Con i container giallo-neri in numerose località in tutta la Germania, è garantito che le perizie professionali sui veicoli non siano mai lontane. Come franchising con presenza locale, CUBEE offre la combinazione perfetta di servizio locale ed esperienza nazionale. Ovunque in Germania. CUBEE è sempre vicino per offrire perizie rapide e affidabili.",
+    "title": "Perché Cubee™ è il partner ideale per le perizie sui veicoli"
+  },
+  "$process": {
+    "cta": "Come funziona",
+    "paragraph": "CUBEE semplifica il processo di perizia – veloce, digitale e personalizzato in base alle tue esigenze. I veicoli idonei alla guida possono essere periziati direttamente presso le nostre sedi, mentre i veicoli gravemente danneggiati vengono valutati tramite il nostro servizio mobile. I nostri esperti utilizzano la tecnologia più avanzata per la raccolta dati e la documentazione fotografica, che viene attentamente valutata nel nostro ufficio centrale per fornirti una perizia dettagliata nel minor tempo possibile.",
+    "title": "Il nostro processo di perizia efficiente"
+  },
+  "$reviews": {
+    "list": [
+      {
+        "content": "Ho utilizzato il servizio di Cubee per far valutare la mia auto dopo un piccolo incidente. Il rapporto era davvero dettagliato e il servizio clienti molto gentile. Ci è voluto un po' più di tempo di quanto pensassi, ma per il resto tutto ottimo.",
+        "date": "15.09.24",
+        "name": "Ayşe D.",
+        "stars": "5",
+        "title": "Molto soddisfatto, buon servizio"
+      },
+      {
+        "content": "Non ero sicuro di quanto valesse ancora la mia auto, ma Cubee mi ha davvero aiutato. L'intero processo è stato super semplice e il team è stato davvero amichevole.",
+        "date": "12.09.24",
+        "name": "Slawomir K.",
+        "stars": "4",
+        "title": "Utile e semplice"
+      },
+      {
+        "content": "Avevo bisogno di una valutazione del veicolo e Cubee ha fatto davvero un buon lavoro. Tutto è andato veloce e il team mi ha spiegato bene come funziona tutto. Posso solo raccomandarlo se si ha bisogno di una valutazione.",
+        "date": "10.09.24",
+        "name": "Paul F.",
+        "stars": "5",
+        "title": "Buon servizio, prezzo equo"
+      },
+      {
+        "content": "La valutazione in sé era a posto, ma ho dovuto aspettare un po' più a lungo per il rapporto di quanto mi era stato detto. Il servizio clienti è stato gentile e si è scusato, ma l'attesa è stata un po' fastidiosa. Alla fine però è andato tutto bene.",
+        "date": "08.09.24",
+        "name": "Sophie W.",
+        "stars": "4",
+        "title": "Era abbastanza ok"
+      },
+      {
+        "content": "Ho dovuto far valutare la mia auto e Cubee l'ha fatto davvero velocemente e professionalmente. Il team è stato anche molto amichevole e disponibile. Volentieri di nuovo!",
+        "date": "07.09.24",
+        "name": "Maximilian K.",
+        "stars": "5",
+        "title": "Tutto è andato alla grande"
+      },
+      {
+        "content": "La valutazione era precisa e il team si è preso il tempo di spiegarmi tutto. Il rapporto è arrivato anche velocemente. Servizio eccellente.",
+        "date": "06.09.24",
+        "name": "Anna Becker",
+        "stars": "5",
+        "title": "Soddisfatto della consulenza"
+      },
+      {
+        "content": "Dopo il mio incidente non ero sicuro di quanto valesse il danno alla mia auto. Cubee mi ha aiutato rapidamente e il rapporto era molto dettagliato. I dipendenti erano amichevoli!",
+        "date": "05.09.24",
+        "name": "Mehmet K.",
+        "stars": "4",
+        "title": "Buona esperienza"
+      },
+      {
+        "content": "Il servizio è stato davvero ottimo. Avevo bisogno rapidamente di una valutazione per la mia auto e Cubee l'ha fatta davvero bene e velocemente.",
+        "date": "04.09.24",
+        "name": "Mia H.",
+        "stars": "5",
+        "title": "Buona e veloce gestione"
+      },
+      {
+        "content": "Ho utilizzato Cubee per una valutazione dei danni dopo un piccolo incidente. Il rapporto era dettagliato e il team era molto gentile. Ho dovuto aspettare più a lungo di quanto pensassi, ma alla fine ero soddisfatto del servizio.",
+        "date": "03.09.24",
+        "name": "Johannes S.",
+        "stars": "4",
+        "title": "Gentile e competente"
+      },
+      {
+        "content": "Cubee mi ha aiutato a trovare il giusto prezzo per la mia auto. La valutazione è stata veloce e ben fatta.",
+        "date": "02.09.24",
+        "name": "Leonie K.",
+        "stars": "5",
+        "title": "Buon servizio per la vendita"
+      }
+    ],
+    "more": "Mostra più recensioni",
+    "title": "Cosa dicono i nostri clienti"
+  },
+  "$seo": {
+    "desc": "Perizie e valutazioni dei danni sui veicoli rapide e professionali da CUBEE. Grazie alle sedi in Germania e in tutta Europa, il servizio è sempre vicino.",
+    "title": "Perizie e valutazioni dei danni sui veicoli nelle vicinanze {'|'} CUBEE Germania"
+  },
+  "$services": {
+    "$damage": {
+      "description": "Dopo un incidente, valutazioni dei danni rapide e dettagliate sono fondamentali. Gli esperti conducono ispezioni approfondite per supportare le richieste di assicurazione e le decisioni di riparazione con perizie complete.",
+      "title": "Valutazione dei danni"
+    },
+    "$oldtimer": {
+      "description": "La perizia dei veicoli d'epoca richiede competenze specialistiche. Il servizio riconosce il valore storico ed emotivo unico di questi veicoli.",
+      "title": "Perizia veicoli d'epoca"
+    },
+    "$value": {
+      "description": "Che sia per la vendita o per l'assicurazione, conoscere il valore esatto del veicolo è fondamentale. Le perizie si basano su dati di mercato attuali e competenze approfondite.",
+      "title": "Perizia del valore"
+    },
+    "getInTouch": "Contattare",
+    "subtitle": "CUBEE offre una vasta gamma di servizi relativi alle perizie sui veicoli.",
+    "title": "Servizi"
+  }
+}

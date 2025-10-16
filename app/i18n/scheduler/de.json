@@ -1,0 +1,112 @@
+{
+  "$seo": {
+    "title": "Gutachterzentrum {city} {'|'} KFZ-Schadensbewertung",
+    "desc": "Das CUBEE-Gutachterzentrum in {city} bietet professionelle KFZ-Gutachten und Schadensbewertungen durch erfahrene Sachverständige. Schnelle Terminvergabe und mobiler Service in ganz Deutschland."
+  },
+  "$hero": {
+    "title": "Cubee {city} – Termin vereinbaren",
+    "driverTitle": "CUBEE Mobiler Gutachter in {city} – Termin vereinbaren"
+  },
+  "$contact": {
+    "navigate": "Navigation starten"
+  },
+  "$section1": {
+    "title": "Ihr unabhängiger KFZ Gutachter & Sachverständiger in {cityName} – Schnell, zuverlässig & kompetent",
+    "description": "Ein Unfall oder Fahrzeugschaden ist stressig genug. Vertrauen Sie auf unseren KFZ Gutachter und Sachverständigen-Service in {cityName}. Wir bieten Ihnen professionelle Schadengutachten, klare Schadensanalysen und vollständige Unterstützung bei der Schadensabwicklung – schnell, fair und unabhängig."
+  },
+  "$section2": {
+    "title": "Unsere Leistungen in {cityName}",
+    "items": [
+      {
+        "title": "Schadengutachten durch Experten",
+        "content": "Präzise und neutrale Bewertungen bei Haftpflicht- und Kaskoschäden."
+      },
+      {
+        "title": "Fahrzeugbewertung",
+        "content": "Wertgutachten für den Kauf, Verkauf oder Leasing-Rückgabe."
+      },
+      {
+        "title": "Beweissicherung",
+        "content": "Professionelle Dokumentation von Schäden zur rechtlichen Absicherung."
+      },
+      {
+        "title": "Komplettservice",
+        "content": "Unterstützung bei der Kommunikation mit Versicherungen und Rechtsanwälten."
+      },
+      {
+        "title": "Gutachten vom Sachverständigen",
+        "content": "Gerichtsfeste KFZ-Gutachten, auf die Sie sich verlassen können."
+      }
+    ]
+  },
+  "$section3": {
+    "title": "Warum wir der richtige KFZ Gutachter & Sachverständige in {cityName} sind",
+    "items": [
+      {
+        "title": "Lokale Expertise",
+        "content": "Direkt in {cityName} verfügbar – kurze Reaktionszeiten und schnelle Hilfe."
+      },
+      {
+        "title": "Unabhängige Sachverständige",
+        "content": "Neutrale Bewertung ohne Einfluss von Dritten oder Versicherungen."
+      },
+      {
+        "title": "Umfassende Erfahrung",
+        "content": "Unsere KFZ-Sachverständigen verfügen über jahrelange Erfahrung bei Unfall- und Schadensgutachten."
+      },
+      {
+        "title": "Kundennähe & Vertrauen",
+        "content": "Transparente Prozesse und klare Kommunikation stehen bei uns an erster Stelle."
+      }
+    ]
+  },
+  "$section4": {
+    "title": "Ablauf der Gutachtenerstellung",
+    "items": [
+      {
+        "title": "Kontaktaufnahme",
+        "content": "Wir sind 24/7 für Sie erreichbar."
+      },
+      {
+        "title": "Vor-Ort-Begutachtung",
+        "content": "Unser KFZ-Sachverständiger kommt zu Ihnen oder besichtigt das Fahrzeug in der Werkstatt. Alternativ kann Ihr Fahrzeug in unserem Gutachterzentrum vor Ort in {cityName} begutachtet werden."
+      },
+      {
+        "title": "Gutachtenerstellung",
+        "content": "Sie erhalten ein detailliertes, unabhängiges Schadengutachten."
+      },
+      {
+        "title": "Schadensabwicklung",
+        "content": "Wir unterstützen Sie bei der Kommunikation mit der Versicherung und sorgen dafür, dass Sie Ihr Recht durchsetzen."
+      }
+    ]
+  },
+  "$faq": {
+    "title": "FAQ - Häufig gestellte Fragen",
+    "items": [
+      {
+        "question": "Was macht ein KFZ-Sachverständiger?",
+        "answer": "Ein KFZ-Sachverständiger erstellt Gutachten bei Fahrzeugschäden, bewertet die Schadenshöhe und dokumentiert alles gerichtsfest. Damit haben Sie die Basis, um Ihren Anspruch gegenüber der Versicherung durchzusetzen."
+      },
+      {
+        "question": "Wann benötige ich ein KFZ-Gutachten?",
+        "answer": "Ein Gutachten ist notwendig bei: Haftpflichtschäden (z.B. Unfall mit Fremdverschulden), Kaskoschäden (Eigenverschulden), Fahrzeugbewertungen für den Verkauf oder Leasing-Ende."
+      },
+      {
+        "question": "Was kostet ein KFZ-Gutachten?",
+        "answer": "Die Kosten für ein KFZ-Gutachten hängen von der Schadenshöhe ab. Bei unverschuldeten Unfällen übernimmt in der Regel die gegnerische Versicherung die Kosten."
+      },
+      {
+        "question": "Wie schnell erhalte ich mein Gutachten?",
+        "answer": "Unsere KFZ-Sachverständigen in {cityName} erstellen Gutachten innerhalb von 24 Stunden nach der Fahrzeugbegutachtung."
+      },
+      {
+        "question": "Warum ist ein unabhängiges Gutachten wichtig?",
+        "answer": "Ein unabhängiges Gutachten schützt Sie vor Kürzungen durch Versicherungen und stellt sicher, dass Sie eine faire Entschädigung erhalten."
+      }
+    ]
+  },
+  "$section5": {
+    "title": "Kontakt – KFZ Gutachter & Sachverständiger {cityName}"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$hero": {
+    "title": "Bir sonraki CUBEE konteynerinizi bulun"
+  },
+  "$search": {
+    "input:placeholder": "Konumları ara (Posta Kodu, Şehir, Cadde)",
+    "station-cta": "Randevu al"
+  },
+  "$seo": {
+    "desc": "Almanya ve tüm Avrupa'da hızlı ve profesyonel araç ekspertizleri için en yakın Cubee konteynerini keşfedin. Yakınınızdaki bir incelemeyi kolayca rezerve etmek için konum bulucumuzu kullanın. Güvenilir, hızlı ve sorunsuz.",
+    "title": "En yakın Cubee konumunuzu bulun {'|'} Hızlı araç ekspertizi rezervasyonu yapın"
+  },
+  "appointment": "Randevu",
+  "comingSoon": "Yakında mevcut ...",
+  "notFound": "Konum bulunamadı"
+}

@@ -1,0 +1,17 @@
+{
+  "$blog": {
+    "desc": "Discover our latest posts on vehicle appraisals in Germany and get all the important information about vehicle evaluations.",
+    "title": "Our Latest Articles"
+  },
+  "$hero": {
+    "desc": "Stay up to date on vehicle evaluations, damage assessments, traffic law, and more. In the CUBEE Blog, you will find everything important about cars. Clear, reliable, and always current.",
+    "title": "The CUBEE Blog"
+  },
+  "$seo": {
+    "description": "The CUBEE Blog offers you valuable information and practical tips on quick vehicle appraisals, independent damage assessments, and much more. Learn everything you need to know about vehicle evaluations in Germany and across Europe.",
+    "title": "CUBEE Blog: Expertise on Vehicle Appraisals, Damage Assessments, and Traffic Law"
+  },
+  "backToBlogs": "Back to Blog",
+  "readMore": "Read More",
+  "relatedArticles": "Related Articles"
+}

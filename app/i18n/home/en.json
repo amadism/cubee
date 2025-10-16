@@ -1,0 +1,124 @@
+{
+  "$contact": {
+    "button": "Get in touch",
+    "subtitle": "Experience the Cubee difference. Book an appraisal or learn more about the comprehensive services.",
+    "title": "Contact Cubee"
+  },
+  "$hero": {
+    "appointment": "Schedule an appointment",
+    "cta:subtitle": "in a CUBEE container nearby",
+    "cta:title": "Immediate appointment",
+    "mobile:subtitle": "Submit your case to receive a professional assessment.",
+    "mobile:title": "Submit Report",
+    "subtitle": "Fast, professional, and customer-oriented.",
+    "title": "Independent appraisals and damage assessments after accidents."
+  },
+  "$introduction": {
+    "finder": "Find location",
+    "more": "Learn more",
+    "paragraph": "Always there where support is needed. With the black and yellow containers at numerous locations throughout Germany, it is ensured that professional vehicle appraisals are never far away. As a franchise with local presence, CUBEE offers the perfect combination of local service and nationwide expertise. No matter where in Germany. CUBEE is always nearby to provide fast and reliable appraisals.",
+    "title": "Why Cubee™ is the ideal partner for vehicle appraisals"
+  },
+  "$process": {
+    "cta": "How it works",
+    "paragraph": "CUBEE simplifies the appraisal process – fast, digital, and tailored to your needs. Drivable vehicles can be appraised directly at our locations, while heavily damaged vehicles are assessed through our mobile service. Our experts use the latest technology for data collection and image documentation, which is carefully evaluated at the central office to provide you with a detailed appraisal in the shortest possible time.",
+    "title": "Our efficient appraisal process"
+  },
+  "$reviews": {
+    "list": [
+      {
+        "content": "I used Cubee's service to have my car assessed after a minor accident. The report was really detailed and the customer service was super nice. It took a bit longer than I expected, but otherwise everything was great.",
+        "date": "15.09.24",
+        "name": "Ayşe D.",
+        "stars": "5",
+        "title": "Very satisfied, good service"
+      },
+      {
+        "content": "I was unsure how much my car was still worth, but Cubee really helped me out. The whole process was super easy, and the team was really friendly.",
+        "date": "12.09.24",
+        "name": "Slawomir K.",
+        "stars": "4",
+        "title": "Helpful and uncomplicated"
+      },
+      {
+        "content": "I needed a vehicle appraisal and Cubee did a really good job. Everything went quickly and the team also explained to me well how everything works. I can only recommend it if you need an appraisal.",
+        "date": "10.09.24",
+        "name": "Paul F.",
+        "stars": "5",
+        "title": "Good service, fair price"
+      },
+      {
+        "content": "The appraisal itself was okay, but I had to wait a bit longer for the report than I was told. The customer service was nice and apologized, but the waiting was a bit annoying. In the end, it worked out.",
+        "date": "08.09.24",
+        "name": "Sophie W.",
+        "stars": "4",
+        "title": "Was okay"
+      },
+      {
+        "content": "I needed to have my car appraised and Cubee did it really quickly and professionally. The team was also very friendly and helpful. Would gladly use again!",
+        "date": "07.09.24",
+        "name": "Maximilian K.",
+        "stars": "5",
+        "title": "Everything went great"
+      },
+      {
+        "content": "The appraisal was accurate and the team took the time to explain everything to me. The report was also quickly available. Great service.",
+        "date": "06.09.24",
+        "name": "Anna Becker",
+        "stars": "5",
+        "title": "Satisfied with the consultation"
+      },
+      {
+        "content": "After my accident, I was unsure what the damage to my car was worth. Cubee helped me quickly and the report was very detailed. The staff was friendly!",
+        "date": "05.09.24",
+        "name": "Mehmet K.",
+        "stars": "4",
+        "title": "Had a good experience"
+      },
+      {
+        "content": "The service was really great. I needed a quick appraisal for my car and Cubee did it really well and promptly.",
+        "date": "04.09.24",
+        "name": "Mia H.",
+        "stars": "5",
+        "title": "Good and fast processing"
+      },
+      {
+        "content": "I used Cubee for a damage assessment after a minor accident. The report was detailed and the team was very nice. I had to wait longer than expected, but in the end, I was satisfied with the service.",
+        "date": "03.09.24",
+        "name": "Johannes S.",
+        "stars": "4",
+        "title": "Nice and competent"
+      },
+      {
+        "content": "Cubee helped me find the right price for my car. The appraisal was quick and well done.",
+        "date": "02.09.24",
+        "name": "Leonie K.",
+        "stars": "5",
+        "title": "Good service for selling"
+      }
+    ],
+    "more": "Show more reviews",
+    "title": "What our customers say"
+  },
+  "$seo": {
+    "desc": "Fast and professional vehicle appraisals and damage assessments by CUBEE. Thanks to locations in Germany and all over Europe, the service is always nearby.",
+    "title": "Vehicle appraisals and damage assessments nearby {'|'} CUBEE Germany"
+  },
+  "$services": {
+    "$damage": {
+      "description": "After an accident, quick and detailed damage assessments are crucial. The experts conduct thorough inspections to support insurance claims and repair decisions with comprehensive appraisals.",
+      "title": "Damage Assessment"
+    },
+    "$oldtimer": {
+      "description": "The appraisal of classic cars requires special expertise. The service recognizes the unique historical and emotional value of these vehicles.",
+      "title": "Classic Car Appraisal"
+    },
+    "$value": {
+      "description": "Whether for sale or insurance – knowing the exact value of the vehicle is crucial. The appraisals are based on current market data and comprehensive expertise.",
+      "title": "Value Appraisal"
+    },
+    "getInTouch": "Get in touch",
+    "subtitle": "CUBEE offers a variety of services related to vehicle appraisals.",
+    "title": "Services"
+  }
+}

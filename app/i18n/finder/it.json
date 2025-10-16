@@ -1,0 +1,16 @@
+{
+  "$hero": {
+    "title": "Trova il tuo prossimo container CUBEE"
+  },
+  "$search": {
+    "input:placeholder": "Cerca località (CAP, città, via)",
+    "station-cta": "Fissa un appuntamento"
+  },
+  "$seo": {
+    "desc": "Scopri il container Cubee più vicino per perizie auto rapide e professionali in Germania e in tutta Europa. Utilizza il nostro localizzatore per prenotare comodamente un'ispezione vicino a te. Affidabile, veloce e semplice.",
+    "title": "Trova la tua sede Cubee più vicina {'|'} Prenota una perizia auto veloce"
+  },
+  "appointment": "Appuntamento",
+  "comingSoon": "Disponibile a breve ...",
+  "notFound": "Nessuna sede trovata"
+}

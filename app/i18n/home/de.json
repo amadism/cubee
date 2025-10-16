@@ -1,0 +1,124 @@
+{
+  "$contact": {
+    "button": "Kontakt aufnehmen",
+    "subtitle": "Den Cubee-Unterschied erleben. Ein Gutachten buchen oder mehr über die umfassenden Dienstleistungen erfahren.",
+    "title": "Cubee kontaktieren"
+  },
+  "$hero": {
+    "appointment": "Termin vereinbaren",
+    "title": "Unabhängige Gutachten und Schadensbewertungen nach Unfällen.",
+    "subtitle": "Schnell, professionell und kundenorientiert.",
+    "cta:title": "Sofort-Termin",
+    "cta:subtitle": "Bei einem CUBEE-Standort in der Nähe",
+    "mobile:title": "Bericht einreichen",
+    "mobile:subtitle": "Fall einreichen und professionelles Gutachten erhalten."
+  },
+  "$introduction": {
+    "finder": "Standort finden",
+    "more": "Mehr erfahren",
+    "paragraph": "Immer da, wo Unterstützung benötigt wird. Mit den schwarz-gelben Containern an zahlreichen Standorten in ganz Deutschland ist sichergestellt, dass professionelle KFZ-Gutachten nie weit entfernt sind. Als Franchise mit lokaler Präsenz bietet CUBEE die perfekte Kombination aus örtlichem Service und bundesweiter Expertise. Egal, wo in Deutschland. CUBEE ist immer in der Nähe, um schnelle und zuverlässige Gutachten zu bieten.",
+    "title": "Warum Cubee™ der ideale Partner für KFZ-Gutachten ist"
+  },
+  "$process": {
+    "paragraph": "CUBEE vereinfacht den Gutachten-Prozess – schnell, digital und individuell auf Ihre Bedürfnisse abgestimmt. Fahrbereite Fahrzeuge können direkt an unseren Standorten begutachtet werden, während stark beschädigte Fahrzeuge über unseren mobilen Service bewertet werden. Unsere Experten nutzen modernste Technik für Datenerfassung und Bilddokumentation, die im zentralen Büro sorgfältig ausgewertet wird, um Ihnen ein detailliertes Gutachten in kürzester Zeit zu erstellen.",
+    "title": "Unser effizienter Begutachtungsprozess",
+    "cta": "So funktioniert's"
+  },
+  "$seo": {
+    "desc": "Schnelle und professionelle KFZ-Gutachten und Schadensbewertungen von CUBEE. Dank der Standorte in Deutschland und ganz Europa ist der Service immer in der Nähe.",
+    "title": "KFZ-Gutachten und Schadensbewertungen in der Nähe {'|'} CUBEE Deutschland"
+  },
+  "$services": {
+    "title": "Dienstleistungen",
+    "subtitle": "CUBEE bietet eine Vielzahl von Dienstleistungen rund um KFZ-Gutachten an.",
+    "$damage": {
+      "title": "Schadensbewertung",
+      "description": "Nach einem Unfall sind schnelle und detaillierte Schadensbewertungen entscheidend. Die Experten führen gründliche Inspektionen durch, um Versicherungsansprüche und Reparaturentscheidungen mit umfassenden Gutachten zu unterstützen."
+    },
+    "getInTouch": "Kontakt aufnehmen",
+    "$oldtimer": {
+      "title": "Oldtimer-Gutachten",
+      "description": "Die Begutachtung von Oldtimern erfordert besondere Fachkenntnisse. Der Service erkennt den einzigartigen historischen und emotionalen Wert dieser Fahrzeuge an."
+    },
+    "$value": {
+      "title": "Wertgutachten",
+      "description": "Ob für den Verkauf oder die Versicherung – den genauen Wert des Fahrzeugs zu kennen, ist entscheidend. Die Gutachten basieren auf aktuellen Marktdaten und umfassender Expertise."
+    }
+  },
+  "$reviews": {
+    "title": "Was unsere Kunden sagen",
+    "more": "Mehr Bewertungen anzeigen",
+    "list": [
+      {
+        "title": "Sehr zufrieden, guter Service",
+        "content": "Ich habe den Service von Cubee genutzt, um mein Auto nach einem kleinen Unfall bewerten zu lassen. Der Bericht war echt detailliert und der Kundenservice super nett. Hat zwar ein bisschen länger gedauert, als ich dachte, aber sonst war alles top.",
+        "name": "Ayşe D.",
+        "date": "15.09.24",
+        "stars": "5"
+      },
+      {
+        "title": "Hilfreich und unkompliziert",
+        "content": "Ich war mir unsicher, wie viel mein Auto noch wert ist, aber Cubee hat mir echt weitergeholfen. Der ganze Ablauf war super einfach, und das Team war richtig freundlich.",
+        "name": "Slawomir K.",
+        "date": "12.09.24",
+        "stars": "4"
+      },
+      {
+        "title": "Guter Service, fairer Preis",
+        "content": "Ich brauchte eine Fahrzeugbewertung und Cubee hat echt einen guten Job gemacht. Alles ging flott und das Team hat mir auch gut erklärt, wie das alles abläuft. Kann ich nur empfehlen, wenn man mal ne Bewertung braucht.",
+        "name": "Paul F.",
+        "date": "10.09.24",
+        "stars": "5"
+      },
+      {
+        "title": "War ganz okay",
+        "content": "Die Bewertung an sich war in Ordnung, aber ich musste ein bisschen länger auf den Bericht warten, als mir gesagt wurde. Der Kundenservice war nett und hat sich entschuldigt, aber das Warten war ein bisschen nervig. Am Ende hat es aber gepasst.",
+        "name": "Sophie W.",
+        "date": "08.09.24",
+        "stars": "4"
+      },
+      {
+        "title": "Alles super gelaufen",
+        "content": "Ich musste mein Auto bewerten lassen und Cubee hat das echt schnell und professionell gemacht. Das Team war auch sehr freundlich und hilfsbereit. Gerne wieder!",
+        "name": "Maximilian K.",
+        "date": "07.09.24",
+        "stars": "5"
+      },
+      {
+        "title": "Zufrieden mit der Beratung",
+        "content": "Die Bewertung war genau und das Team hat sich Zeit genommen, mir alles zu erklären. Der Bericht war auch schnell da. Super Service.",
+        "name": "Anna Becker",
+        "date": "06.09.24",
+        "stars": "5"
+      },
+      {
+        "title": "Gute Erfahrung gemacht",
+        "content": "Nach meinem Unfall war ich unsicher, was der Schaden an meinem Auto wert ist. Cubee hat mir schnell geholfen und der Bericht war sehr detailliert. Die Mitarbeiter waren freundlich!",
+        "name": "Mehmet K.",
+        "date": "05.09.24",
+        "stars": "4"
+      },
+      {
+        "title": "Gute und schnelle Abwicklung",
+        "content": "Der Service war echt super. Ich brauchte schnell eine Bewertung für mein Auto und Cubee hat das echt gut und zügig gemacht.",
+        "name": "Mia H.",
+        "date": "04.09.24",
+        "stars": "5"
+      },
+      {
+        "title": "Nett und kompetent",
+        "content": "Ich habe Cubee für eine Schadensbewertung nach einem kleinen Unfall genutzt. Der Bericht war ausführlich und das Team war sehr nett. Ich musste zwar länger warten, als gedacht, aber am Ende war ich zufrieden mit dem Service.",
+        "name": "Johannes S.",
+        "date": "03.09.24",
+        "stars": "4"
+      },
+      {
+        "title": "Guter Service für den Verkauf",
+        "content": "Cubee hat mir geholfen, den richtigen Preis für mein Auto zu finden. Die Bewertung war schnell und gut gemacht.",
+        "name": "Leonie K.",
+        "date": "02.09.24",
+        "stars": "5"
+      }
+    ]
+  }
+}

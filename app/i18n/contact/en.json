@@ -1,0 +1,89 @@
+{
+  "$FAQSection": {
+    "additionalInfo": {
+      "1": "Didn't find the answer you were looking for?",
+      "2": "Contact us directly,",
+      "3": "and our team will be happy to assist you!"
+    },
+    "faq1": {
+      "answer": "Cubee offers a unique combination of expertise and convenience. Our containers are strategically located throughout Germany and Europe to ensure quick, easy, and professional appraisals near you.",
+      "question": "What makes Cubee different from other vehicle appraisal services?"
+    },
+    "faq10": {
+      "answer": {
+        "1": "Use our search function on the website,",
+        "2": "to find the nearest Cubee location. Thanks to our extensive network, we are never far away."
+      },
+      "question": "Where can I find a Cubee container near me?"
+    },
+    "faq2": {
+      "answer": "It's very simple! Visit our website and click on 'Schedule an appointment'. Choose the Cubee location and time that suits you. You can also contact us directly if you need assistance.",
+      "question": "How do I schedule an appointment for a vehicle appraisal?"
+    },
+    "faq3": {
+      "answer": "Yes, for damaged vehicles we offer a mobile service. Our team comes directly to you and uses a specialized app to conduct a thorough damage assessment. No matter where the vehicle is located.",
+      "question": "Can Cubee also appraise vehicles that cannot be brought to the container?"
+    },
+    "faq4": {
+      "answer": "Our appraisal process is quick and efficient. The vehicle appraisal usually takes less than an hour, and you will receive the detailed report within 3 business days.",
+      "question": "How long does the appraisal process take?"
+    },
+    "faq5": {
+      "answer": "We appraise all types of vehicles, including cars, trucks, motorcycles, and even classic cars. Our service covers all your vehicle appraisal needs.",
+      "question": "What types of vehicles can Cubee appraise?"
+    },
+    "faq6": {
+      "answer": "Yes, our professional appraisals are recognized by most insurance companies and support you with your insurance claims or repair decisions.",
+      "question": "Is the appraisal from Cubee accepted by insurance companies?"
+    },
+    "faq7": {
+      "answer": "Simply bring your vehicle to one of our Cubee locations. Our experts will take care of everything else and create a precise value appraisal based on the latest market data.",
+      "question": "What information do I need for a vehicle appraisal?"
+    },
+    "faq8": {
+      "answer": "Our experts use a specialized app for data collection and image capture on site. This information is then carefully analyzed at our headquarters to ensure a precise and reliable appraisal.",
+      "question": "How does Cubee ensure the accuracy of its appraisals?"
+    },
+    "faq9": {
+      "answer": "Yes, we offer special classic car appraisals that take into account the historical and emotional value of vintage vehicles and reflect their true market value.",
+      "question": "Does Cubee also offer appraisals for classic cars?"
+    },
+    "title": "Frequently Asked Questions about our Vehicle Appraisals"
+  },
+  "$contactSection": {
+    "paragraph1": "At Cubee, we are shaping the future of automotive expertise with our digital appraisal services. Whether you need to assess vehicle damage, determine the value of your car, or get an expert appraisal for your classic car, our team offers fast and precise solutions.",
+    "paragraph2": "Do you have questions? Take a look at our FAQ below or contact us directly through our form. Our specialists are ready to help you with all your vehicle appraisal needs.",
+    "title": "Contact Us"
+  },
+  "$form": {
+    "contentError": "Content must be at least 100 characters long.",
+    "emailError": "Email is empty.",
+    "emailNotValid": "Email is not valid.",
+    "nameError": "Name is empty.",
+    "nameMinLengthError": "Name must be at least 5 characters long.",
+    "nameInvalidCharsError": "Name can only contain letters, spaces, hyphens, and apostrophes.",
+    "telError": "Phone number is empty.",
+    "telInvalidFormat": "Please enter a valid German phone number (e.g., 0151 2345678).",
+    "locationError": "Location is required.",
+    "submissionError": "An error occurred while submitting your request. Please try again."
+  },
+  "$getInTouchSection": {
+    "description": "Please select the type of inquiry and fill out the form below. Our team will get back to you as soon as possible to answer your questions and assist you.",
+    "footer": "Your trust in Cubee is important to us, and we are committed to providing you with top-notch service at all times.",
+    "generalInquiry": "General Inquiry",
+    "becomePartner": "Become a Partner",
+    "inputEmailPlaceholder": "Email",
+    "inputMessagePlaceholder": "Your message",
+    "inputNamePlaceholder": "Name",
+    "inputTelPlaceholder": "Phone number",
+    "inputLocationPlaceholder": "Location",
+    "selectPlaceholder": "Select inquiry type",
+    "submitButton": "Send Inquiry",
+    "successMessage": "Successfully sent the contact email.",
+    "title": "Get in Touch"
+  },
+  "$seo": {
+    "desc": "Contact Cubee for professional vehicle appraisals, classic car evaluations, franchise inquiries, and more. We offer fast and reliable service in Germany and across Europe – inquire now!",
+    "title": "Contact Cubee {'|'} Experts in Vehicle Appraisals and Evaluations"
+  }
+}

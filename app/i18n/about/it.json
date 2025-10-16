@@ -1,0 +1,46 @@
+{
+  "$concept": {
+    "imageAlt": "Contenitore alveare Cubee.",
+    "imageCaption": "Il nostro alveare Cubee",
+    "paragraph": "Trovare una sede per la valutazione del tuo veicolo non dovrebbe essere un ostacolo. Con i nostri contenitori giallo-neri in posizioni facilmente accessibili in Germania e presto in tutta Europa, un esperto Cubee è sempre vicino a te quando ne hai bisogno.",
+    "title": "Il nostro concetto"
+  },
+  "$imageAlts": {
+    "carTalk": "Esperto Cubee durante la valutazione di un veicolo con un cliente.",
+    "computer": "Computer stilizzato Cubee.",
+    "handshake": "Contenitore alveare Cubee.",
+    "mail": "Busta stilizzata Cubee."
+  },
+  "$join-us": {
+    "becomeFranchiseeButton": "Diventa un franchising",
+    "content": "Mentre espandiamo la nostra rete in tutta Europa, ti invitiamo a vivere il futuro delle valutazioni dei veicoli. Da Cubee, efficienza, precisione e soddisfazione del cliente sono al centro – e tutto questo direttamente vicino a te. Unisciti al nostro viaggio e scopri come stiamo stabilendo nuovi standard nel settore automobilistico.",
+    "title": "Unisciti a noi"
+  },
+  "$process": {
+    "$step-1": {
+      "content": "Trova facilmente la sede Cubee più vicina. Prenota il tuo appuntamento comodamente online in pochi minuti.",
+      "findLocationButton": "Trova sede",
+      "scheduleAppointmentButton": "Prenota appuntamento",
+      "title": "Passo 1: Prenota un appuntamento"
+    },
+    "$step-2": {
+      "content": "Guida fino alla sede Cubee più vicina e fai valutare il tuo veicolo in modo rapido ed efficiente. Se il tuo veicolo non è in condizioni di marcia, il nostro team mobile verrà direttamente da te.",
+      "title": "Passo 2: Valutazione del veicolo senza stress"
+    },
+    "$step-3": {
+      "content": "I nostri esperti redigeranno un rapporto dettagliato sul tuo veicolo. Riceverai il rapporto finale comodamente via e-mail o posta. L'intero processo di solito richiede solo 3 giorni lavorativi.",
+      "title": "Passo 3: Ricevi la tua perizia"
+    },
+    "title": "Come funziona il processo di valutazione da CUBEE"
+  },
+  "$seo": {
+    "desc": "Scopri come CUBEE rende le valutazioni dei veicoli e le perizie sui danni più semplici, veloci e affidabili. Conosci il nostro approccio innovativo e diventa parte della nostra rete in crescita in Germania e in tutta Europa.",
+    "title": "Su Cubee {'|'} Come stiamo cambiando le perizie automobilistiche in Europa"
+  },
+  "$welcome": {
+    "imageAlt": "Sede centrale di Cubee a Francoforte sul Meno",
+    "location": "CUBEE Sachverständigen AG - Opernplatz 14, Francoforte sul Meno",
+    "paragraph": "Ci siamo impegnati a cambiare il modo in cui vengono effettuate le valutazioni dei veicoli e le perizie sui danni in Europa. Come franchising in crescita, vogliamo rendere l'intero processo più semplice, veloce e accessibile a tutti.",
+    "title": "Benvenuto da Cubee"
+  }
+}

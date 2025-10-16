@@ -1,0 +1,67 @@
+{
+  "$contact": {
+    "email": "E-posta",
+    "phone": "Telefon",
+    "web": "Web"
+  },
+  "$cookies": {
+    "$consents": {
+      "essential": "Temel Çerezler",
+      "marketing": "Pazarlama",
+      "personalized": "Kişiselleştirilmiş İçerik",
+      "statistics": "İstatistikler"
+    },
+    "accept": "Kabul Et",
+    "accept-all": "Hepsini kabul et",
+    "accept-selection": "Seçimi kabul et",
+    "customize": "Ayarları özelleştir",
+    "subtitle": "Kullanıcı deneyiminizi geliştirmek ve içeriklerimizi ve hizmetlerimizi sizin için optimize etmek için çerezler kullanıyoruz.",
+    "text": "\"Kabul Et\"e tıkladığınızda, analitik çerezlerin kullanımını ve {privacy} kabul etmiş olursunuz. Onayınızı istediğiniz zaman geri çekebilirsiniz.",
+    "text:privacy": "Gizlilik Politikası",
+    "title": "Gizlilik Ayarları"
+  },
+  "$footer": {
+    "aboutCubee": "Cubee Hakkında",
+    "becomeFranchisee": "Bayilik olun",
+    "company": "Cubee",
+    "companyHeading": "Şirket",
+    "contact": "İletişim",
+    "contactUs": "Bize Ulaşın",
+    "copyright": "Cubee Telif Hakkı | Tüm hakları saklıdır",
+    "dataPrivacy": "Kişisel verilerimi satmayın veya paylaşmayın",
+    "emailAddress": "hello{'@'}cubee.expert",
+    "followUs": "Bizi Takip Edin",
+    "jobs": "İşler",
+    "legalNotice": "Yasal Uyarı",
+    "locationFinder": "Konum Bulucu",
+    "phone": "0800 - 2823333",
+    "phoneAvailability": "Pzt - Cum 09:00 - 16:00 arası",
+    "privacyPolicy": "Gizlilik",
+    "tos": "Kullanım şartları"
+  },
+  "$lang": {
+    "de": "Almanca",
+    "en": "İngilizce",
+    "fr": "Fransızca",
+    "it": "İtalyanca",
+    "ru": "Rusça",
+    "tr": "Türkçe"
+  },
+  "$socialMedia": {
+    "facebook": "Facebook",
+    "twitter": "Twitter"
+  },
+  "$uiElements": {
+    "buttonContact": "Bize Ulaşın",
+    "contactUsFull": {
+      "buttonAccessibility": "Bize ulaşmak için basın",
+      "buttonText": "Bize Ulaşın"
+    }
+  },
+  "about": "Hakkımızda",
+  "blog": "Blog",
+  "contact": "İletişim",
+  "finder": "Konumlar",
+  "home": "Ana Sayfa",
+  "lang": "Dil"
+}

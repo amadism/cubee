@@ -1,0 +1,67 @@
+{
+  "$contact": {
+    "email": "Email",
+    "phone": "Phone",
+    "web": "Web"
+  },
+  "$cookies": {
+    "$consents": {
+      "essential": "Essential Cookies",
+      "marketing": "Marketing",
+      "personalized": "Personalized Content",
+      "statistics": "Statistics"
+    },
+    "accept": "Accept",
+    "accept-all": "Accept All",
+    "accept-selection": "Accept Selection",
+    "customize": "Customize Settings",
+    "subtitle": "We use cookies to improve your user experience and to optimize our content and services for you.",
+    "text": "By clicking \"Accept\", you agree to the use of analytical cookies and our {privacy}. You can revoke your consent at any time.",
+    "text:privacy": "Privacy Policy",
+    "title": "Privacy Settings"
+  },
+  "$footer": {
+    "aboutCubee": "About Cubee",
+    "becomeFranchisee": "Become a franchisee",
+    "company": "Cubee",
+    "companyHeading": "Company",
+    "contact": "Contact",
+    "contactUs": "Contact Us",
+    "copyright": "Copyright by Cubee | All rights reserved",
+    "dataPrivacy": "Do not sell or share my personal data",
+    "emailAddress": "hello{'@'}cubee.expert",
+    "followUs": "Follow Us",
+    "jobs": "Jobs",
+    "legalNotice": "Legal Notice",
+    "locationFinder": "Location Finder",
+    "phone": "0800 - 2823333",
+    "phoneAvailability": "Mon - Fri from 09:00 - 16:00",
+    "privacyPolicy": "Privacy Policy",
+    "tos": "Terms of service"
+  },
+  "$lang": {
+    "de": "German",
+    "en": "English",
+    "fr": "French",
+    "it": "Italian",
+    "ru": "Russian",
+    "tr": "Turkish"
+  },
+  "$socialMedia": {
+    "facebook": "Facebook",
+    "twitter": "Twitter"
+  },
+  "$uiElements": {
+    "buttonContact": "Contact Us",
+    "contactUsFull": {
+      "buttonAccessibility": "Press to contact us",
+      "buttonText": "Contact Us"
+    }
+  },
+  "about": "About Us",
+  "blog": "Blog",
+  "contact": "Contact",
+  "finder": "Locations",
+  "home": "Home",
+  "lang": "Language"
+}

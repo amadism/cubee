@@ -1,0 +1,112 @@
+{
+  "$contact": {
+    "navigate": "Démarrer la navigation"
+  },
+  "$faq": {
+    "items": [
+      {
+        "answer": "Un expert automobile établit des rapports en cas de dommages aux véhicules, évalue le montant des dommages et documente tout de manière juridiquement valable. Cela vous donne la base pour faire valoir votre droit auprès de l'assurance.",
+        "question": "Que fait un expert automobile ?"
+      },
+      {
+        "answer": "Un rapport est nécessaire pour : les dommages de responsabilité civile (par exemple, accident avec faute d'un tiers), les dommages tous risques (faute propre), les évaluations de véhicules pour la vente ou la fin de leasing.",
+        "question": "Quand ai-je besoin d'un rapport automobile ?"
+      },
+      {
+        "answer": "Les coûts d'un rapport automobile dépendent du montant des dommages. En cas d'accidents non responsables, l'assurance adverse prend généralement en charge les frais.",
+        "question": "Combien coûte un rapport automobile ?"
+      },
+      {
+        "answer": "Nos experts automobiles à {cityName} établissent des rapports dans les 24 heures suivant l'expertise du véhicule.",
+        "question": "À quelle vitesse puis-je obtenir mon rapport ?"
+      },
+      {
+        "answer": "Un rapport indépendant vous protège des réductions par les assurances et garantit que vous recevez une indemnisation équitable.",
+        "question": "Pourquoi un rapport indépendant est-il important ?"
+      }
+    ],
+    "title": "FAQ - Questions fréquemment posées"
+  },
+  "$hero": {
+    "driverTitle": "CUBEE Expert Mobile à {city} – Prendre un Rendez-vous",
+    "title": "Centre d'expertise CUBEE {city} – Prendre rendez-vous"
+  },
+  "$section1": {
+    "description": "Un accident ou un dommage au véhicule est déjà assez stressant. Faites confiance à notre service d'expertise automobile à {cityName}. Nous vous offrons des rapports de dommages professionnels, des analyses de dommages claires et un soutien complet dans le traitement des dommages – rapide, équitable et indépendant.",
+    "title": "Votre expert automobile indépendant à {cityName} – Rapide, fiable et compétent"
+  },
+  "$section2": {
+    "items": [
+      {
+        "content": "Évaluations précises et neutres pour les dommages de responsabilité civile et tous risques.",
+        "title": "Rapports de dommages par des experts"
+      },
+      {
+        "content": "Évaluations de véhicules pour l'achat, la vente ou la restitution de leasing.",
+        "title": "Évaluation de véhicule"
+      },
+      {
+        "content": "Documentation professionnelle des dommages pour une sécurité juridique.",
+        "title": "Constitution de preuves"
+      },
+      {
+        "content": "Soutien dans la communication avec les assurances et les avocats.",
+        "title": "Service complet"
+      },
+      {
+        "content": "Rapports automobiles juridiquement valables sur lesquels vous pouvez compter.",
+        "title": "Rapports par des experts"
+      }
+    ],
+    "title": "Nos services à {cityName}"
+  },
+  "$section3": {
+    "items": [
+      {
+        "content": "Disponible directement à {cityName} – temps de réaction courts et aide rapide.",
+        "title": "Expertise locale"
+      },
+      {
+        "content": "Évaluation neutre sans influence de tiers ou d'assurances.",
+        "title": "Experts indépendants"
+      },
+      {
+        "content": "Nos experts automobiles ont des années d'expérience dans les rapports d'accidents et de dommages.",
+        "title": "Expérience complète"
+      },
+      {
+        "content": "Des processus transparents et une communication claire sont notre priorité.",
+        "title": "Proximité client et confiance"
+      }
+    ],
+    "title": "Pourquoi nous sommes le bon expert automobile à {cityName}"
+  },
+  "$section4": {
+    "items": [
+      {
+        "content": "Nous sommes disponibles 24/7 pour vous.",
+        "title": "Prise de contact"
+      },
+      {
+        "content": "Notre expert automobile vient chez vous ou examine le véhicule à l'atelier. Alternativement, votre véhicule peut être examiné dans notre centre d'expertise sur place à {cityName}.",
+        "title": "Expertise sur place"
+      },
+      {
+        "content": "Vous recevez un rapport de dommages détaillé et indépendant.",
+        "title": "Élaboration du rapport"
+      },
+      {
+        "content": "Nous vous aidons dans la communication avec l'assurance et veillons à ce que vous fassiez valoir vos droits.",
+        "title": "Traitement des dommages"
+      }
+    ],
+    "title": "Processus d'élaboration du rapport"
+  },
+  "$section5": {
+    "title": "Contact – Expert automobile {cityName}"
+  },
+  "$seo": {
+    "desc": "Le centre d'expertise CUBEE à {city} offre des rapports automobiles professionnels et des évaluations de dommages par des experts expérimentés. Prise de rendez-vous rapide et service mobile dans toute l'Allemagne.",
+    "title": "Centre d'expertise {city} {'|'} Évaluation des dommages automobiles"
+  }
+}

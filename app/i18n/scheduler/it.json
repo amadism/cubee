@@ -1,0 +1,112 @@
+{
+  "$contact": {
+    "navigate": "Avvia navigazione"
+  },
+  "$faq": {
+    "items": [
+      {
+        "answer": "Un perito automobilistico redige perizie in caso di danni al veicolo, valuta l'entità del danno e documenta tutto in modo valido per il tribunale. In questo modo hai la base per far valere il tuo diritto nei confronti dell'assicurazione.",
+        "question": "Cosa fa un perito automobilistico?"
+      },
+      {
+        "answer": "Una perizia è necessaria in caso di: danni da responsabilità civile (ad es. incidente con colpa di terzi), danni da casco (colpa propria), valutazioni del veicolo per la vendita o fine leasing.",
+        "question": "Quando ho bisogno di una perizia automobilistica?"
+      },
+      {
+        "answer": "I costi per una perizia automobilistica dipendono dall'entità del danno. In caso di incidenti non causati da te, di solito l'assicurazione della controparte copre i costi.",
+        "question": "Quanto costa una perizia automobilistica?"
+      },
+      {
+        "answer": "I nostri periti automobilistici a {cityName} redigono perizie entro 24 ore dalla valutazione del veicolo.",
+        "question": "Quanto velocemente ricevo la mia perizia?"
+      },
+      {
+        "answer": "Una perizia indipendente ti protegge da riduzioni da parte delle assicurazioni e garantisce che tu riceva un risarcimento equo.",
+        "question": "Perché è importante una perizia indipendente?"
+      }
+    ],
+    "title": "FAQ - Domande frequenti"
+  },
+  "$hero": {
+    "driverTitle": "CUBEE Perito Mobile a {city} – Fissa un Appuntamento",
+    "title": "Centro peritale CUBEE {city} – Fissa un appuntamento"
+  },
+  "$section1": {
+    "description": "Un incidente o un danno al veicolo è già abbastanza stressante. Affidati al nostro servizio di perizia e consulenza automobilistica a {cityName}. Ti offriamo perizie professionali sui danni, analisi chiare dei danni e supporto completo nella gestione dei sinistri – rapido, equo e indipendente.",
+    "title": "Il tuo perito automobilistico indipendente a {cityName} – Veloce, affidabile e competente"
+  },
+  "$section2": {
+    "items": [
+      {
+        "content": "Valutazioni precise e neutrali in caso di danni da responsabilità civile e casco.",
+        "title": "Perizie sui danni da esperti"
+      },
+      {
+        "content": "Perizie di valore per l'acquisto, la vendita o la restituzione del leasing.",
+        "title": "Valutazione del veicolo"
+      },
+      {
+        "content": "Documentazione professionale dei danni per la sicurezza legale.",
+        "title": "Conservazione delle prove"
+      },
+      {
+        "content": "Supporto nella comunicazione con assicurazioni e avvocati.",
+        "title": "Servizio completo"
+      },
+      {
+        "content": "Perizie automobilistiche valide per il tribunale su cui puoi contare.",
+        "title": "Perizie da esperti"
+      }
+    ],
+    "title": "I nostri servizi a {cityName}"
+  },
+  "$section3": {
+    "items": [
+      {
+        "content": "Disponibile direttamente a {cityName} – tempi di reazione brevi e assistenza rapida.",
+        "title": "Esperienza locale"
+      },
+      {
+        "content": "Valutazione neutrale senza influenze di terzi o assicurazioni.",
+        "title": "Periti indipendenti"
+      },
+      {
+        "content": "I nostri periti automobilistici hanno anni di esperienza in perizie su incidenti e danni.",
+        "title": "Esperienza completa"
+      },
+      {
+        "content": "Processi trasparenti e comunicazione chiara sono la nostra priorità.",
+        "title": "Vicino al cliente e fiducia"
+      }
+    ],
+    "title": "Perché siamo il giusto perito automobilistico a {cityName}"
+  },
+  "$section4": {
+    "items": [
+      {
+        "content": "Siamo disponibili 24/7 per te.",
+        "title": "Contatto"
+      },
+      {
+        "content": "Il nostro perito automobilistico viene da te o ispeziona il veicolo in officina. In alternativa, il tuo veicolo può essere valutato nel nostro centro peritale a {cityName}.",
+        "title": "Valutazione in loco"
+      },
+      {
+        "content": "Riceverai una perizia dettagliata e indipendente sui danni.",
+        "title": "Redazione della perizia"
+      },
+      {
+        "content": "Ti supportiamo nella comunicazione con l'assicurazione e ci assicuriamo che tu faccia valere i tuoi diritti.",
+        "title": "Gestione dei sinistri"
+      }
+    ],
+    "title": "Procedura di redazione della perizia"
+  },
+  "$section5": {
+    "title": "Contatto – Perito automobilistico {cityName}"
+  },
+  "$seo": {
+    "desc": "Il centro peritale CUBEE a {city} offre perizie automobilistiche professionali e valutazioni dei danni da parte di esperti. Rapida assegnazione degli appuntamenti e servizio mobile in tutta la Germania.",
+    "title": "Centro peritale {city} {'|'} Valutazione dei danni automobilistici"
+  }
+}

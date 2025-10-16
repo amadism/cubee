@@ -1,0 +1,89 @@
+{
+  "$FAQSection": {
+    "additionalInfo": {
+      "1": "Non hai trovato la risposta che cercavi?",
+      "2": "Contattaci direttamente,",
+      "3": "e il nostro team sarà felice di aiutarti!"
+    },
+    "faq1": {
+      "answer": "Cubee offre una combinazione unica di competenza e comodità. I nostri container sono strategicamente distribuiti in Germania e in tutta Europa per garantire perizie rapide, semplici e professionali vicino a te.",
+      "question": "Cosa rende Cubee diverso dagli altri servizi di valutazione dei veicoli?"
+    },
+    "faq10": {
+      "answer": {
+        "1": "Utilizza la nostra funzione di ricerca sul sito web,",
+        "2": "per trovare il Cubee più vicino. Grazie alla nostra vasta rete, non siamo mai lontani."
+      },
+      "question": "Dove posso trovare un container Cubee vicino a me?"
+    },
+    "faq2": {
+      "answer": "È molto semplice! Visita il nostro sito web e clicca su 'Prenota un appuntamento'. Scegli la sede Cubee e l'orario che preferisci. Puoi anche contattarci direttamente se hai bisogno di assistenza.",
+      "question": "Come posso prenotare un appuntamento per una perizia auto?"
+    },
+    "faq3": {
+      "answer": "Sì, per i veicoli danneggiati offriamo un servizio mobile. Il nostro team verrà direttamente da te e utilizzerà un'app specializzata per effettuare una valutazione dettagliata dei danni. Non importa dove si trova il veicolo.",
+      "question": "Cubee può valutare anche veicoli che non possono essere portati al container?"
+    },
+    "faq4": {
+      "answer": "Il nostro processo di valutazione è rapido ed efficiente. La valutazione del veicolo di solito richiede meno di un'ora e riceverai il rapporto dettagliato entro 3 giorni lavorativi.",
+      "question": "Quanto dura il processo di valutazione?"
+    },
+    "faq5": {
+      "answer": "Valutiamo tutti i tipi di veicoli, tra cui auto, camion, motociclette e anche auto d'epoca. Il nostro servizio copre tutte le tue esigenze relative alle perizie auto.",
+      "question": "Quali tipi di veicoli può valutare Cubee?"
+    },
+    "faq6": {
+      "answer": "Sì, le nostre perizie professionali sono riconosciute dalla maggior parte delle assicurazioni e ti supportano nelle tue richieste di risarcimento o nelle decisioni di riparazione.",
+      "question": "Le perizie di Cubee sono accettate dalle assicurazioni?"
+    },
+    "faq7": {
+      "answer": "Porta semplicemente il tuo veicolo in una delle nostre sedi Cubee. I nostri esperti si occuperanno di tutto il resto e realizzeranno una perizia precisa basata sui dati di mercato più recenti.",
+      "question": "Quali informazioni sono necessarie per una valutazione del veicolo?"
+    },
+    "faq8": {
+      "answer": "I nostri esperti utilizzano un'app specializzata per la raccolta dei dati e la cattura delle immagini sul posto. Queste informazioni vengono poi analizzate attentamente nella nostra sede centrale per garantire una valutazione precisa e affidabile.",
+      "question": "Come garantisce Cubee l'accuratezza delle sue perizie?"
+    },
+    "faq9": {
+      "answer": "Sì, offriamo perizie speciali per auto d'epoca che tengono conto del valore storico ed emotivo dei veicoli vintage e ne riflettono il vero valore di mercato.",
+      "question": "Cubee offre anche valutazioni per auto d'epoca?"
+    },
+    "title": "Domande frequenti sulle nostre perizie auto"
+  },
+  "$contactSection": {
+    "paragraph1": "Da Cubee, stiamo plasmando il futuro della competenza automobilistica con i nostri servizi di valutazione digitale. Che tu abbia bisogno di valutare danni al veicolo, determinare il valore della tua auto o ottenere una perizia esperta per la tua auto d'epoca, il nostro team offre soluzioni rapide e precise.",
+    "paragraph2": "Hai domande? Dai un'occhiata alle nostre FAQ qui sotto o contattaci direttamente tramite il nostro modulo. I nostri specialisti sono pronti ad aiutarti con tutte le tue esigenze di valutazione del veicolo.",
+    "title": "Contattaci"
+  },
+  "$form": {
+    "contentError": "Il contenuto deve essere lungo almeno 100 caratteri.",
+    "emailError": "L'email è vuota.",
+    "emailNotValid": "L'email non è valida.",
+    "nameError": "Il nome è vuoto.",
+    "nameMinLengthError": "Il nome deve essere lungo almeno 5 caratteri.",
+    "nameInvalidCharsError": "Il nome può contenere solo lettere, spazi, trattini e apostrofi.",
+    "telError": "Il numero di telefono è vuoto.",
+    "telInvalidFormat": "Inserisci un numero di telefono tedesco valido (es. 0151 2345678).",
+    "locationError": "La posizione è richiesta.",
+    "submissionError": "Si è verificato un errore durante l'invio della tua richiesta. Riprova."
+  },
+  "$getInTouchSection": {
+    "description": "Si prega di selezionare il tipo della tua richiesta e compilare il modulo sottostante. Il nostro team ti contatterà il prima possibile per rispondere alle tue domande e aiutarti.",
+    "footer": "La tua fiducia in Cubee è importante per noi, e ci impegniamo a offrirti sempre un servizio di prima classe.",
+    "generalInquiry": "Richiesta generale",
+    "becomePartner": "Diventa partner",
+    "inputEmailPlaceholder": "Email",
+    "inputMessagePlaceholder": "Il tuo messaggio",
+    "inputNamePlaceholder": "Nome",
+    "inputTelPlaceholder": "Numero di telefono",
+    "inputLocationPlaceholder": "Posizione",
+    "selectPlaceholder": "Seleziona il tipo di richiesta",
+    "submitButton": "Invia richiesta",
+    "successMessage": "Invio dell'email di contatto riuscito.",
+    "title": "Mettersi in contatto"
+  },
+  "$seo": {
+    "desc": "Contatta Cubee per perizie auto professionali, valutazioni di auto d'epoca, richieste di franchising e altro. Offriamo un servizio rapido e affidabile in Germania e in tutta Europa – richiedi ora!",
+    "title": "Contatta Cubee {'|'} Esperti in perizie auto e valutazioni dei veicoli"
+  }
+}

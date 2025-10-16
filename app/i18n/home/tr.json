@@ -1,0 +1,124 @@
+{
+  "$contact": {
+    "button": "İletişime Geçin",
+    "subtitle": "Cubee farkını yaşayın. Bir rapor rezervasyonu yapın veya kapsamlı hizmetler hakkında daha fazla bilgi edinin.",
+    "title": "Cubee ile İletişime Geçin"
+  },
+  "$hero": {
+    "appointment": "Randevu Ayarla",
+    "cta:subtitle": "yakınınızdaki bir CUBEE konteynerinde",
+    "cta:title": "Hemen Randevu",
+    "mobile:subtitle": "Profesyonel bir değerlendirme almak için vak'anızı gönderin.",
+    "mobile:title": "Rapor Gönder",
+    "subtitle": "Hızlı, profesyonel ve müşteri odaklı.",
+    "title": "Kazalardan sonra bağımsız ekspertiz ve hasar değerlendirmeleri."
+  },
+  "$introduction": {
+    "finder": "Konum Bul",
+    "more": "Daha Fazla Bilgi",
+    "paragraph": "Destek gerektiğinde her zaman yanınızda. Almanya genelinde birçok konumda bulunan siyah-sarı konteynerler ile profesyonel araç ekspertizleri asla uzak değil. Yerel varlığı olan bir franchise olarak CUBEE, yerel hizmet ve ulusal uzmanlığın mükemmel kombinasyonunu sunar. Almanya'nın neresinde olursanız olun. CUBEE, hızlı ve güvenilir ekspertizler sunmak için her zaman yakındadır.",
+    "title": "Cubee™'nin Araç Ekspertizleri için İdeal Ortak Olmasının Nedenleri"
+  },
+  "$process": {
+    "cta": "Nasıl Çalışır",
+    "paragraph": "CUBEE, ekspertiz sürecini basitleştirir – hızlı, dijital ve ihtiyaçlarınıza göre bireysel olarak uyarlanmış. Sürüşe uygun araçlar doğrudan konumlarımızda incelenebilirken, ağır hasarlı araçlar mobil hizmetimiz aracılığıyla değerlendirilir. Uzmanlarımız, veri toplama ve görüntü dokümantasyonu için en son teknolojiyi kullanır ve merkezi ofiste dikkatlice değerlendirilir, böylece size en kısa sürede ayrıntılı bir rapor sunabiliriz.",
+    "title": "Verimli Ekspertiz Sürecimiz"
+  },
+  "$reviews": {
+    "list": [
+      {
+        "content": "Küçük bir kazadan sonra arabamı değerlendirmek için Cubee'nin hizmetini kullandım. Rapor gerçekten detaylıydı ve müşteri hizmetleri çok nazikti. Beklediğimden biraz daha uzun sürdü ama her şey harikaydı.",
+        "date": "15.09.24",
+        "name": "Ayşe D.",
+        "stars": "5",
+        "title": "Çok memnun kaldım, iyi hizmet"
+      },
+      {
+        "content": "Arabamın ne kadar değerli olduğundan emin değildim ama Cubee bana gerçekten yardımcı oldu. Tüm süreç çok basitti ve ekip gerçekten dost canlısıydı.",
+        "date": "12.09.24",
+        "name": "Slawomir K.",
+        "stars": "4",
+        "title": "Yardımcı ve sorunsuz"
+      },
+      {
+        "content": "Bir araç değerlendirmesine ihtiyacım vardı ve Cubee gerçekten iyi bir iş çıkardı. Her şey hızlıydı ve ekip bana sürecin nasıl işlediğini iyi açıkladı. Değerlendirmeye ihtiyacınız varsa kesinlikle tavsiye ederim.",
+        "date": "10.09.24",
+        "name": "Paul F.",
+        "stars": "5",
+        "title": "İyi hizmet, adil fiyat"
+      },
+      {
+        "content": "Değerlendirme genel olarak iyiydi ama raporu beklediğimden biraz daha uzun sürdü. Müşteri hizmetleri nazikti ve özür diledi ama beklemek biraz sinir bozucuydu. Sonunda her şey yolunda gitti.",
+        "date": "08.09.24",
+        "name": "Sophie W.",
+        "stars": "4",
+        "title": "Fena değildi"
+      },
+      {
+        "content": "Arabamı değerlendirmem gerekiyordu ve Cubee bunu gerçekten hızlı ve profesyonel bir şekilde yaptı. Ekip de çok dost canlısı ve yardımseverdi. Tekrar memnuniyetle!",
+        "date": "07.09.24",
+        "name": "Maximilian K.",
+        "stars": "5",
+        "title": "Her şey harika geçti"
+      },
+      {
+        "content": "Değerlendirme tamdı ve ekip her şeyi açıklamak için zaman ayırdı. Rapor da hızlı geldi. Harika hizmet.",
+        "date": "06.09.24",
+        "name": "Anna Becker",
+        "stars": "5",
+        "title": "Danışmanlıktan memnun kaldım"
+      },
+      {
+        "content": "Kazadan sonra arabamdaki hasarın ne kadar değerli olduğundan emin değildim. Cubee bana hızlıca yardımcı oldu ve rapor çok detaylıydı. Çalışanlar dost canlısıydı!",
+        "date": "05.09.24",
+        "name": "Mehmet K.",
+        "stars": "4",
+        "title": "İyi bir deneyim yaşadım"
+      },
+      {
+        "content": "Hizmet gerçekten harikaydı. Arabam için hızlı bir değerlendirmeye ihtiyacım vardı ve Cubee bunu gerçekten iyi ve hızlı bir şekilde yaptı.",
+        "date": "04.09.24",
+        "name": "Mia H.",
+        "stars": "5",
+        "title": "İyi ve hızlı işlem"
+      },
+      {
+        "content": "Küçük bir kazadan sonra hasar değerlendirmesi için Cubee'yi kullandım. Rapor ayrıntılıydı ve ekip çok nazikti. Beklediğimden daha uzun sürdü ama sonunda hizmetten memnun kaldım.",
+        "date": "03.09.24",
+        "name": "Johannes S.",
+        "stars": "4",
+        "title": "Nazik ve yetkin"
+      },
+      {
+        "content": "Cubee, arabam için doğru fiyatı bulmama yardımcı oldu. Değerlendirme hızlı ve iyi yapıldı.",
+        "date": "02.09.24",
+        "name": "Leonie K.",
+        "stars": "5",
+        "title": "Satış için iyi hizmet"
+      }
+    ],
+    "more": "Daha Fazla Değerlendirme Göster",
+    "title": "Müşterilerimiz Ne Diyor"
+  },
+  "$seo": {
+    "desc": "CUBEE'den hızlı ve profesyonel araç ekspertizleri ve hasar değerlendirmeleri. Almanya ve Avrupa genelindeki konumlar sayesinde hizmet her zaman yakınınızda.",
+    "title": "Yakınınızdaki Araç Ekspertizleri ve Hasar Değerlendirmeleri {'|'} CUBEE Almanya"
+  },
+  "$services": {
+    "$damage": {
+      "description": "Bir kazadan sonra hızlı ve detaylı hasar değerlendirmeleri çok önemlidir. Uzmanlar, sigorta taleplerini ve onarım kararlarını desteklemek için kapsamlı raporlarla titiz incelemeler yapar.",
+      "title": "Hasar Değerlendirmesi"
+    },
+    "$oldtimer": {
+      "description": "Klasik araçların değerlendirilmesi özel uzmanlık gerektirir. Hizmet, bu araçların benzersiz tarihi ve duygusal değerini tanır.",
+      "title": "Klasik Araç Ekspertizi"
+    },
+    "$value": {
+      "description": "Satış veya sigorta için – aracın gerçek değerini bilmek çok önemlidir. Ekspertizler, güncel piyasa verileri ve kapsamlı uzmanlık temelinde yapılır.",
+      "title": "Değer Ekspertizi"
+    },
+    "getInTouch": "İletişime Geçin",
+    "subtitle": "CUBEE, araç ekspertizleri ile ilgili çeşitli hizmetler sunar.",
+    "title": "Hizmetler"
+  }
+}

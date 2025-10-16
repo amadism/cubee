@@ -1,0 +1,31 @@
+{
+  "name": "@modernice/money",
+  "version": "0.0.1",
+  "description": "Money library",
+  "type": "module",
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "unbuild"
+  },
+  "keywords": [],
+  "author": "Saman Hosseini <saman@modernice.ltd>",
+  "license": "proprietary",
+  "devDependencies": {
+    "typescript": "^5.5.3",
+    "unbuild": "^2.0.0"
+  },
+  "dependencies": {
+    "@dinero.js/currencies": "2.0.0-alpha.1",
+    "dinero.js": "2.0.0-alpha.14",
+    "zod": "^3.20.6"
+  }
+}

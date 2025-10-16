@@ -1,0 +1,17 @@
+{
+  "$blog": {
+    "desc": "Almanya'da araç ekspertizleri ile ilgili en güncel yazılarımızı keşfedin ve araç değerlendirmeleri hakkında tüm önemli bilgilere ulaşın.",
+    "title": "En yeni makalelerimiz"
+  },
+  "$hero": {
+    "desc": "Araç değerlendirmeleri, hasar raporları, trafik hukuku ve daha fazlası hakkında en güncel bilgilere sahip olun. CUBEE Blog'da araba ile ilgili her şeyi bulabilirsiniz. Anlaşılır, güvenilir ve her zaman güncel.",
+    "title": "CUBEE Blog"
+  },
+  "$seo": {
+    "description": "CUBEE Blog, hızlı araç ekspertizleri, bağımsız hasar değerlendirmeleri ve daha fazlası hakkında değerli bilgiler ve pratik ipuçları sunar. Almanya ve tüm Avrupa'da araç değerlendirmeleri hakkında bilmeniz gereken her şeyi öğrenin.",
+    "title": "CUBEE Blog: Araç Ekspertizleri, Hasar Değerlendirmeleri ve Trafik Hukuku Hakkında Uzman Bilgisi"
+  },
+  "backToBlogs": "Bloga geri dön",
+  "readMore": "Daha fazla bilgi",
+  "relatedArticles": "Benzer Makaleler"
+}

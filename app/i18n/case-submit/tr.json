@@ -1,0 +1,84 @@
+{
+  "$form": {
+    "title": "Hasar Bildirim Formu",
+    "steps": {
+      "1": "Rapor Bilgisi",
+      "2": "Hasar Detayları",
+      "3": "İletişim"
+    },
+    "actions": {
+      "back": "Geri",
+      "next": "İleri",
+      "submit": "Gönder",
+      "submitting": "Gönderiliyor...",
+      "success": "Form başarıyla gönderildi!",
+      "error": "Gönderim hatası. Lütfen tekrar deneyin."
+    }
+  },
+  "$report": {
+    "title": "Rapor Bilgileri",
+    "reportType": {
+      "label": "Rapor Türü",
+      "placeholder": "Rapor türü seçin",
+      "required": "Lütfen bir rapor türü seçin",
+      "options": {
+        "accident": "Kaza ve Hasar Raporu",
+        "repair": "Onarım Onayı",
+        "other": "Diğer Rapor"
+      }
+    },
+    "vehicleMakeModel": {
+      "label": "Araç Marka / Model",
+      "placeholder": "örn. Toyota Camry",
+      "required": "Marka/model zorunludur",
+      "minLength": "Marka/model en az 1 karakter olmalı"
+    }
+  },
+  "$details": {
+    "title": "Hasar Detayları",
+    "detailedInformation": {
+      "label": "Detaylı Bilgi",
+      "placeholder": "Lütfen hasarla ilgili detaylı bilgi verin...",
+      "required": "Detaylı bilgi zorunludur",
+      "minLength": "En az 10 karakter olmalı"
+    },
+    "uploads": {
+      "label": "Görsel/PDF Yükle (Opsiyonel)",
+      "cta": "Dosya yüklemek için tıklayın",
+      "hint": "Görseller veya PDF dosyaları yükleyebilirsiniz",
+      "listTitle": "Yüklenen Dosyalar:",
+      "remove": "Kaldır"
+    }
+  },
+  "$contact": {
+    "title": "İletişim Bilgileri",
+    "fullName": {
+      "label": "Ad Soyad",
+      "placeholder": "Tam adınız",
+      "required": "Ad zorunludur",
+      "minLength": "En az 3 karakter olmalı"
+    },
+    "email": {
+      "label": "E-posta Adresi",
+      "placeholder": "epostaniz{'@'}ornek.com",
+      "optional": "isteğe bağlı",
+      "required": "E-posta adresi zorunludur",
+      "invalid": "Lütfen geçerli bir e-posta adresi girin"
+    },
+    "mobile": {
+      "label": "Cep Telefonu Numarası",
+      "placeholder": "151 12345678",
+      "required": "Cep telefonu numarası zorunludur",
+      "invalid": "Lütfen geçerli bir Alman cep telefonu numarası girin",
+      "helper": "Baştaki 0 olmadan 10 rakam girin, ör. 151 2345678"
+    },
+    "whatsapp": {
+      "label": "WhatsApp'ta Mevcut",
+      "yes": "Evet",
+      "no": "Hayır",
+      "required": "Lütfen WhatsApp kullanılabilirliğini seçin"
+    }
+  }
+}
+
+

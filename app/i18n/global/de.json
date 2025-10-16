@@ -1,0 +1,67 @@
+{
+  "home": "Startseite",
+  "about": "Über uns",
+  "blog": "Blog",
+  "contact": "Kontakt",
+  "lang": "Sprache",
+  "finder": "Standorte",
+  "$lang": {
+    "en": "Englisch",
+    "de": "Deutsch",
+    "fr": "Französisch",
+    "it": "Italienisch",
+    "tr": "Türkisch",
+    "ru": "Russisch"
+  },
+  "$cookies": {
+    "title": "Datenschutzeinstellungen",
+    "subtitle": "Wir verwenden Cookies, um dein Nutzererlebnis zu verbessern und unsere Inhalte und Dienste für dich zu optimieren.",
+    "text": "Wenn du auf \"Akzeptieren\" klickst, erklärst du dich mit der Verwendung von analytischen Cookies und unserer {privacy} einverstanden. Du kannst deine Einwilligung jederzeit widerrufen.",
+    "text:privacy": "Datenschutzerklärung",
+    "customize": "Einstellungen anpassen",
+    "accept": "Akzeptieren",
+    "accept-all": "Alle akzeptieren",
+    "accept-selection": "Auswahl akzeptieren",
+    "$consents": {
+      "essential": "Essenzielle Cookies",
+      "statistics": "Statistiken",
+      "personalized": "Personalisierte Inhalte",
+      "marketing": "Marketing"
+    }
+  },
+  "$footer": {
+    "company": "Cubee",
+    "aboutCubee": "Über Cubee",
+    "locationFinder": "Standortsuche",
+    "companyHeading": "Unternehmen",
+    "legalNotice": "Impressum",
+    "privacyPolicy": "Datenschutz",
+    "followUs": "Folgen Sie uns",
+    "contact": "Kontakt",
+    "emailAddress": "hello{'@'}cubee.expert",
+    "phone": "0800 - 2823333",
+    "phoneAvailability": "Mo - Fr von 09:00 - 16:00",
+    "contactUs": "Kontaktieren Sie uns",
+    "copyright": "Urheberrecht von Cubee | Alle Rechte vorbehalten",
+    "dataPrivacy": "Meine personenbezogenen Daten nicht verkaufen oder weitergeben",
+    "becomeFranchisee": "Franchisee werden",
+    "tos": "Nutzungsbedinungen",
+    "jobs": "Jobs"
+  },
+  "$socialMedia": {
+    "facebook": "Facebook",
+    "twitter": "Twitter"
+  },
+  "$contact": {
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "web": "Web"
+  },
+  "$uiElements": {
+    "buttonContact": "Kontaktieren Sie uns",
+    "contactUsFull": {
+      "buttonText": "Kontaktieren Sie uns",
+      "buttonAccessibility": "Drücken Sie, um uns zu kontaktieren"
+    }
+  }
+}

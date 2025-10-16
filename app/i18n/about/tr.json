@@ -1,0 +1,46 @@
+{
+  "$concept": {
+    "imageAlt": "Cubee-Arı Kovanı Konteyneri.",
+    "imageCaption": "Cubee Arı Kovanımız",
+    "paragraph": "Araç değerlendirme yerinizi bulmak bir engel olmamalıdır. Almanya'da ve yakında tüm Avrupa'da kolayca erişilebilen konumlarda bulunan sarı-siyah konteynerlerimizle, bir Cubee uzmanı ihtiyacınız olduğunda her zaman yanınızdadır.",
+    "title": "Konseptimiz"
+  },
+  "$imageAlts": {
+    "carTalk": "Cubee uzmanı bir müşteriyle araç değerlendirmesi yaparken.",
+    "computer": "Cubee tarzında bilgisayar.",
+    "handshake": "Cubee-Arı Kovanı Konteyneri.",
+    "mail": "Cubee tarzında zarf."
+  },
+  "$join-us": {
+    "becomeFranchiseeButton": "Franchisee Olun",
+    "content": "Avrupa genelinde ağımızı genişletirken, sizi araç değerlendirmelerinin geleceğini deneyimlemeye davet ediyoruz. Cubee'de verimlilik, hassasiyet ve müşteri memnuniyeti ön plandadır – ve bu doğrudan size yakın bir yerde. Yolculuğumuzun bir parçası olun ve otomotiv sektöründe yeni standartlar belirlediğimizi görün.",
+    "title": "Bize Katılın"
+  },
+  "$process": {
+    "$step-1": {
+      "content": "En yakın Cubee konumunu kolayca bulun. Randevunuzu birkaç dakika içinde çevrimiçi olarak rahatça ayırtın.",
+      "findLocationButton": "Konum Bul",
+      "scheduleAppointmentButton": "Randevu Ayırt",
+      "title": "Adım 1: Randevu Ayarlayın"
+    },
+    "$step-2": {
+      "content": "En yakın Cubee konumuna gidin ve aracınızı hızlı ve verimli bir şekilde değerlendirin. Aracınız sürülebilir durumda değilse, mobil ekibimiz doğrudan size gelir.",
+      "title": "Adım 2: Stresten Uzak Araç Değerlendirmesi"
+    },
+    "$step-3": {
+      "content": "Uzmanlarımız aracınız hakkında ayrıntılı bir rapor hazırlar. Nihai raporu e-posta veya posta yoluyla rahatça alırsınız. Tüm süreç genellikle sadece 3 iş günü sürer.",
+      "title": "Adım 3: Değerlendirme Raporunuzu Alın"
+    },
+    "title": "CUBEE'de Değerlendirme Süreci Nasıl İşler"
+  },
+  "$seo": {
+    "desc": "CUBEE'nin araç değerlendirmelerini ve hasar raporlarını nasıl daha kolay, hızlı ve güvenilir hale getirdiğini öğrenin. Yenilikçi yaklaşımımızı keşfedin ve Almanya'da ve tüm Avrupa'da büyüyen ağımızın bir parçası olun.",
+    "title": "Cubee Hakkında {'|'} Avrupa'da Araç Değerlendirmelerini Nasıl Değiştiriyoruz"
+  },
+  "$welcome": {
+    "imageAlt": "Frankfurt am Main'deki Cubee Merkezi",
+    "location": "CUBEE Bilirkişi AG - Opernplatz 14, Frankfurt am Main",
+    "paragraph": "Araç değerlendirmeleri ve hasar raporlarının Avrupa'da nasıl yapıldığını değiştirmeyi kendimize görev edindik. Büyüyen bir franchise olarak, tüm süreci daha basit, daha hızlı ve herkes için erişilebilir hale getirmek istiyoruz.",
+    "title": "Cubee'ye Hoş Geldiniz"
+  }
+}

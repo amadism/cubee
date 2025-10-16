@@ -1,0 +1,27 @@
+{
+  "accidentCauser": {
+    "title": "Wer hat den Unfall verursacht?",
+    "me": "Ich",
+    "other": "Unfall Gegner",
+    "unknown": "Unbekannt"
+  },
+  "form": {
+    "title": "It is unclear who caused the accident.",
+    "subtitle": "The initial situation should be clarified in advance.\nDescribe the case briefly and we will contact you immediately.\nYour inquiry is non-binding and free of charge!",
+    "meTitle": "I caused the accident",
+    "meSubtitle": "Please provide your details below so we can help you navigate the next steps.\nYour inquiry is non-binding and free of charge!",
+    "otherTitle": "Accident support\nrequested in just 2 minutes",
+    "otherSubtitle": "Just fill out the following short form.\nWe will contact you promptly to coordinate the next steps.\nYour inquiry is non-binding and free of charge!",
+    "salutation": "Select salutation",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "your-email{'@'}email.com",
+    "phone": "+49 171 123 123 12",
+    "location": "Location e.g. 22095 Hamburg",
+    "description": "Describe your incident (optional)",
+    "submit": "Submit",
+    "privacyNotice": "By submitting the inquiry, I agree to the privacy policy and terms and conditions.",
+    "ssl": "PRIVACY ENCRYPTED",
+    "free": "100% FREE"
+  }
+}

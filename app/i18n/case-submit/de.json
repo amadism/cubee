@@ -1,0 +1,99 @@
+{
+  "$form": {
+    "title": "Schadensmeldungsformular",
+    "steps": {
+      "1": "Standort",
+      "2": "Meldung",
+      "3": "Schadensdetails",
+      "4": "Kontakt"
+    },
+    "actions": {
+      "back": "Zurück",
+      "next": "Weiter",
+      "submit": "Absenden",
+      "submitting": "Wird gesendet...",
+      "success": "Formular erfolgreich übermittelt!",
+      "error": "Fehler beim Senden. Bitte erneut versuchen."
+    }
+  },
+  "$report": {
+    "title": "Meldungsinformationen",
+    "reportType": {
+      "label": "Meldungsart",
+      "placeholder": "Meldungsart wählen",
+      "required": "Bitte eine Meldungsart wählen",
+      "options": {
+        "accident": "Unfall- und Schadensmeldung",
+        "repair": "Reparaturbestätigung",
+        "other": "Andere Meldung"
+      }
+    },
+    "vehicleMakeModel": {
+      "label": "Fahrzeug Marke / Modell",
+      "placeholder": "z. B. Toyota Camry",
+      "required": "Marke/Modell ist erforderlich",
+      "minLength": "Marke/Modell muss mindestens 1 Zeichen lang sein"
+    },
+    "location": {
+      "label": "Unfallort",
+      "required": "Bitte wählen Sie einen Ort"
+    }
+  },
+  "$location": {
+    "title": "Wählen Sie Ihren Standort",
+    "subtitle": "Helfen Sie uns, die nächsten Partner zu finden, die Ihnen helfen können",
+    "or": "oder",
+    "custom": {
+      "label": "Nach einer bestimmten Adresse suchen"
+    },
+    "selected": "Standort ausgewählt",
+    "required": "Bitte wählen Sie einen Standort"
+  },
+  "$details": {
+    "title": "Schadensdetails",
+    "detailedInformation": {
+      "label": "Detaillierte Informationen",
+      "placeholder": "Bitte geben Sie detaillierte Informationen zum Schaden an...",
+      "required": "Detaillierte Angaben sind erforderlich",
+      "minLength": "Mindestens 10 Zeichen erforderlich"
+    },
+    "uploads": {
+      "label": "Bilder/PDFs hochladen (optional)",
+      "cta": "Zum Hochladen von Dateien klicken",
+      "hint": "Sie können Bilder oder PDFs hochladen",
+      "listTitle": "Hochgeladene Dateien:",
+      "remove": "Entfernen"
+    }
+  },
+  "$contact": {
+    "title": "Kontaktinformationen",
+    "fullName": {
+      "label": "Vollständiger Name",
+      "placeholder": "Ihr vollständiger Name",
+      "required": "Name ist erforderlich",
+      "minLength": "Name muss mindestens 3 Zeichen lang sein"
+    },
+    "email": {
+      "label": "E-Mail-Adresse",
+      "placeholder": "max.mustermann{'@'}beispiel.de",
+      "optional": "optional",
+      "required": "E-Mail-Adresse ist erforderlich",
+      "invalid": "Bitte eine gültige E-Mail-Adresse eingeben"
+    },
+    "mobile": {
+      "label": "Handynummer",
+      "placeholder": "151 12345678",
+      "required": "Handynummer ist erforderlich",
+      "invalid": "Bitte eine gültige deutsche Handynummer eingeben",
+      "helper": "10 Ziffern ohne führende 0, z. B. 151 2345678"
+    },
+    "whatsapp": {
+      "label": "Bei WhatsApp erreichbar",
+      "yes": "Ja",
+      "no": "Nein",
+      "required": "Bitte WhatsApp-Verfügbarkeit auswählen"
+    }
+  }
+}
+
+

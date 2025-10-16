@@ -1,0 +1,89 @@
+{
+  "$FAQSection": {
+    "additionalInfo": {
+      "1": "Vous n'avez pas trouvé la réponse que vous cherchiez ?",
+      "2": "Contactez-nous directement,",
+      "3": "et notre équipe se fera un plaisir de vous aider !"
+    },
+    "faq1": {
+      "answer": "Cubee offre une combinaison unique d'expertise et de confort. Nos conteneurs sont stratégiquement répartis en Allemagne et dans toute l'Europe pour garantir des expertises rapides, simples et professionnelles près de chez vous.",
+      "question": "Qu'est-ce qui rend Cubee différent des autres services d'évaluation de véhicules ?"
+    },
+    "faq10": {
+      "answer": {
+        "1": "Utilisez notre fonction de recherche sur le site web,",
+        "2": "pour trouver le conteneur Cubee le plus proche. Grâce à notre vaste réseau, nous ne sommes jamais loin."
+      },
+      "question": "Où puis-je trouver un conteneur Cubee près de chez moi ?"
+    },
+    "faq2": {
+      "answer": "C'est très simple ! Visitez notre site web et cliquez sur 'Prendre rendez-vous'. Choisissez le site Cubee et l'heure qui vous conviennent. Vous pouvez également nous contacter directement si vous avez besoin d'aide.",
+      "question": "Comment prendre rendez-vous pour une expertise automobile ?"
+    },
+    "faq3": {
+      "answer": "Oui, pour les véhicules endommagés, nous offrons un service mobile. Notre équipe vient directement chez vous et utilise une application spécialisée pour effectuer une évaluation approfondie des dommages. Peu importe où se trouve le véhicule.",
+      "question": "Cubee peut-il également évaluer des véhicules qui ne peuvent pas être amenés au conteneur ?"
+    },
+    "faq4": {
+      "answer": "Notre processus d'évaluation est rapide et efficace. L'évaluation du véhicule prend généralement moins d'une heure, et vous recevrez le rapport détaillé sous 3 jours ouvrables.",
+      "question": "Combien de temps dure le processus d'évaluation ?"
+    },
+    "faq5": {
+      "answer": "Nous évaluons tous les types de véhicules, y compris les voitures, les camions, les motos et même les voitures anciennes. Notre service couvre tous vos besoins en matière d'expertise automobile.",
+      "question": "Quels types de véhicules Cubee peut-il évaluer ?"
+    },
+    "faq6": {
+      "answer": "Oui, nos expertises professionnelles sont reconnues par la plupart des assurances et vous aident dans vos réclamations d'assurance ou vos décisions de réparation.",
+      "question": "L'expertise de Cubee est-elle acceptée par les assurances ?"
+    },
+    "faq7": {
+      "answer": "Apportez simplement votre véhicule à l'un de nos sites Cubee. Nos experts s'occupent de tout le reste et établissent une expertise précise basée sur les dernières données du marché.",
+      "question": "Quelles informations sont nécessaires pour une évaluation de véhicule ?"
+    },
+    "faq8": {
+      "answer": "Nos experts utilisent une application spécialisée pour la collecte de données et la prise de photos sur place. Ces informations sont ensuite soigneusement analysées dans notre centre pour garantir une évaluation précise et fiable.",
+      "question": "Comment Cubee assure-t-il la précision de ses expertises ?"
+    },
+    "faq9": {
+      "answer": "Oui, nous offrons des expertises spéciales pour les voitures anciennes, qui prennent en compte la valeur historique et émotionnelle des véhicules vintage et reflètent leur véritable valeur marchande.",
+      "question": "Cubee propose-t-il également des évaluations pour les voitures anciennes ?"
+    },
+    "title": "Questions fréquemment posées sur nos expertises automobiles"
+  },
+  "$contactSection": {
+    "paragraph1": "Chez Cubee, nous façonnons l'avenir de l'expertise automobile avec nos services d'évaluation numériques. Que vous souhaitiez faire évaluer des dommages sur votre véhicule, déterminer la valeur de votre voiture ou obtenir une expertise pour votre voiture ancienne, notre équipe offre des solutions rapides et précises.",
+    "paragraph2": "Vous avez des questions ? Consultez notre FAQ ci-dessous ou contactez-nous directement via notre formulaire. Nos spécialistes sont prêts à vous aider pour toutes vos préoccupations concernant l'évaluation de véhicules.",
+    "title": "Contactez-nous"
+  },
+  "$form": {
+    "contentError": "Le contenu doit comporter au moins 100 caractères.",
+    "emailError": "L'e-mail est vide.",
+    "emailNotValid": "L'e-mail n'est pas valide.",
+    "nameError": "Le nom est vide.",
+    "nameMinLengthError": "Le nom doit contenir au moins 5 caractères.",
+    "nameInvalidCharsError": "Le nom ne peut contenir que des lettres, des espaces, des traits d'union et des apostrophes.",
+    "telError": "Le numéro de téléphone est vide.",
+    "telInvalidFormat": "Veuillez saisir un numéro de téléphone allemand valide (ex: 0151 2345678).",
+    "locationError": "L'emplacement est requis.",
+    "submissionError": "Une erreur s'est produite lors de l'envoi de votre demande. Veuillez réessayer."
+  },
+  "$getInTouchSection": {
+    "description": "Veuillez choisir le type de votre demande et remplir le formulaire ci-dessous. Notre équipe vous contactera dès que possible pour répondre à vos questions et vous aider.",
+    "footer": "Votre confiance en Cubee est importante pour nous, et nous nous engageons à vous offrir un service de premier ordre à tout moment.",
+    "generalInquiry": "Demande générale",
+    "becomePartner": "Devenir partenaire",
+    "inputEmailPlaceholder": "E-mail",
+    "inputMessagePlaceholder": "Votre message",
+    "inputNamePlaceholder": "Nom",
+    "inputTelPlaceholder": "Numéro de téléphone",
+    "inputLocationPlaceholder": "Emplacement",
+    "selectPlaceholder": "Choisir le type de demande",
+    "submitButton": "Envoyer la demande",
+    "successMessage": "Succès de l'envoi de l'e-mail de contact.",
+    "title": "Entrer en contact"
+  },
+  "$seo": {
+    "desc": "Contactez Cubee pour des expertises automobiles professionnelles, des évaluations de voitures anciennes, des demandes de franchise et plus encore. Nous offrons un service rapide et fiable en Allemagne et dans toute l'Europe – demandez maintenant !",
+    "title": "Contactez Cubee {'|'} Experts en expertises automobiles et évaluations de véhicules"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "accidentCauser": {
+    "title": "Wer hat den Unfall verursacht?",
+    "me": "Ich",
+    "other": "Unfall Gegner",
+    "unknown": "Unbekannt"
+  },
+  "form": {
+    "title": "Es ist unklar wer den Unfall verursacht hat.",
+    "meTitle": "Ich habe den Unfall verursacht",
+    "meSubtitle": "Bitte geben Sie Ihre Daten unten ein, damit wir Ihnen bei den nächsten Schritten helfen können.\nIhre Anfrage ist unverbindlich und kostenfrei!",
+    "otherTitle": "Der Unfall Gegner ist der Verursacher",
+    "subtitle": "Bitte kläre zunächst die Ausgangssituation. Beschreibe den Vorfall kurz und wir werden uns umgehend mit dir in Verbindung setzen. Deine Anfrage bleibt selbstverständlich unverbindlich und kostenfrei!",
+    "otherSubtitle": "Fülle nur das folgende kurze Formular aus. Im Anschluss werden wir uns bei dir zeitnah melden, um das weitere Vorgehen abzustimmen. Deine Anfrage ist unverbindlich und kostenfrei!",
+    "salutation": "Anrede auswählen",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "email": "ihre-email{'@'}email.com",
+    "phone": "+49 171 123 123 12",
+    "location": "Ortschaft z.B. 22095 Hamburg",
+    "description": "Beschreiben Sie ihren Vorfall (optional)",
+    "submit": "Abschicken",
+    "privacyNotice": "Mit der Anfrage erkläre ich mich mit der Geltung der Datenschutzerklärung sowie den AGBs einverstanden.",
+    "ssl": "DATENSCHUTZ VERSCHLÜSSELT",
+    "free": "100% KOSTENLOS"
+  }
+}
