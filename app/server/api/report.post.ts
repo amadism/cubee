@@ -9,7 +9,7 @@ type UploadedJsonFile = {
 
 type ReportBody = {
   step1?: { location?: { lat?: number; lng?: number; name?: string } }
-  step2?: { reportType?: string; vehicleMakeModel?: string; mileage?: string; previousDamage?: string }
+  step2?: { reportType?: string; zuordnung?: string; vehicleMakeModel?: string; mileage?: string; previousDamage?: string }
   step3?: { detailedInformation?: string; uploadedFiles?: UploadedJsonFile[] }
   step4?: { fullName?: string; email?: string; mobile?: string; onWhatsapp?: boolean; lat?: number; lon?: number; locationName?: string }
 }
@@ -81,6 +81,7 @@ export default defineEventHandler(async (event) => {
 
   const payload = {
     report_type: body?.step2?.reportType ?? null,
+    zuordnung: body?.step2?.zuordnung ?? null,
     vehicle_make_model: body?.step2?.vehicleMakeModel ?? null,
     mileage: body?.step2?.mileage ?? null,
     previous_damage: body?.step2?.previousDamage ?? null,
@@ -100,18 +101,18 @@ export default defineEventHandler(async (event) => {
   if (insertError) return { success: false, message: `Failed to insert case: ${insertError.message}` }
 
   
-  // if(body?.step4?.onWhatsapp) {
-  // await $fetch("/api/send-whatsapp", {
-  //       method: "POST",
-  //       body: {
-  //         templateId: 'tn_9JsXUf8OVOrksaAX1Uqoo',
-  //         to: mobile,
-  //         variables: [
-  //           { position: 1, value: body.step4.fullName }
-  //           ],
-  //       },
-  //     });
-  // }
+  if(body?.step4?.onWhatsapp) {
+  await $fetch("/api/send-whatsapp", {
+        method: "POST",
+        body: {
+          templateId: 'tn_9JsXUf8OVOrksaAX1Uqoo',
+          to: mobile,
+          variables: [
+            { position: 1, value: body.step4.fullName }
+            ],
+        },
+      });
+  }
   return { success: true }
 })
 

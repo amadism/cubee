@@ -177,6 +177,7 @@ const formData = reactive({
   },
   step2: {
     reportType: "",
+    zuordnung: "",
     vehicleMakeModel: "",
     mileage: "",
     previousDamage: "",
@@ -297,6 +298,13 @@ const updateStep2Errors = () => {
 
   if (!formData.step2.reportType) {
     newErrors.reportType = csT("$report.reportType.required");
+  }
+
+  // Validate Zuordnung field if required
+  const shouldShowZuordnung = formData.step2.reportType === 'haftpflichtgutachten' || 
+                              formData.step2.reportType === 'accident';
+  if (shouldShowZuordnung && !formData.step2.zuordnung) {
+    newErrors.zuordnung = csT("$report.zuordnung.required");
   }
 
   if (!formData.step2.vehicleMakeModel?.trim()) {
@@ -437,6 +445,7 @@ const submitForm = async () => {
       },
       step2: {
         reportType: formData.step2.reportType,
+        zuordnung: formData.step2.zuordnung,
         vehicleMakeModel: formData.step2.vehicleMakeModel,
         mileage: formData.step2.mileage,
         previousDamage: formData.step2.previousDamage,

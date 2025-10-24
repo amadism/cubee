@@ -22,10 +22,19 @@
       "placeholder": "Seleziona tipo di rapporto",
       "required": "Seleziona un tipo di rapporto",
       "options": {
+        "haftpflichtgutachten": "Valutazione di responsabilità",
         "accident": "Rapporto di incidente e danni",
         "repair": "Conferma di riparazione",
-        "haftpflichtgutachten": "Valutazione di responsabilità",
         "other": "Altro rapporto"
+      }
+    },
+    "zuordnung": {
+      "label": "Assegnazione",
+      "placeholder": "Seleziona assegnazione",
+      "required": "Seleziona un'assegnazione",
+      "options": {
+        "geschädigter": "Parte lesa",
+        "unfallverursacher": "Responsabile dell'incidente"
       }
     },
     "vehicleMakeModel": {

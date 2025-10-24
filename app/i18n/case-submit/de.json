@@ -23,10 +23,19 @@
       "placeholder": "Meldungsart wählen",
       "required": "Bitte eine Meldungsart wählen",
       "options": {
+        "haftpflichtgutachten": "Haftpflichtgutachten",
         "accident": "Unfall- und Schadensmeldung",
         "repair": "Reparaturbestätigung",
-        "haftpflichtgutachten": "Haftpflichtgutachten",
         "other": "Andere Meldung"
+      }
+    },
+    "zuordnung": {
+      "label": "Zuordnung",
+      "placeholder": "Zuordnung wählen",
+      "required": "Bitte eine Zuordnung wählen",
+      "options": {
+        "geschädigter": "Geschädigter",
+        "unfallverursacher": "Unfallverursacher"
       }
     },
     "vehicleMakeModel": {

@@ -22,10 +22,19 @@
       "placeholder": "Выберите тип сообщения",
       "required": "Пожалуйста, выберите тип сообщения",
       "options": {
+        "haftpflichtgutachten": "Оценка ответственности",
         "accident": "Сообщение об аварии и повреждениях",
         "repair": "Подтверждение ремонта",
-        "haftpflichtgutachten": "Оценка ответственности",
         "other": "Другое сообщение"
+      }
+    },
+    "zuordnung": {
+      "label": "Назначение",
+      "placeholder": "Выберите назначение",
+      "required": "Пожалуйста, выберите назначение",
+      "options": {
+        "geschädigter": "Пострадавшая сторона",
+        "unfallverursacher": "Виновник аварии"
       }
     },
     "vehicleMakeModel": {

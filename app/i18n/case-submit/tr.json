@@ -22,10 +22,19 @@
       "placeholder": "Rapor türü seçin",
       "required": "Lütfen bir rapor türü seçin",
       "options": {
+        "haftpflichtgutachten": "Sorumluluk Değerlendirmesi",
         "accident": "Kaza ve Hasar Raporu",
         "repair": "Onarım Onayı",
-        "haftpflichtgutachten": "Sorumluluk Değerlendirmesi",
         "other": "Diğer Rapor"
+      }
+    },
+    "zuordnung": {
+      "label": "Atama",
+      "placeholder": "Atama seçin",
+      "required": "Lütfen bir atama seçin",
+      "options": {
+        "geschädigter": "Zarar Gören Taraf",
+        "unfallverursacher": "Kaza Sorumlusu"
       }
     },
     "vehicleMakeModel": {

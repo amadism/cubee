@@ -22,10 +22,19 @@
       "placeholder": "Sélectionner un type de rapport",
       "required": "Veuillez sélectionner un type de rapport",
       "options": {
+        "haftpflichtgutachten": "Évaluation de responsabilité",
         "accident": "Rapport d'accident et de dommage",
         "repair": "Confirmation de réparation",
-        "haftpflichtgutachten": "Évaluation de responsabilité",
         "other": "Autre rapport"
+      }
+    },
+    "zuordnung": {
+      "label": "Attribution",
+      "placeholder": "Sélectionner une attribution",
+      "required": "Veuillez sélectionner une attribution",
+      "options": {
+        "geschädigter": "Partie lésée",
+        "unfallverursacher": "Responsable de l'accident"
       }
     },
     "vehicleMakeModel": {

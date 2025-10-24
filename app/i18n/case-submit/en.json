@@ -23,10 +23,19 @@
       "placeholder": "Select report type",
       "required": "Please select a report type",
       "options": {
+        "haftpflichtgutachten": "Liability Assessment",
         "accident": "Accident and Damage Report",
         "repair": "Repair Confirmation",
-        "haftpflichtgutachten": "Liability Assessment",
         "other": "Other Report"
+      }
+    },
+    "zuordnung": {
+      "label": "Assignment",
+      "placeholder": "Select assignment",
+      "required": "Please select an assignment",
+      "options": {
+        "geschädigter": "Injured Party",
+        "unfallverursacher": "Accident Causer"
       }
     },
     "vehicleMakeModel": {
