@@ -178,6 +178,8 @@ const formData = reactive({
   step2: {
     reportType: "",
     vehicleMakeModel: "",
+    mileage: "",
+    previousDamage: "",
   },
   step3: {
     detailedInformation: "",
@@ -301,6 +303,16 @@ const updateStep2Errors = () => {
     newErrors.vehicleMakeModel = csT("$report.vehicleMakeModel.required");
   }
 
+  if (!formData.step2.mileage?.trim()) {
+    newErrors.mileage = csT("$report.mileage.required");
+  } else if (!isValidMileage(formData.step2.mileage)) {
+    newErrors.mileage = csT("$report.mileage.invalid");
+  }
+
+  if (!formData.step2.previousDamage) {
+    newErrors.previousDamage = csT("$report.previousDamage.required");
+  }
+
   errors.step2 = newErrors;
 };
 
@@ -362,6 +374,11 @@ const clearStep4Errors = () => {
   errors.step4 = {};
 };
 
+const isValidMileage = (mileage: string): boolean => {
+  const mileageRegex = /^\d+\s*(km|miles?)?$/i;
+  return mileageRegex.test(mileage.trim());
+};
+
 const isValidEmail = (email: string): boolean => {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
@@ -421,6 +438,8 @@ const submitForm = async () => {
       step2: {
         reportType: formData.step2.reportType,
         vehicleMakeModel: formData.step2.vehicleMakeModel,
+        mileage: formData.step2.mileage,
+        previousDamage: formData.step2.previousDamage,
       },
       step3: {
         detailedInformation: formData.step3.detailedInformation,
@@ -464,11 +483,52 @@ const submitForm = async () => {
       );
     }
 
+    await sendEmail(
+      'becker@cubee.expert',
+      `
+      Es wurde eine neue Schadensmeldung eingereicht.
+
+      Name: ${formData.step4.fullName}
+      E-Mail: ${formData.step4.email}
+      Mobilnummer: ${formData.step4.mobile}
+      Schadensart: ${formData.step2.reportType}
+      Fahrzeug: ${formData.step2.vehicleMakeModel}
+      Kilometerstand: ${formData.step2.mileage}
+      Vorschäden: ${formData.step2.previousDamage}
+      Standort: ${formData.step4.locationName || 'Nicht angegeben'}
+
+      Weitere Details:
+      ${formData.step3.detailedInformation}
+
+      Bitte prüfen Sie den Vorgang zeitnah im System.
+      `
+    )
+
+    await sendEmail(
+      'saad@modernice.design',
+      `
+      A new damage report has been submitted.
+
+      Name: ${formData.step4.fullName}
+      Email: ${formData.step4.email}
+      Mobile Number: ${formData.step4.mobile}
+      Report Type: ${formData.step2.reportType}
+      Vehicle: ${formData.step2.vehicleMakeModel}
+      Mileage: ${formData.step2.mileage}
+      Previous Damage: ${formData.step2.previousDamage}
+      Location: ${formData.step4.locationName || 'Not specified'}
+
+      Additional Details:
+      ${formData.step3.detailedInformation}
+
+      Please review the case in the system.
+      `
+    )
+
     isSuccessDialogOpen.value = true;
   } catch (error: any) {
     console.error("Error submitting form:", error);
     const message = error?.data?.message || error?.message || csT("$form.actions.error");
-    // Surface error under fields instead of alert
     if (message && /mobile|number/i.test(message)) {
       errors.step4 = { ...errors.step4, mobile: csT("$contact.mobile.invalid") };
     }
@@ -492,35 +552,6 @@ const sendEmail = async (email: string, message: string) => {
     console.error("Failed to send email:", err);
   }
 };
-const resetForm = () => {
-  formData.step1 = {
-    location: undefined,
-  };
-  formData.step2 = {
-    reportType: "",
-    vehicleMakeModel: "",
-  };
-  formData.step3 = {
-    detailedInformation: "",
-    uploadedFiles: [],
-  };
-  formData.step4 = {
-    fullName: "",
-    lon: currentLocation?.value?.lng || 0,
-    lat: currentLocation?.value?.lat || 0,
-    email: "",
-    mobile: "",
-    onWhatsapp: null,
-    locationName: currentLocation?.value?.name || "",
-  };
-
-  errors.step1 = {};
-  errors.step2 = {};
-  errors.step3 = {};
-  errors.step4 = {};
-
-  currentStep.value = 1;
-};
 
 const emit = defineEmits<{
   'location-selected': [location: UserLocation]
@@ -531,7 +562,6 @@ const handleLocationSelected = (location: UserLocation) => {
   
     emit('location-selected', location)
   
-  // Auto-advance to next step when location is selected
   setTimeout(() => {
     if (currentStep.value === 1) {
       currentStep.value = 2;

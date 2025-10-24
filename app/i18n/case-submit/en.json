@@ -25,6 +25,7 @@
       "options": {
         "accident": "Accident and Damage Report",
         "repair": "Repair Confirmation",
+        "haftpflichtgutachten": "Liability Assessment",
         "other": "Other Report"
       }
     },
@@ -33,6 +34,18 @@
       "placeholder": "e.g., Toyota Camry",
       "required": "Vehicle make/model is required",
       "minLength": "Vehicle make/model must be at least 1 character"
+    },
+    "mileage": {
+      "label": "Mileage",
+      "placeholder": "e.g., 50000 km",
+      "required": "Mileage is required",
+      "invalid": "Please enter a valid mileage"
+    },
+    "previousDamage": {
+      "label": "Previous Damage",
+      "yes": "Yes",
+      "no": "No",
+      "required": "Please select if there was previous damage"
     },
     "location": {
       "label": "Incident Location",

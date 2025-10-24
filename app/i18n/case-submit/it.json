@@ -24,6 +24,7 @@
       "options": {
         "accident": "Rapporto di incidente e danni",
         "repair": "Conferma di riparazione",
+        "haftpflichtgutachten": "Valutazione di responsabilità",
         "other": "Altro rapporto"
       }
     },
@@ -32,6 +33,18 @@
       "placeholder": "es.: Toyota Camry",
       "required": "Marca/modello obbligatorio",
       "minLength": "Marca/modello: minimo 1 carattere"
+    },
+    "mileage": {
+      "label": "Chilometraggio",
+      "placeholder": "es.: 50000 km",
+      "required": "Chilometraggio obbligatorio",
+      "invalid": "Inserisci un chilometraggio valido"
+    },
+    "previousDamage": {
+      "label": "Danni precedenti",
+      "yes": "Sì",
+      "no": "No",
+      "required": "Seleziona se ci sono stati danni precedenti"
     }
   },
   "$details": {

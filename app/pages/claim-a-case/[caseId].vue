@@ -68,6 +68,24 @@ async function acceptClaim() {
       caseData: caseData.value
     },
   })
+
+  if(data.value?.success) {
+    await sendEmail(
+      'becker@cubee.expert',
+      `
+      Der Fall wurde erfolgreich von ${caseData.value?.partner_name || '[Unbekannter Partner]'} übernommen.
+      `
+    )
+
+    await sendEmail(
+      'saad@modernice.design',
+      `
+      The case was successfully claimed by ${caseData.value?.partner_name || '[Unknown Partner]'} .
+      `
+    )
+
+  }
+  
   loading.value = false
 
   if (error.value || !data.value?.success) {
@@ -93,6 +111,22 @@ function goHome() {
   successOpen.value = false
   router.push('/')
 }
+
+const sendEmail = async (email: string, message: string) => {
+  try {
+    const res = await $fetch("/api/sendEmail", {
+      method: "POST",
+      body: {
+        to: email,
+        subject: "Case Claimed",
+        message: message,
+      },
+    });
+    console.log("Email send result:", res);
+  } catch (err) {
+    console.error("Failed to send email:", err);
+  }
+};
 </script>
 
 <template>

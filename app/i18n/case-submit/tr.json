@@ -24,6 +24,7 @@
       "options": {
         "accident": "Kaza ve Hasar Raporu",
         "repair": "Onarım Onayı",
+        "haftpflichtgutachten": "Sorumluluk Değerlendirmesi",
         "other": "Diğer Rapor"
       }
     },
@@ -32,6 +33,18 @@
       "placeholder": "örn. Toyota Camry",
       "required": "Marka/model zorunludur",
       "minLength": "Marka/model en az 1 karakter olmalı"
+    },
+    "mileage": {
+      "label": "Kilometre",
+      "placeholder": "örn. 50000 km",
+      "required": "Kilometre zorunludur",
+      "invalid": "Lütfen geçerli bir kilometre girin"
+    },
+    "previousDamage": {
+      "label": "Önceki Hasar",
+      "yes": "Evet",
+      "no": "Hayır",
+      "required": "Lütfen önceki hasar olup olmadığını seçin"
     }
   },
   "$details": {

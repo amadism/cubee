@@ -9,7 +9,7 @@ type UploadedJsonFile = {
 
 type ReportBody = {
   step1?: { location?: { lat?: number; lng?: number; name?: string } }
-  step2?: { reportType?: string; vehicleMakeModel?: string }
+  step2?: { reportType?: string; vehicleMakeModel?: string; mileage?: string; previousDamage?: string }
   step3?: { detailedInformation?: string; uploadedFiles?: UploadedJsonFile[] }
   step4?: { fullName?: string; email?: string; mobile?: string; onWhatsapp?: boolean; lat?: number; lon?: number; locationName?: string }
 }
@@ -82,6 +82,8 @@ export default defineEventHandler(async (event) => {
   const payload = {
     report_type: body?.step2?.reportType ?? null,
     vehicle_make_model: body?.step2?.vehicleMakeModel ?? null,
+    mileage: body?.step2?.mileage ?? null,
+    previous_damage: body?.step2?.previousDamage ?? null,
     detailed_information: body?.step3?.detailedInformation ?? null,
     attachments: uploadedFileUrls.length > 0 ? uploadedFileUrls : null,
     full_name: body?.step4?.fullName ?? null,

@@ -11,6 +11,7 @@
           :placeholder="csT('$details.detailedInformation.placeholder')"
           class="w-full min-h-24"
           :class="{ 'border-red-500': errors.detailedInformation }"
+          @keydown="handleKeydown"
           required
         />
         <p v-if="errors.detailedInformation" class="text-red-500 text-sm mt-1 font-poppins">{{ errors.detailedInformation }}</p>
@@ -92,6 +93,10 @@ const errors = ref<Errors>({ ...(props.errors || {}) })
 
 // Watch for changes and emit updates
 watch(localFormData, (newData) => {
+  // Clean up excessive line breaks
+  if (newData.detailedInformation) {
+    newData.detailedInformation = newData.detailedInformation.replace(/\n{3,}/g, '\n\n')
+  }
   emit('update:formData', { ...newData, uploadedFiles: uploadedFiles.value })
 }, { deep: true })
 
@@ -113,6 +118,22 @@ const handleFileUpload = (event: Event) => {
 const removeFile = (index: number) => {
   uploadedFiles.value.splice(index, 1)
   emit('update:formData', { ...localFormData.value, uploadedFiles: uploadedFiles.value })
+}
+
+const handleKeydown = (event: KeyboardEvent) => {
+  if (event.key === 'Enter') {
+    const textarea = event.target as HTMLTextAreaElement
+    const currentValue = textarea.value
+    const cursorPosition = textarea.selectionStart
+    
+    const beforeCursor = currentValue.substring(0, cursorPosition)
+    const lastOneChar = beforeCursor.slice(-1)
+    
+    if (lastOneChar === '\n') {
+      event.preventDefault()
+      return false
+    }
+  }
 }
 
 const validate = (): boolean => {

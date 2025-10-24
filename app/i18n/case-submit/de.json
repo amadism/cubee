@@ -25,6 +25,7 @@
       "options": {
         "accident": "Unfall- und Schadensmeldung",
         "repair": "Reparaturbestätigung",
+        "haftpflichtgutachten": "Haftpflichtgutachten",
         "other": "Andere Meldung"
       }
     },
@@ -33,6 +34,18 @@
       "placeholder": "z. B. Toyota Camry",
       "required": "Marke/Modell ist erforderlich",
       "minLength": "Marke/Modell muss mindestens 1 Zeichen lang sein"
+    },
+    "mileage": {
+      "label": "Kilometerstand",
+      "placeholder": "z. B. 50000 km",
+      "required": "Kilometerstand ist erforderlich",
+      "invalid": "Bitte geben Sie einen gültigen Kilometerstand ein"
+    },
+    "previousDamage": {
+      "label": "Vorschäden",
+      "yes": "Ja",
+      "no": "Nein",
+      "required": "Bitte wählen Sie, ob Vorschäden vorhanden sind"
     },
     "location": {
       "label": "Unfallort",
