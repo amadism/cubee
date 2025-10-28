@@ -63,9 +63,6 @@
               <!-- Divider -->
               <div class="hidden lg:block flex-1 mx-2 h-px" :class="currentStep >= 4 ? 'bg-yellow-400' : 'bg-gray-300'"></div>
 
-              <!-- Divider -->
-              <div class="hidden lg:block flex-1 mx-2 h-px" :class="currentStep >= 5 ? 'bg-yellow-400' : 'bg-gray-300'"></div>
-
               <!-- Step 4 -->
               <div class="flex items-center space-x-2 lg:flex-1">
                 <span :class="[
@@ -528,6 +525,24 @@ const submitForm = async () => {
     });
     if (!(res as any)?.success) throw new Error((res as any)?.message || "Submission failed");
 
+    formData.step1.location = undefined;
+    formData.step2.reportType = "";
+    formData.step2.zuordnung = "";
+    formData.step3.vehicleMakeModel = "";
+    formData.step3.mileage = "";
+    formData.step3.previousDamage = "";
+    formData.step4.detailedInformation = "";
+    formData.step4.uploadedFiles = [];
+    formData.step5.fullName = "";
+    formData.step5.email = "";
+    formData.step5.mobile = "";
+    formData.step5.onWhatsapp = null;
+    formData.step5.lat = currentLocation?.value?.lat || 0;
+    formData.step5.lon = currentLocation?.value?.lng || 0;
+    formData.step5.locationName = currentLocation?.value?.name || "";
+    
+    currentStep.value = 1;
+    
     isSuccessDialogOpen.value = true;
   } catch (error: any) {
     console.error("Error submitting form:", error);

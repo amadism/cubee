@@ -1,6 +1,10 @@
 import { Resend } from 'resend';
 import { readBody } from 'h3';
 
+if (!process.env.RESEND_API_KEY) {
+  console.error('RESEND_API_KEY is not configured in environment variables');
+}
+
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 function escapeHtml(text: string): string {
@@ -72,6 +76,11 @@ export default defineEventHandler(async (event) => {
   const body = await readBody(event);
 
   try {
+    if (!process.env.RESEND_API_KEY) {
+      console.error('RESEND_API_KEY is missing');
+      return { data: null, error: { message: 'Email service is not configured. RESEND_API_KEY is missing.' } };
+    }
+
     // Validate required fields
     if (!body.to) {
       return { error: { message: 'Missing required field: to' } };

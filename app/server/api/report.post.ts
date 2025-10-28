@@ -118,7 +118,7 @@ export default defineEventHandler(async (event) => {
   // Send confirmation email to user
   if (body?.step5?.email) {
     try {
-      await $fetch("/api/sendEmail", {
+      const emailResponse = await $fetch("/api/sendEmail", {
         method: "POST",
         body: {
           to: body.step5.email,
@@ -132,6 +132,9 @@ Mit freundlichen Grüßen,
 Ihr Cubee Support-Team`,
         },
       });
+      if (emailResponse && (emailResponse as any).error) {
+        console.error("Failed to send confirmation email:", (emailResponse as any).error);
+      }
     } catch (err) {
       console.error("Failed to send confirmation email:", err);
     }
@@ -158,7 +161,7 @@ Bitte prüfen Sie den Vorgang zeitnah im System.`;
 
   for (const adminEmail of adminEmails) {
     try {
-      await $fetch("/api/sendEmail", {
+      const emailResponse = await $fetch("/api/sendEmail", {
         method: "POST",
         body: {
           to: adminEmail,
@@ -166,6 +169,9 @@ Bitte prüfen Sie den Vorgang zeitnah im System.`;
           message: adminMessage,
         },
       });
+      if (emailResponse && (emailResponse as any).error) {
+        console.error(`Failed to send email to ${adminEmail}:`, (emailResponse as any).error);
+      }
     } catch (err) {
       console.error(`Failed to send email to ${adminEmail}:`, err);
     }

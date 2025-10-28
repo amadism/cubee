@@ -51,7 +51,7 @@ Der Partner wurde über WhatsApp benachrichtigt.`
 
   for (const adminEmail of adminEmails) {
     try {
-      await $fetch('/api/sendEmail', {
+      const emailResponse = await $fetch('/api/sendEmail', {
         method: 'POST',
         body: {
           to: adminEmail,
@@ -59,6 +59,9 @@ Der Partner wurde über WhatsApp benachrichtigt.`
           message: adminMessage,
         },
       })
+      if (emailResponse && emailResponse.error) {
+        console.error(`Failed to send email to ${adminEmail}:`, emailResponse.error)
+      }
     } catch (e) {
       console.error(`Failed to send email to ${adminEmail}:`, e)
     }
