@@ -1,65 +1,106 @@
-import nodemailer from 'nodemailer'
-import { defineEventHandler, readBody } from 'h3'
+import { Resend } from 'resend';
+import { readBody } from 'h3';
+
+const resend = new Resend(process.env.RESEND_API_KEY);
+
+function escapeHtml(text: string): string {
+  return text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+function nl2br(text: string): string {
+  return text.replace(/\n/g, '<br>');
+}
+
+function createEmailTemplate(message: string): string {
+  const escapedMessage = escapeHtml(message);
+  const formattedMessage = nl2br(escapedMessage);
+  
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body style="margin: 0; padding: 0; font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: #F7FAFE;">
+  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #F7FAFE;">
+    <tr>
+      <td style="padding: 40px 20px;">
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 8px; box-shadow: 0 2px 8px rgba(7, 13, 21, 0.08);">
+          <tr>
+            <td style="padding: 32px 40px 24px; text-align: center; background: linear-gradient(135deg, #F7FAFE 0%, #ffffff 100%); border-bottom: 3px solid #FEC907; border-radius: 8px 8px 0 0;">
+              <h1 style="margin: 0; font-size: 36px; font-weight: 700; color: #070D15; letter-spacing: -0.5px; font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">Cubee</h1>
+              <p style="margin: 8px 0 0; font-size: 14px; color: #697174; font-weight: 500; font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">cubee.expert</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 40px;">
+              <div style="color: #070D15; font-size: 16px; line-height: 1.7; font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">${formattedMessage}</div>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 32px 40px; background-color: #F7FAFE; border-top: 1px solid #E4E8EA; border-radius: 0 0 8px 8px;">
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                  <td style="text-align: center; padding-bottom: 12px;">
+                    <p style="margin: 0; font-size: 13px; color: #697174; font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">© ${new Date().getFullYear()} Cubee. All rights reserved.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="text-align: center;">
+                    <a href="https://cubee.expert" style="display: inline-block; padding: 10px 24px; background-color: #FEC907; color: #070D15; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">Visit cubee.expert</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>`;
+}
 
 export default defineEventHandler(async (event) => {
-  const body = await readBody(event) // { to, subject, message }
+  const body = await readBody(event);
 
-  const transporter = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
-    port: 465,
-    secure: true,
-    auth: {
-      user: process.env.MAIL_USER,
-      pass: process.env.MAIL_PASS,
-    },
-  })
+  try {
+    // Validate required fields
+    if (!body.to) {
+      return { error: { message: 'Missing required field: to' } };
+    }
+    if (!body.subject) {
+      return { error: { message: 'Missing required field: subject' } };
+    }
 
-  await transporter.sendMail({
-    from: `"Cubee" <${process.env.MAIL_USER}>`,
-    to: body.to,
-    subject: body.subject,
-    text: body.message,
-    html: `
-      <!DOCTYPE html>
-      <html lang="en">
-      <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cubee</title>
-      </head>
-      <body style="margin: 0; padding: 0; font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: linear-gradient(135deg, #fef3c7 0%, #fbbf24 100%); min-height: 100vh;">
-        <div style="max-width: 600px; margin: 0 auto; background: white; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);">
-          
-          <!-- Content -->
-          <div style="padding: 40px 30px;">
-            <div style="background: linear-gradient(to right, #fef3c7, #fbbf24); height: 4px; border-radius: 2px; margin-bottom: 30px;"></div>
-            
-            <div style="color: #374151; font-size: 16px; line-height: 1.6; margin-bottom: 30px;">
-              ${body.message.replace(/\n/g, '<br>')}
-            </div>
-            
-            <div style="background: linear-gradient(to right, #fef3c7, #fbbf24); height: 2px; border-radius: 1px; margin: 30px 0;"></div>
-          </div>
-          
-          <!-- Footer -->
-          <div style="background: #f9fafb; padding: 30px; text-align: center; border-top: 1px solid #e5e7eb;">
-            <p style="margin: 0; color: #6b7280; font-size: 14px; line-height: 1.5;">
-              This email was sent by <strong style="color: #facc15;">Cubee</strong><br>
-              Thank you for choosing our services! 🐝
-            </p>
-            <div style="margin-top: 20px;">
-              <div style="display: inline-block; width: 30px; height: 30px; background: linear-gradient(135deg, #facc15, #eab308); border-radius: 50%; margin: 0 5px; position: relative;">
-                <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 16px;">🐝</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </body>
-      </html>
-    `,
-  })
+    const htmlContent = body.html ? body.html : createEmailTemplate(body.message || '');
 
-  return { success: true }
-})
+    const { data, error } = await resend.emails.send({
+      from: 'Cubee <support@cubee.expert>',
+      to: [body.to],
+      subject: body.subject,
+      html: htmlContent,
+    });
 
+    if (error) {
+      return { data: null, error };
+    }
 
+    return { data, error: null };
+  } catch (error: any) {
+    return { 
+      data: null, 
+      error: { 
+        name: error.name || 'unknown_error', 
+        message: error.message || 'An unexpected error occurred' 
+      } 
+    };
+  }
+});

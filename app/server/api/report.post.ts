@@ -9,9 +9,10 @@ type UploadedJsonFile = {
 
 type ReportBody = {
   step1?: { location?: { lat?: number; lng?: number; name?: string } }
-  step2?: { reportType?: string; zuordnung?: string; vehicleMakeModel?: string; mileage?: string; previousDamage?: string }
-  step3?: { detailedInformation?: string; uploadedFiles?: UploadedJsonFile[] }
-  step4?: { fullName?: string; email?: string; mobile?: string; onWhatsapp?: boolean; lat?: number; lon?: number; locationName?: string }
+  step2?: { reportType?: string; zuordnung?: string }
+  step3?: { vehicleMakeModel?: string; mileage?: string; previousDamage?: string }
+  step4?: { detailedInformation?: string; uploadedFiles?: UploadedJsonFile[] }
+  step5?: { fullName?: string; email?: string; mobile?: string; onWhatsapp?: boolean; lat?: number; lon?: number; locationName?: string }
 }
 
 function dataUrlOrBase64ToBuffer(input: string): { buffer: Buffer; mime?: string } {
@@ -29,7 +30,7 @@ export default defineEventHandler(async (event) => {
 
   const supabase = await serverSupabaseClient(event)
 
-  const tel = String(body?.step4?.mobile)
+  const tel = String(body?.step5?.mobile)
   const digitsOnly = tel.replace(/\D/g, '')
   let national = digitsOnly
   if (national.startsWith('49')) national = national.slice(2)
@@ -49,15 +50,15 @@ export default defineEventHandler(async (event) => {
     return { success: false, message: 'Please enter a valid German mobile number.' }
   }
 
-  if (body?.step4?.onWhatsapp === null) {
+  if (body?.step5?.onWhatsapp === null) {
     return { success: false, message: 'WhatsApp availability is required.' }
   }
 
-  const email = body?.step4?.email?.trim()
+  const email = body?.step5?.email?.trim()
   const folder = email ? email.toLowerCase() : `mobile-${mobile.replace(/\D/g, '')}`
   const uploadedFileUrls: string[] = []
 
-  const jsonFiles: UploadedJsonFile[] = body?.step3?.uploadedFiles || []
+  const jsonFiles: UploadedJsonFile[] = body?.step4?.uploadedFiles || []
   for (const jf of jsonFiles) {
     const { buffer, mime } = dataUrlOrBase64ToBuffer(jf.data)
     const safeName = (jf.name || `file-${Date.now()}`).replace(/\s+/g, '-')
@@ -82,18 +83,18 @@ export default defineEventHandler(async (event) => {
   const payload = {
     report_type: body?.step2?.reportType ?? null,
     zuordnung: body?.step2?.zuordnung ?? null,
-    vehicle_make_model: body?.step2?.vehicleMakeModel ?? null,
-    mileage: body?.step2?.mileage ?? null,
-    previous_damage: body?.step2?.previousDamage ?? null,
-    detailed_information: body?.step3?.detailedInformation ?? null,
+    vehicle_make_model: body?.step3?.vehicleMakeModel ?? null,
+    mileage: body?.step3?.mileage ?? null,
+    previous_damage: body?.step3?.previousDamage ?? null,
+    detailed_information: body?.step4?.detailedInformation ?? null,
     attachments: uploadedFileUrls.length > 0 ? uploadedFileUrls : null,
-    full_name: body?.step4?.fullName ?? null,
-    email: body?.step4?.email ?? null,
+    full_name: body?.step5?.fullName ?? null,
+    email: body?.step5?.email ?? null,
     tel: mobile,
-    on_whatsapp: body?.step4?.onWhatsapp ?? false,
-    lat: typeof body?.step4?.lat === 'number' ? body.step4.lat : null,
-    lon: typeof body?.step4?.lon === 'number' ? body.step4.lon : null,
-    location_name: body?.step4?.locationName ?? null,
+    on_whatsapp: body?.step5?.onWhatsapp ?? false,
+    lat: typeof body?.step5?.lat === 'number' ? body.step5.lat : null,
+    lon: typeof body?.step5?.lon === 'number' ? body.step5.lon : null,
+    location_name: body?.step5?.locationName ?? null,
     claim_code: generateClaimCode(),
   }
 
@@ -101,18 +102,75 @@ export default defineEventHandler(async (event) => {
   if (insertError) return { success: false, message: `Failed to insert case: ${insertError.message}` }
 
   
-  if(body?.step4?.onWhatsapp) {
+  if(body?.step5?.onWhatsapp) {
   await $fetch("/api/send-whatsapp", {
         method: "POST",
         body: {
           templateId: 'tn_9JsXUf8OVOrksaAX1Uqoo',
           to: mobile,
           variables: [
-            { position: 1, value: body.step4.fullName }
+            { position: 1, value: body.step5.fullName }
             ],
         },
       });
   }
+
+  // Send confirmation email to user
+  if (body?.step5?.email) {
+    try {
+      await $fetch("/api/sendEmail", {
+        method: "POST",
+        body: {
+          to: body.step5.email,
+          subject: "Schadensmeldung erhalten - Cubee",
+          message: `Sehr geehrte/r ${body.step5.fullName},
+
+Vielen Dank für Ihre Schadensmeldung.
+Unser Team wird Ihre Anfrage prüfen und sich zeitnah bei Ihnen melden.
+
+Mit freundlichen Grüßen,
+Ihr Cubee Support-Team`,
+        },
+      });
+    } catch (err) {
+      console.error("Failed to send confirmation email:", err);
+    }
+  }
+
+  // Send notification email to admins
+  const adminEmails = ['becker@cubee.expert', 'saad@modernice.design'];
+  
+  const adminMessage = `Es wurde eine neue Schadensmeldung eingereicht.
+
+Name: ${body.step5?.fullName || 'Nicht angegeben'}
+E-Mail: ${body.step5?.email || 'Nicht angegeben'}
+Mobilnummer: ${body.step5?.mobile || 'Nicht angegeben'}
+Schadensart: ${body.step2?.reportType || 'Nicht angegeben'}
+Fahrzeug: ${body.step3?.vehicleMakeModel || 'Nicht angegeben'}
+Kilometerstand: ${body.step3?.mileage || 'Nicht angegeben'}
+Vorschäden: ${body.step3?.previousDamage || 'Nicht angegeben'}
+Standort: ${body.step5?.locationName || 'Nicht angegeben'}
+
+Weitere Details:
+${body.step4?.detailedInformation || 'Keine zusätzlichen Informationen'}
+
+Bitte prüfen Sie den Vorgang zeitnah im System.`;
+
+  for (const adminEmail of adminEmails) {
+    try {
+      await $fetch("/api/sendEmail", {
+        method: "POST",
+        body: {
+          to: adminEmail,
+          subject: 'Neue Schadensmeldung eingereicht',
+          message: adminMessage,
+        },
+      });
+    } catch (err) {
+      console.error(`Failed to send email to ${adminEmail}:`, err);
+    }
+  }
+
   return { success: true }
 })
 

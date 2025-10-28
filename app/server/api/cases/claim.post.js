@@ -32,6 +32,37 @@ if(data.success){
         ],
       },
     });
+
+  // Send notification email to admins
+  const adminEmails = ['becker@cubee.expert', 'saad@modernice.design']
+  const adminMessage = `Der Fall wurde erfolgreich übernommen.
+
+Fall-ID: ${case_id || 'Nicht angegeben'}
+Partner: ${caseData?.partner_name || 'Nicht angegeben'}
+Schadensart: ${caseData?.report_type || 'Nicht angegeben'}
+Fahrzeug: ${caseData?.vehicle_make_model || 'Nicht angegeben'}
+Standort: ${caseData?.location_name || 'Nicht angegeben'}
+Telefon: ${caseData?.tel || 'Nicht angegeben'}
+
+Weitere Details:
+${caseData?.detailed_information || 'Keine zusätzlichen Informationen'}
+
+Der Partner wurde über WhatsApp benachrichtigt.`
+
+  for (const adminEmail of adminEmails) {
+    try {
+      await $fetch('/api/sendEmail', {
+        method: 'POST',
+        body: {
+          to: adminEmail,
+          subject: 'Fall erfolgreich übernommen',
+          message: adminMessage,
+        },
+      })
+    } catch (e) {
+      console.error(`Failed to send email to ${adminEmail}:`, e)
+    }
+  }
 }
   return { success: data.success }
 })

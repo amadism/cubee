@@ -4,8 +4,9 @@
     "steps": {
       "1": "Standort",
       "2": "Meldung",
-      "3": "Schadensdetails",
-      "4": "Kontakt"
+      "3": "Fahrzeuginfo",
+      "4": "Schadensdetails",
+      "5": "Kontakt"
     },
     "actions": {
       "back": "Zurück",
@@ -38,6 +39,23 @@
         "unfallverursacher": "Unfallverursacher"
       }
     },
+    "location": {
+      "label": "Unfallort",
+      "required": "Bitte wählen Sie einen Ort"
+    }
+  },
+  "$location": {
+    "title": "Wählen Sie Ihren Standort",
+    "subtitle": "Helfen Sie uns, die nächsten Partner zu finden, die Ihnen helfen können",
+    "or": "oder",
+    "custom": {
+      "label": "Nach einer bestimmten Adresse suchen"
+    },
+    "selected": "Standort ausgewählt",
+    "required": "Bitte wählen Sie einen Standort"
+  },
+  "$vehicle": {
+    "title": "Fahrzeuginformationen",
     "vehicleMakeModel": {
       "label": "Fahrzeug Marke / Modell",
       "placeholder": "z. B. Toyota Camry",
@@ -55,21 +73,7 @@
       "yes": "Ja",
       "no": "Nein",
       "required": "Bitte wählen Sie, ob Vorschäden vorhanden sind"
-    },
-    "location": {
-      "label": "Unfallort",
-      "required": "Bitte wählen Sie einen Ort"
     }
-  },
-  "$location": {
-    "title": "Wählen Sie Ihren Standort",
-    "subtitle": "Helfen Sie uns, die nächsten Partner zu finden, die Ihnen helfen können",
-    "or": "oder",
-    "custom": {
-      "label": "Nach einer bestimmten Adresse suchen"
-    },
-    "selected": "Standort ausgewählt",
-    "required": "Bitte wählen Sie einen Standort"
   },
   "$details": {
     "title": "Schadensdetails",

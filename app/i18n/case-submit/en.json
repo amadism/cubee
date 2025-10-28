@@ -4,8 +4,9 @@
     "steps": {
       "1": "Location",
       "2": "Report Info",
-      "3": "Damage Details",
-      "4": "Contact Info"
+      "3": "Vehicle Info",
+      "4": "Damage Details",
+      "5": "Contact Info"
     },
     "actions": {
       "back": "Back",
@@ -38,6 +39,23 @@
         "unfallverursacher": "Accident Causer"
       }
     },
+    "location": {
+      "label": "Incident Location",
+      "required": "Please select a location"
+    }
+  },
+  "$location": {
+    "title": "Select Your Location",
+    "subtitle": "Help us locate the nearest partners to assist you",
+    "or": "or",
+    "custom": {
+      "label": "Search for a specific address"
+    },
+    "selected": "Location Selected",
+    "required": "Please select a location"
+  },
+  "$vehicle": {
+    "title": "Vehicle Information",
     "vehicleMakeModel": {
       "label": "Vehicle Make / Model",
       "placeholder": "e.g., Toyota Camry",
@@ -55,21 +73,7 @@
       "yes": "Yes",
       "no": "No",
       "required": "Please select if there was previous damage"
-    },
-    "location": {
-      "label": "Incident Location",
-      "required": "Please select a location"
     }
-  },
-  "$location": {
-    "title": "Select Your Location",
-    "subtitle": "Help us locate the nearest partners to assist you",
-    "or": "or",
-    "custom": {
-      "label": "Search for a specific address"
-    },
-    "selected": "Location Selected",
-    "required": "Please select a location"
   },
   "$details": {
     "title": "Damage Details",

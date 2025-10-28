@@ -19,20 +19,53 @@ export default defineEventHandler(async (event) => {
     return { success: false, error: error.message }
   }
 
-  try {
-    await $fetch('/api/sendEmail', {
-      method: 'POST',
-      body: {
-        to: body.email,
-        subject: 'Cubee - Inquiry',
-        message: `
-          Dear ${body.name},
-          Thank you for your inquiry. We will get back to you as soon as possible.
-        `,
-      },
-    })
-  } catch (e: any) {
-    return { success: false, error: e?.message || 'Failed to send email' }
+  // Send confirmation email to user
+  if (body.email) {
+    try {
+      await $fetch('/api/sendEmail', {
+        method: 'POST',
+        body: {
+          to: body.email,
+          subject: 'Anfrage erhalten - Cubee',
+          message: `Sehr geehrte/r ${body.name},
+
+Vielen Dank für Ihre Anfrage.
+Wir werden uns so schnell wie möglich bei Ihnen melden.
+
+Mit freundlichen Grüßen,
+Ihr Cubee Support-Team`,
+        },
+      })
+    } catch (e: any) {
+      console.error('Failed to send confirmation email:', e)
+    }
+  }
+
+  // Send notification email to admins
+  const adminEmails = ['becker@cubee.expert', 'saad@modernice.design']
+  const adminMessage = `Es wurde eine neue Anfrage eingereicht.
+
+Name: ${body.name || 'Nicht angegeben'}
+E-Mail: ${body.email || 'Nicht angegeben'}
+
+Nachricht:
+${body.message || 'Keine Nachricht'}
+
+Bitte prüfen Sie die Anfrage zeitnah im System.`
+
+  for (const adminEmail of adminEmails) {
+    try {
+      await $fetch('/api/sendEmail', {
+        method: 'POST',
+        body: {
+          to: adminEmail,
+          subject: 'Neue Anfrage eingereicht',
+          message: adminMessage,
+        },
+      })
+    } catch (e: any) {
+      console.error(`Failed to send email to ${adminEmail}:`, e)
+    }
   }
 
   return { success: true }

@@ -7,7 +7,7 @@
             {{ csT("$form.title") }}
           </CardTitle>
           <!-- Stepper -->
-          <div class="flex justify-center mt-6 text-xs lg:text-sm">
+          <div class="flex justify-center mt-6 text-xs overflow-hidden">
             <div class="flex items-center flex-wrap justify-center gap-2 lg:gap-0 lg:flex-nowrap w-full max-w-3xl">
               <!-- Step 1 -->
               <div class="flex items-center space-x-2 lg:flex-1">
@@ -63,8 +63,11 @@
               <!-- Divider -->
               <div class="hidden lg:block flex-1 mx-2 h-px" :class="currentStep >= 4 ? 'bg-yellow-400' : 'bg-gray-300'"></div>
 
+              <!-- Divider -->
+              <div class="hidden lg:block flex-1 mx-2 h-px" :class="currentStep >= 5 ? 'bg-yellow-400' : 'bg-gray-300'"></div>
+
               <!-- Step 4 -->
-              <div class="flex items-center space-x-2 lg:flex-1 lg:justify-end">
+              <div class="flex items-center space-x-2 lg:flex-1">
                 <span :class="[
                   'w-6 h-6 flex items-center justify-center rounded-full border transition-all duration-300',
                   currentStep >= 4
@@ -75,6 +78,24 @@
                 </span>
                 <span class="text-nowrap" :class="currentStep >= 4 ? 'text-gray-900' : 'text-gray-500'">
                   {{ csT("$form.steps.4") }}
+                </span>
+              </div>
+
+              <!-- Divider -->
+              <div class="hidden lg:block flex-1 mx-2 h-px" :class="currentStep >= 5 ? 'bg-yellow-400' : 'bg-gray-300'"></div>
+
+              <!-- Step 5 -->
+              <div class="flex items-center space-x-2 lg:flex-1 lg:justify-end">
+                <span :class="[
+                  'w-6 h-6 flex items-center justify-center rounded-full border transition-all duration-300',
+                  currentStep >= 5
+                    ? 'bg-yellow-400 text-gray-700 border-yellow-400'
+                    : 'bg-white text-gray-500 border-gray-300',
+                ]">
+                  5
+                </span>
+                <span class="text-nowrap" :class="currentStep >= 5 ? 'text-gray-900' : 'text-gray-500'">
+                  {{ csT("$form.steps.5") }}
                 </span>
               </div>
             </div>
@@ -91,11 +112,14 @@
           <ReportInformation v-if="currentStep === 2" ref="step2Ref" v-model:form-data="formData.step2"
             :errors="errors.step2" />
 
-          <DamageDetails v-if="currentStep === 3" ref="step3Ref" v-model:form-data="formData.step3"
+          <VehicleInformation v-if="currentStep === 3" ref="step3Ref" v-model:form-data="formData.step3"
             :errors="errors.step3" />
 
-          <ContactInformation v-if="currentStep === 4" ref="step4Ref" v-model:form-data="formData.step4"
+          <DamageDetails v-if="currentStep === 4" ref="step4Ref" v-model:form-data="formData.step4"
             :errors="errors.step4" />
+
+          <ContactInformation v-if="currentStep === 5" ref="step5Ref" v-model:form-data="formData.step5"
+            :errors="errors.step5" />
 
           <div class="flex justify-between mt-8 pt-6 border-t border-gray-200">
             <Button v-if="currentStep > 1" variant="outline" @click="goToPreviousStep" type="button"
@@ -104,12 +128,12 @@
             </Button>
             <div v-else></div>
 
-            <Button v-if="currentStep < 4" @click="goToNextStep" type="button" variant="primary"
+            <Button v-if="currentStep < 5" @click="goToNextStep" type="button" variant="primary"
               class="font-poppins transition-transform duration-300 hover:scale-105">
               {{ csT("$form.actions.next") }}
             </Button>
 
-            <Button v-if="currentStep === 4" @click="submitForm" type="button" variant="primary"
+            <Button v-if="currentStep === 5" @click="submitForm" type="button" variant="primary"
               :disabled="isSubmitting"
               class="font-poppins transition-transform duration-300 hover:scale-105 disabled:hover:scale-100">
               {{
@@ -154,6 +178,7 @@ import { Button } from "@/components/ui/button";
 import {
   LocationSelection,
   ReportInformation,
+  VehicleInformation,
   DamageDetails,
   ContactInformation,
 } from "./three_sections";
@@ -170,6 +195,7 @@ const step1Ref = ref();
 const step2Ref = ref();
 const step3Ref = ref();
 const step4Ref = ref();
+const step5Ref = ref();
 
 const formData = reactive({
   step1: {
@@ -178,15 +204,17 @@ const formData = reactive({
   step2: {
     reportType: "",
     zuordnung: "",
+  },
+  step3: {
     vehicleMakeModel: "",
     mileage: "",
     previousDamage: "",
   },
-  step3: {
+  step4: {
     detailedInformation: "",
     uploadedFiles: [] as File[],
   },
-  step4: {
+  step5: {
     fullName: "",
     lon: currentLocation?.value?.lng || 0,
     lat: currentLocation?.value?.lat || 0,
@@ -202,11 +230,12 @@ const errors = reactive({
   step2: {} as Record<string, string>,
   step3: {} as Record<string, string>,
   step4: {} as Record<string, string>,
+  step5: {} as Record<string, string>,
 });
 
 const goToNextStep = async () => {
   const isValid = await validateCurrentStep();
-  if (isValid && currentStep.value < 4) {
+  if (isValid && currentStep.value < 5) {
     currentStep.value++;
   }
 };
@@ -252,28 +281,37 @@ const validateCurrentStep = async (): Promise<boolean> => {
   } else if (currentStep.value === 4) {
     if (step4Ref.value) {
       isValid = step4Ref.value.validate();
+      if (!isValid) {
+        updateStep4Errors();
+      } else {
+        clearStep4Errors();
+      }
+    }
+  } else if (currentStep.value === 5) {
+    if (step5Ref.value) {
+      isValid = step5Ref.value.validate();
       const newErrors: Record<string, string> = {};
-      if (!formData.step4.fullName?.trim()) {
+      if (!formData.step5.fullName?.trim()) {
         newErrors.fullName = csT("$contact.fullName.required");
       }
-      if (!formData.step4.mobile?.trim()) {
+      if (!formData.step5.mobile?.trim()) {
         newErrors.mobile = csT("$contact.mobile.required");
-      } else if (!isValidGermanMobile(formData.step4.mobile)) {
+      } else if (!isValidGermanMobile(formData.step5.mobile)) {
         newErrors.mobile = csT("$contact.mobile.invalid");
       }
-      if (formData.step4.onWhatsapp === false) {
-        if (!formData.step4.email?.trim()) {
+      if (formData.step5.onWhatsapp === false) {
+        if (!formData.step5.email?.trim()) {
           newErrors.email = csT("$contact.email.required");
-        } else if (!isValidEmail(formData.step4.email)) {
+        } else if (!isValidEmail(formData.step5.email)) {
           newErrors.email = csT("$contact.email.invalid");
         }
-      } else if (formData.step4.email?.trim() && !isValidEmail(formData.step4.email)) {
+      } else if (formData.step5.email?.trim() && !isValidEmail(formData.step5.email)) {
         newErrors.email = csT("$contact.email.invalid");
       }
-      if (formData.step4.onWhatsapp === null) {
+      if (formData.step5.onWhatsapp === null) {
         newErrors.onWhatsapp = csT("$contact.whatsapp.required");
       }
-      errors.step4 = newErrors;
+      errors.step5 = newErrors;
       if (Object.keys(newErrors).length > 0) {
         isValid = false;
       }
@@ -307,30 +345,26 @@ const updateStep2Errors = () => {
     newErrors.zuordnung = csT("$report.zuordnung.required");
   }
 
-  if (!formData.step2.vehicleMakeModel?.trim()) {
-    newErrors.vehicleMakeModel = csT("$report.vehicleMakeModel.required");
-  }
-
-  if (!formData.step2.mileage?.trim()) {
-    newErrors.mileage = csT("$report.mileage.required");
-  } else if (!isValidMileage(formData.step2.mileage)) {
-    newErrors.mileage = csT("$report.mileage.invalid");
-  }
-
-  if (!formData.step2.previousDamage) {
-    newErrors.previousDamage = csT("$report.previousDamage.required");
-  }
-
   errors.step2 = newErrors;
 };
 
 const updateStep3Errors = () => {
   const newErrors: Record<string, string> = {};
 
-  if (!formData.step3.detailedInformation?.trim()) {
-    newErrors.detailedInformation = csT(
-      "$details.detailedInformation.required"
-    );
+  if (!formData.step3.vehicleMakeModel?.trim()) {
+    newErrors.vehicleMakeModel = csT("$vehicle.vehicleMakeModel.required");
+  } else if (formData.step3.vehicleMakeModel.trim().length < 1) {
+    newErrors.vehicleMakeModel = csT("$vehicle.vehicleMakeModel.minLength");
+  }
+
+  if (!formData.step3.mileage?.trim()) {
+    newErrors.mileage = csT("$vehicle.mileage.required");
+  } else if (!isValidMileage(formData.step3.mileage)) {
+    newErrors.mileage = csT("$vehicle.mileage.invalid");
+  }
+
+  if (!formData.step3.previousDamage) {
+    newErrors.previousDamage = csT("$vehicle.previousDamage.required");
   }
 
   errors.step3 = newErrors;
@@ -339,31 +373,43 @@ const updateStep3Errors = () => {
 const updateStep4Errors = () => {
   const newErrors: Record<string, string> = {};
 
-  if (!formData.step4.fullName?.trim()) {
-    newErrors.fullName = csT("$contact.fullName.required");
-  }
-
-  if (formData.step4.onWhatsapp === false) {
-    if (!formData.step4.email?.trim()) {
-      newErrors.email = csT("$contact.email.required");
-    } else if (!isValidEmail(formData.step4.email)) {
-      newErrors.email = csT("$contact.email.invalid");
-    }
-  } else if (formData.step4.email?.trim() && !isValidEmail(formData.step4.email)) {
-    newErrors.email = csT("$contact.email.invalid");
-  }
-
-  if (!formData.step4.mobile?.trim()) {
-    newErrors.mobile = csT("$contact.mobile.required");
-  } else if (!isValidGermanMobile(formData.step4.mobile)) {
-    newErrors.mobile = csT("$contact.mobile.invalid");
-  }
-
-  if (formData.step4.onWhatsapp === null) {
-    newErrors.onWhatsapp = csT("$contact.whatsapp.required");
+  if (!formData.step4.detailedInformation?.trim()) {
+    newErrors.detailedInformation = csT(
+      "$details.detailedInformation.required"
+    );
   }
 
   errors.step4 = newErrors;
+};
+
+const updateStep5Errors = () => {
+  const newErrors: Record<string, string> = {};
+
+  if (!formData.step5.fullName?.trim()) {
+    newErrors.fullName = csT("$contact.fullName.required");
+  }
+
+  if (formData.step5.onWhatsapp === false) {
+    if (!formData.step5.email?.trim()) {
+      newErrors.email = csT("$contact.email.required");
+    } else if (!isValidEmail(formData.step5.email)) {
+      newErrors.email = csT("$contact.email.invalid");
+    }
+  } else if (formData.step5.email?.trim() && !isValidEmail(formData.step5.email)) {
+    newErrors.email = csT("$contact.email.invalid");
+  }
+
+  if (!formData.step5.mobile?.trim()) {
+    newErrors.mobile = csT("$contact.mobile.required");
+  } else if (!isValidGermanMobile(formData.step5.mobile)) {
+    newErrors.mobile = csT("$contact.mobile.invalid");
+  }
+
+  if (formData.step5.onWhatsapp === null) {
+    newErrors.onWhatsapp = csT("$contact.whatsapp.required");
+  }
+
+  errors.step5 = newErrors;
 };
 
 const clearStep1Errors = () => {
@@ -380,6 +426,10 @@ const clearStep3Errors = () => {
 
 const clearStep4Errors = () => {
   errors.step4 = {};
+};
+
+const clearStep5Errors = () => {
+  errors.step5 = {};
 };
 
 const isValidMileage = (mileage: string): boolean => {
@@ -433,11 +483,11 @@ const submitForm = async () => {
   try {
     const selectedLocation = formData.step1.location;
     
-    formData.step4.lat = selectedLocation?.lat || 0;
-    formData.step4.lon = selectedLocation?.lng || 0;
-    formData.step4.locationName = selectedLocation?.name || "";
+    formData.step5.lat = selectedLocation?.lat || 0;
+    formData.step5.lon = selectedLocation?.lng || 0;
+    formData.step5.locationName = selectedLocation?.name || "";
 
-    const uploadedFiles = await filesToJson(formData.step3.uploadedFiles || []);
+    const uploadedFiles = await filesToJson(formData.step4.uploadedFiles || []);
 
     const formPayload = {
       step1: {
@@ -446,26 +496,28 @@ const submitForm = async () => {
       step2: {
         reportType: formData.step2.reportType,
         zuordnung: formData.step2.zuordnung,
-        vehicleMakeModel: formData.step2.vehicleMakeModel,
-        mileage: formData.step2.mileage,
-        previousDamage: formData.step2.previousDamage,
       },
       step3: {
-        detailedInformation: formData.step3.detailedInformation,
-        uploadedFiles,
+        vehicleMakeModel: formData.step3.vehicleMakeModel,
+        mileage: formData.step3.mileage,
+        previousDamage: formData.step3.previousDamage,
       },
       step4: {
-        fullName: formData.step4.fullName,
-        email: formData.step4.email,
-        mobile: formData.step4.mobile,
-        onWhatsapp: formData.step4.onWhatsapp,
-        lat: formData.step4.lat,
-        lon: formData.step4.lon,
-        locationName: formData.step4.locationName,
+        detailedInformation: formData.step4.detailedInformation,
+        uploadedFiles,
+      },
+      step5: {
+        fullName: formData.step5.fullName,
+        email: formData.step5.email,
+        mobile: formData.step5.mobile,
+        onWhatsapp: formData.step5.onWhatsapp,
+        lat: formData.step5.lat,
+        lon: formData.step5.lon,
+        locationName: formData.step5.locationName,
       },
     };
 
-    if(formData.step3.uploadedFiles.length >= 1) {
+    if(formData.step4.uploadedFiles.length >= 1) {
       const supabase = useSupabaseClient();
       await supabase.auth.signOut()
     }
@@ -476,89 +528,15 @@ const submitForm = async () => {
     });
     if (!(res as any)?.success) throw new Error((res as any)?.message || "Submission failed");
 
-    
-    if (formData.step4.email) {
-      await sendEmail(
-        formData.step4.email,
-        `
-        Sehr geehrte/r ${formData.step4.fullName},
-
-        Vielen Dank für Ihre Schadensmeldung.
-        Unser Team wird Ihre Anfrage prüfen und sich zeitnah bei Ihnen melden.
-
-        Mit freundlichen Grüßen,
-        Ihr Support-Team
-      `
-      );
-    }
-
-    await sendEmail(
-      'becker@cubee.expert',
-      `
-      Es wurde eine neue Schadensmeldung eingereicht.
-
-      Name: ${formData.step4.fullName}
-      E-Mail: ${formData.step4.email}
-      Mobilnummer: ${formData.step4.mobile}
-      Schadensart: ${formData.step2.reportType}
-      Fahrzeug: ${formData.step2.vehicleMakeModel}
-      Kilometerstand: ${formData.step2.mileage}
-      Vorschäden: ${formData.step2.previousDamage}
-      Standort: ${formData.step4.locationName || 'Nicht angegeben'}
-
-      Weitere Details:
-      ${formData.step3.detailedInformation}
-
-      Bitte prüfen Sie den Vorgang zeitnah im System.
-      `
-    )
-
-    await sendEmail(
-      'saad@modernice.design',
-      `
-      A new damage report has been submitted.
-
-      Name: ${formData.step4.fullName}
-      Email: ${formData.step4.email}
-      Mobile Number: ${formData.step4.mobile}
-      Report Type: ${formData.step2.reportType}
-      Vehicle: ${formData.step2.vehicleMakeModel}
-      Mileage: ${formData.step2.mileage}
-      Previous Damage: ${formData.step2.previousDamage}
-      Location: ${formData.step4.locationName || 'Not specified'}
-
-      Additional Details:
-      ${formData.step3.detailedInformation}
-
-      Please review the case in the system.
-      `
-    )
-
     isSuccessDialogOpen.value = true;
   } catch (error: any) {
     console.error("Error submitting form:", error);
     const message = error?.data?.message || error?.message || csT("$form.actions.error");
     if (message && /mobile|number/i.test(message)) {
-      errors.step4 = { ...errors.step4, mobile: csT("$contact.mobile.invalid") };
+      errors.step5 = { ...errors.step5, mobile: csT("$contact.mobile.invalid") };
     }
   } finally {
     isSubmitting.value = false;
-  }
-};
-
-const sendEmail = async (email: string, message: string) => {
-  try {
-    const res = await $fetch("/api/sendEmail", {
-      method: "POST",
-      body: {
-        to: email,
-        subject: "Damage Report Submission",
-        message: message,
-      },
-    });
-    console.log("Email send result:", res);
-  } catch (err) {
-    console.error("Failed to send email:", err);
   }
 };
 
