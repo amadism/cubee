@@ -93,6 +93,36 @@
                             {{ item.email }}
                           </p>
                         </div>
+                        <div class="space-y-1" v-if="item.zuordnung">
+                          <p
+                            class="text-xs font-medium text-gray-500 uppercase tracking-wide"
+                          >
+                            Zuordnung
+                          </p>
+                          <p class="text-sm font-semibold text-gray-900">
+                            {{ item.zuordnung }}
+                          </p>
+                        </div>
+                        <div class="space-y-1" v-if="item.mileage">
+                          <p
+                            class="text-xs font-medium text-gray-500 uppercase tracking-wide"
+                          >
+                            Mileage
+                          </p>
+                          <p class="text-sm font-semibold text-gray-900">
+                            {{ item.mileage }}
+                          </p>
+                        </div>
+                        <div class="space-y-1" v-if="item.previous_damage">
+                          <p
+                            class="text-xs font-medium text-gray-500 uppercase tracking-wide"
+                          >
+                            Previous Damage
+                          </p>
+                          <p class="text-sm font-semibold text-gray-900">
+                            {{ item.previous_damage }}
+                          </p>
+                        </div>
                       </div>
                     </div>
 
@@ -119,21 +149,20 @@
                         Detailed Information
                       </h3>
                       <p
-                        class="text-sm text-gray-800 whitespace-pre-wrap leading-relaxed"
+                        class="text-sm text-gray-800 whitespace-pre-wrap leading-relaxed break-words"
                       >
                         {{ item.detailed_information }}
                       </p>
                     </div>
 
                     <!-- Attachments -->
-                    <div class="bg-white border border-gray-200 rounded-lg p-4">
+                    <div class="bg-white border border-gray-200 rounded-lg p-4" v-if="attachments?.length">
                       <h3
                         class="text-sm font-semibold text-gray-700 mb-3 uppercase tracking-wide"
                       >
                         Attachments
                       </h3>
                       <div
-                        v-if="attachments?.length"
                         class="grid grid-cols-2 md:grid-cols-3 gap-3"
                       >
                         <div
@@ -163,9 +192,6 @@
                             </svg>
                           </a>
                         </div>
-                      </div>
-                      <div v-else class="text-sm text-gray-500 italic">
-                        No attachments provided
                       </div>
                     </div>
                   </div>

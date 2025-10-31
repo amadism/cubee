@@ -2,7 +2,7 @@
   <div class="space-y-4">
     <div class="flex flex-col sm:flex-row sm:items-center gap-2">
       <div class="w-full sm:w-64">
-        <Select v-model="status">
+        <Select v-model="status" :disabled="loading">
           <SelectTrigger aria-label="Status" class="focus:ring-yellow-500">
             <SelectValue placeholder="Select status" />
           </SelectTrigger>

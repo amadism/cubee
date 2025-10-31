@@ -38,9 +38,8 @@ function createEmailTemplate(message: string): string {
       <td style="padding: 40px 20px;">
         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 8px; box-shadow: 0 2px 8px rgba(7, 13, 21, 0.08);">
           <tr>
-            <td style="padding: 32px 40px 24px; text-align: center; background: linear-gradient(135deg, #F7FAFE 0%, #ffffff 100%); border-bottom: 3px solid #FEC907; border-radius: 8px 8px 0 0;">
-              <h1 style="margin: 0; font-size: 36px; font-weight: 700; color: #070D15; letter-spacing: -0.5px; font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">Cubee</h1>
-              <p style="margin: 8px 0 0; font-size: 14px; color: #697174; font-weight: 500; font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">cubee.expert</p>
+            <td style="background: linear-gradient(135deg, #F7FAFE 0%, #ffffff 100%); border-bottom: 3px solid #FEC907; border-radius: 8px 8px 0 0;">
+              <img src="https://xqibadvjbgdhacuwipkw.supabase.co/storage/v1/object/public/case-images/cubee.png" alt="Cubee" style="display: inline-block;" />
             </td>
           </tr>
           <tr>
@@ -58,7 +57,7 @@ function createEmailTemplate(message: string): string {
                 </tr>
                 <tr>
                   <td style="text-align: center;">
-                    <a href="https://cubee.expert" style="display: inline-block; padding: 10px 24px; background-color: #FEC907; color: #070D15; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">Visit cubee.expert</a>
+                    <a href="https://cubee.expert" style="display: inline-block; padding: 10px 24px; background-color: #FEC907; color: #070D15; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">Visit Cubee</a>
                   </td>
                 </tr>
               </table>

@@ -33,7 +33,24 @@ if(data.success){
       },
     });
 
-  // Send notification email to admins
+  if (caseData?.email) {
+    try {
+      const emailResponse = await $fetch('/api/sendEmail', {
+        method: 'POST',
+        body: {
+          to: [`${caseData.email}`],
+          subject: 'Ihr Fall wurde einem Partner zugewiesen',
+          message: `Ihr Fall wurde einem unserer Partner zugewiesen.\nSie werden in Kürze kontaktiert.`,
+        },
+      })
+      if (emailResponse && emailResponse.error) {
+        console.error(`Failed to send email to ${caseData.email}:`, emailResponse.error)
+      }
+    } catch (e) {
+      console.error(`Failed to send email to ${caseData.email}:`, e)
+    }
+  }
+
   const adminEmails = ['becker@cubee.expert', 'saad@modernice.design']
   const adminMessage = `Der Fall wurde erfolgreich übernommen.
 
