@@ -14,7 +14,7 @@ const { t: homeT } = useMessages('home')
       class="bg-animated-gradient flex h-auto w-full flex-col items-center whitespace-normal p-4 text-yellow-950 transition-transform duration-300 hover:scale-105"
     >
               <span
-                class="text-xl font-bold text-gray-900"
+                class="text-2xl font-black text-gray-900"
                 v-text="homeT('$hero.cta:title')"
               />
       <span
@@ -25,30 +25,8 @@ const { t: homeT } = useMessages('home')
   </NuxtLink>
 
 
-  <!-- <div class="space-y-2">
 
-    <NuxtLink
-      :to="
-                localePath({ name: 'report-submit' })
-              "
-      class="flex w-full"
-    >
-      <Button
-        class="flex h-auto w-full flex-col items-center whitespace-normal p-4 transition-transform duration-300"
-        variant="outline"
-      >
-                <span
-                  class="text-lg font-bold"
-                  v-text="homeT('$hero.mobile:title')"
-                />
-        <span
-          class="text-xs text-yellow-950 md:text-sm"
-          v-text="homeT('$hero.mobile:subtitle')"
-        />
-      </Button>
-    </NuxtLink>
-  </div> -->
-</template>
+  </template>
 
 <style scoped lang="postcss">
 .bg-animated-gradient {

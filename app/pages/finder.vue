@@ -1,11 +1,5 @@
 <script lang="js" setup>
-import {
-  MapboxGeolocateControl,
-  MapboxMap,
-  MapboxMarker,
-} from '@studiometa/vue-mapbox-gl'
-import 'mapbox-gl/dist/mapbox-gl.css'
-import '@mapbox/mapbox-gl-geocoder/lib/mapbox-gl-geocoder.css'
+import PartnersMap from '@/components/partners-map/PartnersMap.vue'
 
 definePageMeta({
   middleware: ['i18n:messages'],
@@ -13,7 +7,8 @@ definePageMeta({
 })
 
 const { t: finderT } = useMessages('finder')
-
+const { t: globalT } = useMessages('global')
+const localePath = useLocalePath()
 useSeoMeta({
   title: finderT('$seo.title'),
   ogTitle: finderT('$seo.title'),
@@ -21,37 +16,39 @@ useSeoMeta({
   ogDescription: finderT('$seo.desc'),
 })
 
-const { stations } = useStations()
+const partners = ref([])
+const loading = ref(true)
 
-const mapCenter = ref([10.4515, 51.1657])
-const searchInput = ref('')
-
-const filteredStations = computed(() => {
-  if (!searchInput.value) {
-    return stations.value
+onMounted(async () => {
+  try {
+    const data = await $fetch('/api/partners/public')
+    partners.value = (Array.isArray(data) ? data : []).map((p) => ({
+      id: p.id,
+      name: p.name,
+      location_name: p.location_name,
+      location: { lat: p.lat ?? p.latitude, lng: p.lon ?? p.lng },
+    }))
+  } catch (e) {
+    partners.value = []
+  } finally {
+    loading.value = false
   }
-
-  const words = searchInput.value.trim().toLowerCase().split(/\s+/)
-
-  return stations.value.filter((station) => {
-    return words.some((word) => {
-      return (
-        station.name.toLowerCase().includes(word) ||
-        ('address' in station && station.address.toLowerCase().includes(word))
-      )
-    })
-  })
 })
+
 </script>
 
 <template>
   <div class="p-5">
     <div class="mx-auto max-w-6xl space-y-4">
-      <section>
+      <section class="flex items-center justify-between w-full flex-wrap gap-4">
         <h1
           class="text-xl font-semibold md:text-2xl"
           v-text="finderT('$hero.title')"
         />
+
+        <Button :to="localePath({ name: 'contact', query: { type: 'partner_request' } })" variant="primary">
+          <span v-text="globalT('becomePartner')" />
+        </Button>
       </section>
 
       <section>
@@ -59,48 +56,39 @@ const filteredStations = computed(() => {
           <div
             class="locations-holder relative space-y-4 overflow-hidden rounded-lg md:order-last md:col-span-2 md:max-h-[40rem] md:overflow-y-auto md:overscroll-contain"
           >
-            <Input
-              id="address"
-              v-model="searchInput"
-              type="text"
-              :placeholder="finderT('$search.input:placeholder')"
-            />
+            
 
             <div class="relative space-y-2">
-              <template v-for="station in filteredStations" :key="station.id">
-                <FinderComingSoon
-                  v-if="'inactive' in station"
-                  :station="station"
-                />
-                <AppointmentContainer v-else :station="station" />
+              <template v-if="loading">
+                <div
+                  v-for="i in 3"
+                  :key="`skeleton-${i}`"
+                  class="bg-gradient-to-br from-white to-yellow-50 rounded-lg border border-gray-200 px-4 py-6 space-y-4"
+                >
+                  <div class="space-y-2">
+                    <div class="h-8 w-3/4 bg-gray-200 rounded animate-pulse" />
+                    <div class="h-6 w-1/2 bg-gray-200 rounded animate-pulse" />
+                  </div>
+                  <div class="space-y-2">
+                    <div class="h-8 w-full bg-gray-200 rounded animate-pulse" />
+                  </div>
+                </div>
               </template>
-
-              <p
-                v-if="!filteredStations.length"
-                class="text-center text-gray-400"
-              >
-                {{ finderT('notFound') }}
-              </p>
+              <template v-else>
+                <AppointmentContainer
+                  v-for="p in partners"
+                  :key="p.id"
+                  :partner="p"
+                />
+                <p v-if="!partners.length" class="text-center text-gray-400">
+                  {{ finderT('notFound') }}
+                </p>
+              </template>
             </div>
           </div>
 
           <div class="md:col-span-3">
-            <MapboxMap
-              class="h-96 overflow-hidden rounded-lg md:h-[40rem]"
-              access-token="pk.eyJ1IjoibW9kZXJuaWNlIiwiYSI6ImNseDF3ZmdsdjBkd3cycXM5NXZlYTBxd2IifQ.4TdDROuEq-7vnDBBqjO8cw"
-              map-style="mapbox://styles/modernice/clx1x53gt01qf01qr83qgauzj"
-              :center="mapCenter"
-              :zoom="5"
-            >
-              <MapboxGeolocateControl />
-              <template v-for="station in filteredStations" :key="station.id">
-                <MapboxMarker
-                  v-if="!('inactive' in station)"
-                  :lng-lat="[station.location.lng, station.location.lat]"
-                  color="#FEC700"
-                />
-              </template>
-            </MapboxMap>
+            <PartnersMap :partners="partners" />
           </div>
         </div>
       </section>

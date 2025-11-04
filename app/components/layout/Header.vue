@@ -6,6 +6,10 @@ import { getCountryFlag } from '@cubee/app/composables/useCountryFlag'
 import { faBars } from '@fortawesome/pro-regular-svg-icons'
 import { faPhone } from '@fortawesome/pro-solid-svg-icons'
 
+const route = useRoute()
+
+const isFinderPage = computed(() => route.path === `/${locale.value}/finder` || route.path === '/finder')
+
 const { t: globalT } = useMessages('global')
 const localePath = useLocalePath()
 
@@ -61,9 +65,7 @@ router.beforeEach(() => {
         </div>
 
         <div class="hidden flex-1 text-center md:block">
-          <div
-            class="grid grid-cols-4 items-center justify-end gap-4 whitespace-nowrap font-medium"
-          >
+          <div class="flex items-center justify-end gap-4 whitespace-nowrap font-medium">
             <NuxtLink :to="localePath({ name: 'finder' })" class="no-deco">
               {{ globalT('finder') }}
             </NuxtLink>
@@ -72,13 +74,18 @@ router.beforeEach(() => {
             </NuxtLink>
 
             <div>
-              <NuxtLink :to="localePath({ name: 'contact' })" class="no-deco">
-                <Button class="w-full font-semibold" variant="primary">
+              <NuxtLink :to="localePath({ name: 'contact', query: { type: 'inquiry' } })" class="no-deco">
                   <span v-text="globalT('contact')" />
+              </NuxtLink>
+            </div>
+            <div>
+              <NuxtLink v-show="!isFinderPage" :to="localePath({ name: 'contact', query: { type: 'partner_request' } })" class="no-deco">
+                <Button class="font-semibold" variant="primary">
+                  {{ globalT('becomePartner') }}
                 </Button>
               </NuxtLink>
             </div>
-            <div class="col-start-4">
+            <div>
               <Select v-model="locale">
                 <SelectTrigger class="w-auto">
                   <SelectValue :placeholder="globalT('lang')" />
@@ -119,11 +126,17 @@ router.beforeEach(() => {
                 <NuxtLink class="no-deco" :to="localePath({ name: 'about' })">
                   <span v-text="globalT('about')" />
                 </NuxtLink>
-                <NuxtLink :to="localePath({ name: 'contact' })" class="flex">
-                  <Button class="w-full font-semibold" variant="primary">
+              <NuxtLink :to="localePath({ name: 'contact', query: { type: 'inquiry' } })" class="flex">
+                  <Button class="w-full font-semibold">
                     <span v-text="globalT('contact')" />
                   </Button>
                 </NuxtLink>
+
+              <NuxtLink :to="localePath({ name: 'contact', query: { type: 'partner_request' } })" class="flex">
+                <Button class="w-full font-semibold" variant="primary">
+                  {{ globalT('becomePartner') }}
+                </Button>
+              </NuxtLink>
 
                 <Select v-model="locale">
                   <SelectTrigger class="w-auto">

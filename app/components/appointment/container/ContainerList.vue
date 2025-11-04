@@ -12,12 +12,29 @@ const emit = defineEmits<{ back: []; select: [Station] }>()
 
 const { t } = useMessages('appointment')
 
-const nearbyStations = useNearbyStations(() => userLocation)
-const showAllStations = ref(false)
-const visibleStations = computed(() => {
-  return showAllStations.value
-    ? nearbyStations.value
-    : nearbyStations.value.slice(0, 3)
+type PartnerPublic = { id: string | number; location: { lat: number; lng: number } }
+
+const partners = ref<PartnerPublic[]>([])
+const loading = ref(true)
+
+onMounted(async () => {
+  try {
+    const data = await $fetch<any[]>('/api/partners/public')
+    partners.value = (data || []).map((p) => ({
+      id: p.id,
+      location: { lat: p.lat ?? p.latitude, lng: p.lon ?? p.lng },
+    }))
+  } catch (e) {
+    partners.value = []
+  } finally {
+    loading.value = false
+  }
+})
+
+const nearbyPartners = useNearby(() => partners.value, () => userLocation)
+const showAll = ref(false)
+const visiblePartners = computed(() => {
+  return showAll.value ? nearbyPartners.value : nearbyPartners.value.slice(0, 3)
 })
 </script>
 
@@ -63,33 +80,42 @@ const visibleStations = computed(() => {
     <hr />
 
     <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-      <TransitionGroup name="station-list">
+      <template v-if="loading">
+        <div
+          v-for="i in 3"
+          :key="`skeleton-${i}`"
+          class="bg-gradient-to-br from-white to-yellow-50 rounded-lg border border-gray-200 p-4 space-y-4 h-full"
+        >
+          <div class="space-y-2">
+            <div class="h-6 w-3/4 bg-gray-200 rounded animate-pulse" />
+            <div class="h-4 w-1/2 bg-gray-200 rounded animate-pulse" />
+          </div>
+          <div class="space-y-2">
+            <div class="h-12 w-full bg-gray-200 rounded animate-pulse" />
+          </div>
+        </div>
+      </template>
+      <TransitionGroup v-else name="station-list">
         <Container
-          v-for="(station, idx) in visibleStations"
-          :key="station.location.id"
+          v-for="(p, idx) in visiblePartners"
+          :key="p.location.id ?? p.id"
           class="station-item h-full"
-          :station="station.location"
+          :partner="p"
           :user-location="userLocation"
           :highlight="idx === 0"
         />
       </TransitionGroup>
     </div>
 
-    <div
-      v-if="nearbyStations.length > 3 && !showAllStations"
-      class="flex justify-center"
-    >
-      <Button size="sm" @click="showAllStations = true">
+    <div v-if="nearbyPartners.length > 3 && !showAll" class="flex justify-center">
+      <Button size="sm" @click="showAll = true">
         {{ t('$stations.viewMore') }}
       </Button>
     </div>
 
     <hr />
 
-    <AppointmentMap
-      mode="station"
-      :locations="nearbyStations.map(({ location }) => location)"
-    />
+    <AppointmentMap :locations="nearbyPartners.map((x) => ({ id: x.id, location: x.location }))" />
   </div>
 </template>
 

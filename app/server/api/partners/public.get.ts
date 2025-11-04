@@ -26,6 +26,6 @@ export default defineCachedEventHandler(async (event) => {
 
   return data || []
 }, {
-  maxAge: 60 * 10,
+  maxAge: 60 * 3,
   getKey: () => 'partners:public'
 })

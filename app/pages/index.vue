@@ -34,7 +34,7 @@ useSeoMeta({
 
           <div class="space-y-4">
             <h1
-              class="hyphens-auto text-balance text-2xl font-semibold !leading-snug lg:text-4xl"
+              class="hyphens-auto text-2xl text-pretty font-black !leading-snug lg:text-4xl"
               v-text="homeT('$hero.title')"
             />
 

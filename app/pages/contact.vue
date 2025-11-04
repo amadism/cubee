@@ -13,6 +13,8 @@ defineI18nRoute({
 })
 
 const { t: contactT } = useMessages('contact')
+const route = useRoute()
+const router = useRouter()
 
 useSeoMeta({
   title: contactT('$seo.title'),
@@ -33,7 +35,7 @@ const fieldErrors = ref<{
   general?: string
 }>({})
 const success = ref(false)
-const inquiryType = ref('general')
+const inquiryType = ref<'general' | 'partner'>('general')
 const name = ref('')
 const email = ref('')
 const content = ref('')
@@ -166,6 +168,31 @@ async function submit() {
     isSubmitting.value = false
   }
 }
+
+onMounted(() => {
+  const type = (route.query.type as string) || ''
+  if (type === 'partner_request') inquiryType.value = 'partner'
+  else if (type === 'inquiry') inquiryType.value = 'general'
+})
+
+watch(inquiryType, (val) => {
+  const type = val === 'partner' ? 'partner_request' : 'inquiry'
+  router.replace({ query: { ...route.query, type } })
+})
+
+watch(
+  () => route.query.type,
+  (type) => {
+    if (type === 'partner_request') inquiryType.value = 'partner'
+    else if (type === 'inquiry') inquiryType.value = 'general'
+  },
+)
+
+const contactSectionTitle = computed(() =>
+  inquiryType.value === 'partner'
+    ? contactT('$getInTouchSection.becomePartner')
+    : contactT('$contactSection.title'),
+)
 </script>
 
 <template>
@@ -184,7 +211,7 @@ async function submit() {
           <div class="space-y-4">
             <h1
               class="text-xl font-semibold md:text-2xl"
-              v-text="contactT('$contactSection.title')"
+              v-text="contactSectionTitle"
             />
             <p
               class="font-medium leading-relaxed"
