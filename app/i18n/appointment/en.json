@@ -32,7 +32,12 @@
     "desc:driver": "Please enter the address of your vehicle's current location so we can find the nearest mobile appraisers in your area.",
     "desc:station": "Please enter the address of your vehicle's current location so we can find the nearest facility in your area.",
     "title": "Where is your vehicle located?",
-    "use-current": "Use my current location"
+    "use-current": "Use my current location",
+    "locating": "Locating...",
+    "error.not-supported": "Geolocation is not supported by this browser.",
+    "error.permission-denied": "Location permission denied. Please enable location access in your browser settings.",
+    "error.timeout": "Location request timed out. Please try again or enter your location manually.",
+    "error.unavailable": "Unable to determine your location. Please try again or enter your location manually."
   },
   "back": "Back"
 }
