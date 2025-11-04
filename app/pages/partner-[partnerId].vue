@@ -27,8 +27,8 @@ onMounted(async () => {
   }
 })
 
-const title = computed(() => schedulerT('$hero.title', { city: partnerId.value }))
-const cityName = computed(() => partnerId.value)
+const title = computed(() => 'Cubee')
+const cityName = computed(() => 'Cubee')
 
 const { getPartnerCalendarUrl } = usePartnerBooking()
 const calendarUrl = computed(() => getPartnerCalendarUrl(partnerId.value))
@@ -42,10 +42,10 @@ const location = computed(() =>
 
 <template>
   <AppointmentView
-    mode="station"
+    mode="driver"
     :title="title"
     :city-name="cityName"
-    :calendar-url="calendarUrl"
+    calendar-url="https://app.acuityscheduling.com/schedule.php?owner=33374738&calendarID=10852740"
     :address="address"
     :location="location"
   />

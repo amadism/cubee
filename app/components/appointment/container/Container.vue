@@ -102,12 +102,12 @@ const appointmentLink = computed(() =>
           </NuxtLink>
         </template>
         <template v-else>
-          <!-- <NuxtLink :to="localePath({ name: 'partner-partnerId', params: { partnerId: String(props.partner?.id) } })" external class="block">
+          <NuxtLink :to="localePath({ name: 'partner-partnerId', params: { partnerId: String(props.partner?.id) } })" external class="block">
             <Button class="flex w-full gap-1.5" variant="primary">
               <Icon :icon="faHandPointRight" />
               {{ t('$stations.schedule-now') }}
             </Button>
-          </NuxtLink> -->
+          </NuxtLink>
 
           <NuxtLink
             :to="`https://www.google.com/maps/search/?api=1&query=${props.partner?.location.lat},${props.partner?.location.lng}`"

@@ -7,20 +7,50 @@ const { t: appointmentT } = useMessages('appointment')
 
 function selectCurrentLocation() {
   if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
+    const getPositionWithRetry = ({ tries = 5, delay = 1500 } = {}) =>
+      new Promise<GeolocationPosition>((resolve, reject) => {
+        const attempt = (n: number) => {
+          navigator.geolocation.getCurrentPosition(
+            (pos) => resolve(pos),
+            (err) => {
+              if ((err.code === 2 || /LocationUnknown/i.test(String(err.message))) && n > 0) {
+                setTimeout(() => attempt(n - 1), delay)
+              } else {
+                reject(err)
+              }
+            },
+            { enableHighAccuracy: true, timeout: 15000, maximumAge: 10000 },
+          )
+        }
+        attempt(tries)
+      })
+
+    getPositionWithRetry()
+      .then((position) => {
         const data = {
           lat: position.coords.latitude,
           lng: position.coords.longitude,
         }
-
         emit('select', data)
-      },
-      (error) => {
-        console.error('Error getting location:', error)
-      },
-      { enableHighAccuracy: true, timeout: 5000 },
-    )
+      })
+      .catch((firstErr) => {
+        // Fallback to watchPosition for the first available fix
+        try {
+          const watchId = navigator.geolocation.watchPosition(
+            (pos) => {
+              navigator.geolocation.clearWatch(watchId)
+              const data = { lat: pos.coords.latitude, lng: pos.coords.longitude }
+              emit('select', data)
+            },
+            (err) => {
+              console.error('Error getting location (watch fallback):', err || firstErr)
+            },
+            { enableHighAccuracy: true, timeout: 20000, maximumAge: 0 },
+          )
+        } catch (e) {
+          console.error('Error getting location:', firstErr)
+        }
+      })
   } else {
     console.error('Geolocation is not supported by this browser.')
   }
