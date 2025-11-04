@@ -46,9 +46,12 @@ onMounted(async () => {
           v-text="finderT('$hero.title')"
         />
 
-        <Button :to="localePath({ name: 'contact', query: { type: 'partner_request' } })" variant="primary">
+        <NuxtLink :to="localePath({ name: 'contact', query: { type: 'partner_request' } })">
+          <Button variant="primary">
           <span v-text="globalT('becomePartner')" />
         </Button>
+      </NuxtLink>
+
       </section>
 
       <section>
