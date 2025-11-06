@@ -5,12 +5,12 @@
         <div class="absolute inset-0 bg-black/40" @click="emit('update:open', false)" />
         <div class="absolute inset-0 grid place-items-center p-4">
           <Transition enter-active-class="transition ease-out duration-200" enter-from-class="opacity-0 translate-y-2 sm:translate-y-0 sm:scale-95" enter-to-class="opacity-100 translate-y-0 sm:scale-100" leave-active-class="transition ease-in duration-150" leave-from-class="opacity-100 translate-y-0 sm:scale-100" leave-to-class="opacity-0 translate-y-2 sm:translate-y-0 sm:scale-95">
-            <div v-if="open" class="relative w-full max-h-[90dvh] max-w-2xl rounded-lg bg-white shadow-lg overflow-hidden">
-              <button class="absolute right-4 top-4 z-10 inline-flex h-8 w-8 items-center justify-center rounded-md border bg-white hover:bg-gray-50 shadow-sm" aria-label="Close" @click="emit('update:open', false)">
+            <div v-if="open" class="relative w-full max-h-[90dvh] max-w-2xl rounded-lg bg-white shadow-lg overflow-hidden mx-2 sm:mx-0">
+              <button class="absolute right-2 sm:right-4 top-2 sm:top-4 z-10 inline-flex h-8 w-8 items-center justify-center rounded-md border bg-white hover:bg-gray-50 shadow-sm" aria-label="Close" @click="emit('update:open', false)">
                 <span class="text-xl leading-none">×</span>
               </button>
-              <div class="p-6 space-y-4">
-                <h2 class="text-xl font-semibold">Add Partner</h2>
+              <div class="p-4 sm:p-6 space-y-3 sm:space-y-4 overflow-y-auto max-h-[90dvh]">
+                <h2 class="text-lg sm:text-xl font-semibold">Add Partner</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <label class="block text-xs uppercase text-gray-500 mb-1">Name</label>
@@ -57,9 +57,9 @@
                     <p v-if="errors.lat" class="text-xs text-red-600 mt-1">{{ errors.lat }}</p>
                   </div>
                 </div>
-                <div class="flex items-center justify-end gap-2">
-                  <Button variant="outline" @click="emit('update:open', false)">Cancel</Button>
-                  <Button :disabled="saving || !isValid" @click="save" class="bg-emerald-500 hover:bg-emerald-600 text-white">{{ saving ? 'Saving...' : 'Create' }}</Button>
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-end gap-2 pt-2">
+                  <Button variant="outline" @click="emit('update:open', false)" class="w-full sm:w-auto text-sm sm:text-base">Cancel</Button>
+                  <Button :disabled="saving || !isValid" @click="save" class="bg-emerald-500 hover:bg-emerald-600 text-white w-full sm:w-auto text-sm sm:text-base">{{ saving ? 'Saving...' : 'Create' }}</Button>
                 </div>
               </div>
             </div>

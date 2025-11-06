@@ -1,14 +1,14 @@
 <template>
   <div class="overflow-x-auto border rounded-md font-poppins">
-    <table class="min-w-full text-left text-xs lg:text-sm">
+    <table class="min-w-full text-left text-xs sm:text-sm lg:text-sm">
       <thead class="bg-gray-100 text-black font-medium">
         <tr class="border-b">
-          <th class="w-[5%] border-r p-2 border-gray-200">#</th>
-          <th class="w-[15%] border-r p-2 border-gray-200">Created</th>
-          <th class="p-2 w-1/5 border-r border-gray-200">Report Type</th>
-          <th class="w-1/5 border-r p-2 border-gray-200">Vehicle</th>
-          <th class="w-1/5 border-r p-2 border-gray-200">Name</th>
-          <th class="w-1/5 border-r p-2 border-gray-200">Location</th>
+          <th class="w-[5%] border-r p-1.5 sm:p-2 border-gray-200">#</th>
+          <th class="w-[15%] border-r p-1.5 sm:p-2 border-gray-200">Created</th>
+          <th class="p-1.5 sm:p-2 w-1/5 border-r border-gray-200">Report Type</th>
+          <th class="w-1/5 border-r p-1.5 sm:p-2 border-gray-200">Vehicle</th>
+          <th class="w-1/5 border-r p-1.5 sm:p-2 border-gray-200">Name</th>
+          <th class="w-1/5 border-r p-1.5 sm:p-2 border-gray-200">Location</th>
         </tr>
       </thead>
       <tbody v-show="!loading">
@@ -18,15 +18,15 @@
           class="hover:bg-gray-100 cursor-pointer border-b"
           @click="$emit('select', item)"
         >
-          <td class="w-[5%] border-r p-2 border-gray-200">{{ index + 1 }}</td>
-          <td class="w-[15%] border-r p-2 truncate">{{ formatDate(item.created_at) }}</td>
-          <td class="w-1/5 border-r p-2 truncate">{{ item.report_type }}</td>
-          <td class="w-1/5 border-r p-2 truncate">{{ item.vehicle_make_model }}</td>
-          <td class="w-1/5 border-r p-2 truncate">{{ item.full_name }}</td>
-          <td class="w-1/5 border-r p-2 truncate">{{ item.location_name }}</td>
+          <td class="w-[5%] border-r p-1.5 sm:p-2 border-gray-200">{{ index + 1 }}</td>
+          <td class="w-[15%] border-r p-1.5 sm:p-2 truncate text-xs">{{ formatDate(item.created_at) }}</td>
+          <td class="w-1/5 border-r p-1.5 sm:p-2 truncate">{{ item.report_type }}</td>
+          <td class="w-1/5 border-r p-1.5 sm:p-2 truncate">{{ item.vehicle_make_model }}</td>
+          <td class="w-1/5 border-r p-1.5 sm:p-2 truncate">{{ item.full_name }}</td>
+          <td class="w-1/5 border-r p-1.5 sm:p-2 truncate">{{ item.location_name }}</td>
         </tr>
         <tr v-if="!items?.length">
-          <td colspan="7" class="p-3 text-center text-muted-foreground">
+          <td colspan="6" class="p-3 text-center text-muted-foreground text-xs sm:text-sm">
             No data
           </td>
         </tr>

@@ -1,9 +1,9 @@
 <template>
-  <div class="space-y-4">
+  <div class="space-y-4 px-2 sm:px-0">
     <div class="flex flex-col sm:flex-row sm:items-center gap-2">
       <div class="w-full sm:w-64">
         <Select v-model="status" :disabled="loading">
-          <SelectTrigger aria-label="Status" class="focus:ring-yellow-500">
+          <SelectTrigger aria-label="Status" class="focus:ring-yellow-500 text-sm sm:text-base">
             <SelectValue placeholder="Select status" />
           </SelectTrigger>
           <SelectContent>
@@ -13,7 +13,7 @@
           </SelectContent>
         </Select>
       </div>
-      <span v-if="loading" class="text-sm text-gray-500">Loading...</span>
+      <span v-if="loading" class="text-xs sm:text-sm text-gray-500">Loading...</span>
     </div>
 
     <CasesTable :items="cases" :loading="loading" @select="onSelect" />

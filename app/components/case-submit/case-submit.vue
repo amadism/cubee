@@ -1,14 +1,14 @@
 <template>
   <div>
-    <div class="max-w-4xl mx-auto">
+    <div class="max-w-4xl mx-auto px-2 sm:px-4">
       <Card class="bg-gradient-to-br from-white to-yellow-50">
-        <CardHeader class="bg-gray-100 border-b rounded-t-lg py-6" :class="isSubmitting ? '' : 'mb-4'">
-          <CardTitle class="text-2xl font-bold text-center font-poppins text-gray-900">
+        <CardHeader class="bg-gray-100 border-b rounded-t-lg py-4 sm:py-6" :class="isSubmitting ? '' : 'mb-4'">
+          <CardTitle class="text-xl sm:text-2xl font-bold text-center font-poppins text-gray-900 px-2">
             {{ csT("$form.title") }}
           </CardTitle>
           <!-- Stepper -->
-          <div class="flex justify-center mt-6 text-xs overflow-hidden">
-            <div class="flex items-center flex-wrap justify-center gap-2 lg:gap-0 lg:flex-nowrap w-full max-w-3xl">
+          <div class="flex justify-center mt-4 sm:mt-6 text-xs sm:text-sm lg:text-xs overflow-hidden px-2">
+            <div class="flex items-center flex-wrap lg:justify-center md:justify-center gap-2 lg:gap-0 lg:flex-nowrap w-full max-w-3xl">
               <!-- Step 1 -->
               <div class="flex items-center space-x-2 lg:flex-1">
                 <span :class="[
@@ -118,21 +118,21 @@
           <ContactInformation v-if="currentStep === 5" ref="step5Ref" v-model:form-data="formData.step5"
             :errors="errors.step5" />
 
-          <div class="flex justify-between mt-8 pt-6 border-t border-gray-200">
+          <div class="flex justify-between mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-gray-200 gap-2 sm:gap-0">
             <Button v-if="currentStep > 1" variant="outline" @click="goToPreviousStep" type="button"
-              class="font-poppins">
+              class="font-poppins text-sm sm:text-base px-3 sm:px-4">
               {{ csT("$form.actions.back") }}
             </Button>
             <div v-else></div>
 
             <Button v-if="currentStep < 5" @click="goToNextStep" type="button" variant="primary"
-              class="font-poppins transition-transform duration-300 hover:scale-105">
+              class="font-poppins text-sm sm:text-base px-3 sm:px-4 transition-transform duration-300 hover:scale-105">
               {{ csT("$form.actions.next") }}
             </Button>
 
             <Button v-if="currentStep === 5" @click="submitForm" type="button" variant="primary"
               :disabled="isSubmitting"
-              class="font-poppins transition-transform duration-300 hover:scale-105 disabled:hover:scale-100">
+              class="font-poppins text-sm sm:text-base px-3 sm:px-4 transition-transform duration-300 hover:scale-105 disabled:hover:scale-100">
               {{
                 isSubmitting
                   ? csT("$form.actions.submitting")
@@ -146,21 +146,21 @@
   </div>
 
   <!-- Success Dialog -->
-  <div v-if="isSuccessDialogOpen" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-    <div class="bg-white border-2 border-yellow-400 shadow-2xl rounded-lg max-w-md w-full mx-4">
-      <div class="py-4 text-center">
-        <div class="w-16 h-16 mx-auto mb-4 bg-yellow-400 rounded-full flex items-center justify-center">
-          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <div v-if="isSuccessDialogOpen" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4">
+    <div class="bg-white border-2 border-yellow-400 shadow-2xl rounded-lg max-w-md w-full mx-2 sm:mx-4">
+      <div class="py-4 sm:py-6 text-center px-4">
+        <div class="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-3 sm:mb-4 bg-yellow-400 rounded-full flex items-center justify-center">
+          <svg class="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
           </svg>
         </div>
-        <p class="text-gray-600 font-poppins">
+        <p class="text-sm sm:text-base text-gray-600 font-poppins">
           {{ csT("$form.actions.success") }}
         </p>
       </div>
-      <div class="pt-4 p-6">
+      <div class="pt-4 pb-6 px-4 sm:p-6">
         <Button variant="primary" @click="onSuccessOkay"
-          class="w-full bg-animated-gradient text-white font-bold p-3 font-poppins">
+          class="w-full bg-animated-gradient text-white font-bold p-2 sm:p-3 text-sm sm:text-base font-poppins">
           OK
         </Button>
       </div>

@@ -25,20 +25,20 @@
               class="relative w-full max-h-[90dvh] max-w-6xl rounded-lg bg-white shadow-lg overflow-x-hidden overflow-y-auto custom-scrollbar"
             >
               <button
-                class="absolute right-4 top-4 z-10 inline-flex h-8 w-8 items-center justify-center rounded-md border bg-white hover:bg-gray-50 shadow-sm"
+                class="absolute right-2 sm:right-4 top-2 sm:top-4 z-10 inline-flex h-8 w-8 items-center justify-center rounded-md border bg-white hover:bg-gray-50 shadow-sm"
                 aria-label="Close"
                 @click="emit('update:open', false)"
               >
                 <span class="text-xl leading-none">×</span>
               </button>
 
-              <div class="flex h-full">
-                <div class="flex-1 p-6 overflow-y-auto custom-scrollbar">
-                  <div class="mb-6">
-                    <h2 class="text-2xl font-bold text-gray-900">
+              <div class="flex flex-col lg:flex-row h-full">
+                <div class="flex-1 p-4 sm:p-6 overflow-y-auto custom-scrollbar">
+                  <div class="mb-4 sm:mb-6">
+                    <h2 class="text-xl sm:text-2xl font-bold text-gray-900">
                       Case #{{ item?.id }}
                     </h2>
-                    <p class="text-sm text-gray-500 mt-1">
+                    <p class="text-xs sm:text-sm text-gray-500 mt-1">
                       Created {{ formatDate(item?.created_at) }}
                     </p>
                   </div>
@@ -128,14 +128,14 @@
 
                     <!-- Location -->
                     <div
-                      class="bg-blue-50 rounded-lg p-3 flex items-center gap-2"
+                      class="bg-blue-50 rounded-lg p-3 flex flex-col sm:flex-row items-start sm:items-center gap-2"
                     >
                       <h3
-                        class="text-sm font-semibold text-blue-700 uppercase tracking-wide"
+                        class="text-xs sm:text-sm font-semibold text-blue-700 uppercase tracking-wide whitespace-nowrap"
                       >
                         Location:
                       </h3>
-                      <div class="flex items-center gap-2 text-xs">
+                      <div class="flex flex-wrap items-center gap-2 text-xs break-words">
                         {{ item.location_name }} - Lat: {{ item.lat }} · Lon:
                         {{ item.lon }}
                       </div>
@@ -163,7 +163,7 @@
                         Attachments
                       </h3>
                       <div
-                        class="grid grid-cols-2 md:grid-cols-3 gap-3"
+                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3"
                       >
                         <div
                           v-for="(src, idx) in attachments"
@@ -198,12 +198,12 @@
                 </div>
 
                 <div
-                  class="w-80 bg-gray-50 border-l border-gray-200 p-6 flex flex-col"
+                  class="w-full lg:w-80 bg-gray-50 border-t lg:border-t-0 lg:border-l border-gray-200 p-4 sm:p-6 flex flex-col"
                 >
-                  <div class="space-y-6">
-                    <div class="mt-6" v-if="currentStatus === 'pending'">
-                      <h1>PENDING CASE</h1>
-                      <div class="flex items-center gap-2 mt-2">
+                  <div class="space-y-4 sm:space-y-6">
+                    <div class="mt-0 lg:mt-6" v-if="currentStatus === 'pending'">
+                      <h1 class="text-lg sm:text-xl font-bold">PENDING CASE</h1>
+                      <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 mt-2">
                         <Button
                           @click="updateStatus('rejected')"
                           variant="destructive"
@@ -224,11 +224,11 @@
 
                     <div
                         v-if="item.partner && currentStatus === 'assigned'"
-                          class="mt-4 flex flex-col justify-between h-full"
+                          class="mt-2 lg:mt-4 flex flex-col justify-between h-full"
                         >
-                       <div class="text-sm">
-                        <h6>This case has been assigned to</h6>
-                          <h6 class="mb-1 mt-2 rounded-md">{{ item.partner?.name || "waiting for assignment" }}</h6>
+                       <div class="text-xs sm:text-sm">
+                        <h6 class="font-semibold">This case has been assigned to</h6>
+                          <h6 class="mb-1 mt-2 rounded-md font-medium">{{ item.partner?.name || "waiting for assignment" }}</h6>
                           <p
                             v-if="item.partner?.location_name"
                             class="text-xs text-gray-500"
@@ -238,13 +238,13 @@
                        </div>
 
                        <div class="w-full h-[1px] bg-gray-200 my-2" />
-                       <label for="amount" class="text-xs">Set Amount for Invoice</label>
-                       <Input type="number" id="amount" placeholder="100€" v-model="amount" />
-                       <p class="text-red-500 text-xs" v-if="amountError">
+                       <label for="amount" class="text-xs font-medium">Set Amount for Invoice</label>
+                       <Input type="number" id="amount" placeholder="100€" v-model="amount" class="text-sm" />
+                       <p class="text-red-500 text-xs mt-1" v-if="amountError">
                         Please enter a valid amount
                        </p>
                           <Button 
-                            class="mt-2 w-full" 
+                            class="mt-2 w-full text-sm" 
                             variant="primary"
                             @click="generateInvoice"
                             :disabled="generatingInvoice"
@@ -253,9 +253,9 @@
                           </Button>
                         </div>                        
 
-                        <div v-if="currentStatus === 'accepted'" class="mt-4">
+                        <div v-if="currentStatus === 'accepted'" class="mt-2 lg:mt-4">
                         <h3
-                          class="text-xs font-semibold text-gray-700 uppercase tracking-wide"
+                          class="text-xs font-semibold text-gray-700 uppercase tracking-wide mb-2"
                         >
                           Nearest partners
                         </h3>
@@ -274,15 +274,15 @@
                         </div>
                         <div
                           v-else-if="nearestPartners.length"
-                          class="mt-2 space-y-2"
+                          class="mt-2 space-y-2 max-h-64 overflow-y-auto"
                         >
                           <div
                             v-for="p in nearestPartners"
                             :key="p.id"
-                            class="border border-gray-200 bg-white p-2"
+                            class="border border-gray-200 bg-white p-2 rounded"
                           >
                             <h3
-                              class="text-sm font-semibold text-gray-900 leading-tight"
+                              class="text-xs sm:text-sm font-semibold text-gray-900 leading-tight"
                             >
                               {{ p.name }}
                             </h3>
@@ -290,7 +290,7 @@
                               {{ p.location_name }}
                             </h6>
                             <div
-                              class="flex items-center justify-between gap-1 rounded-md bg-green-100 p-0.5 mt-2"
+                              class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-1 rounded-md bg-green-100 p-1 sm:p-0.5 mt-2"
                             >
                               <div class="flex items-center gap-1">
                                 <svg
@@ -321,10 +321,10 @@
                               <button
                               v-if="!p.isInvited"
                                 @click="sendProposal(p.id, p.name, p.tel)"
-                                class="flex items-center gap-1 py-0.5 px-1 bg-green-300 m-[1px] rounded-md hover:scale-105 transition-all duration-200"
+                                class="flex items-center justify-center gap-1 py-1 sm:py-0.5 px-2 sm:px-1 bg-green-300 m-[1px] rounded-md hover:scale-105 transition-all duration-200"
                               >
                                 <span
-                                  class="text-[10px] mt-0.5 font-medium text-green-700"
+                                  class="text-[10px] sm:text-[10px] font-medium text-green-700"
                                 >
                                   {{ sendingTo === p?.id ? "Sending..." : "Send Proposal" }}
                                 </span>
@@ -342,7 +342,7 @@
                                   />
                                 </svg>
                               </button>
-                              <span v-else class="text-xs text-green-500 px-2 italic">
+                              <span v-else class="text-xs text-green-500 px-2 italic text-center sm:text-left">
                                 Invited
                               </span>
                             </div>
