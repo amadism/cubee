@@ -68,6 +68,12 @@
       "required": "Mileage is required",
       "invalid": "Please enter a valid mileage"
     },
+    "manufYear": {
+      "label": "Year of Manufacture",
+      "placeholder": "e.g., 2018",
+      "optional": "optional",
+      "invalid": "Please enter a valid year of manufacture"
+    },
     "previousDamage": {
       "label": "Previous Damage",
       "yes": "Yes",
@@ -118,6 +124,10 @@
       "yes": "Yes",
       "no": "No",
       "required": "Please select WhatsApp availability"
+    },
+    "dataSharingConsent": {
+      "label": "I agree that Cubee may share my data with partner companies for processing the case.",
+      "required": "Please agree to data sharing to proceed."
     }
   }
 }

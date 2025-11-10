@@ -56,6 +56,33 @@
       "required": "Seleziona se ci sono stati danni precedenti"
     }
   },
+  "$vehicle": {
+    "title": "Informazioni sul veicolo",
+    "vehicleMakeModel": {
+      "label": "Marca / Modello veicolo",
+      "placeholder": "es.: Toyota Camry",
+      "required": "Marca/modello obbligatorio",
+      "minLength": "Marca/modello: minimo 1 carattere"
+    },
+    "mileage": {
+      "label": "Chilometraggio",
+      "placeholder": "es.: 50000 km",
+      "required": "Chilometraggio obbligatorio",
+      "invalid": "Inserisci un chilometraggio valido"
+    },
+    "manufYear": {
+      "label": "Anno di fabbricazione",
+      "placeholder": "es.: 2018",
+      "optional": "facoltativo",
+      "invalid": "Inserisci un anno di fabbricazione valido"
+    },
+    "previousDamage": {
+      "label": "Danni precedenti",
+      "yes": "Sì",
+      "no": "No",
+      "required": "Seleziona se ci sono stati danni precedenti"
+    }
+  },
   "$details": {
     "title": "Dettagli del danno",
     "detailedInformation": {
@@ -99,6 +126,10 @@
       "yes": "Sì",
       "no": "No",
       "required": "Seleziona la disponibilità WhatsApp"
+    },
+    "dataSharingConsent": {
+      "label": "Accetto che Cubee possa condividere i miei dati con aziende partner per la gestione della pratica.",
+      "required": "Accetta la condivisione dei dati per procedere."
     }
   }
 }

@@ -85,6 +85,19 @@
           </div>
       </div>
       <p v-if="errors.onWhatsapp" class="text-red-500 text-sm mt-1 font-poppins">{{ errors.onWhatsapp }}</p>
+      <div class="flex items-start gap-3">
+        <input
+          id="dataSharingConsent"
+          type="checkbox"
+          v-model="localFormData.dataSharingConsent"
+          class="mt-1 h-4 w-4 rounded border-gray-300 text-yellow-500 focus:ring-yellow-400"
+        />
+        <label for="dataSharingConsent" class="text-sm text-gray-700 font-poppins leading-5">
+          {{ csT('$contact.dataSharingConsent.label') }}
+          <span class="text-red-500">*</span>
+        </label>
+      </div>
+      <p v-if="errors.dataSharingConsent" class="text-red-500 text-sm mt-1 font-poppins">{{ errors.dataSharingConsent }}</p>
     </div>
   </div>
 </template>
@@ -100,6 +113,7 @@ interface FormData {
   email: string
   mobile: string
   onWhatsapp: boolean | null
+  dataSharingConsent: boolean
 }
 
 interface Errors {
@@ -107,6 +121,7 @@ interface Errors {
   email?: string
   mobile?: string
   onWhatsapp?: string
+  dataSharingConsent?: string
 }
 
 const props = defineProps<{
@@ -175,6 +190,10 @@ const validate = (): boolean => {
   
   if (localFormData.value.onWhatsapp === null) {
     newErrors.onWhatsapp = csT('$contact.whatsapp.required')
+  }
+
+  if (!localFormData.value.dataSharingConsent) {
+    newErrors.dataSharingConsent = csT('$contact.dataSharingConsent.required')
   }
   
   errors.value = newErrors

@@ -30,6 +30,22 @@
         />
         <p v-if="errors.mileage" class="text-red-500 text-sm mt-1 font-poppins">{{ errors.mileage }}</p>
       </div>
+      <div>
+        <label class="block text-sm font-medium mb-2 text-gray-700 font-poppins">
+          {{ csT('$vehicle.manufYear.label') }}
+          <span class="text-gray-500 text-xs font-normal">({{ csT('$vehicle.manufYear.optional') }})</span>
+        </label>
+        <Input
+          v-model="localFormData.manufYear"
+          type="number"
+          :placeholder="csT('$vehicle.manufYear.placeholder')"
+          class="w-full"
+          :class="{ 'border-red-500': errors.manufYear }"
+          min="1900"
+          max="2100"
+        />
+        <p v-if="errors.manufYear" class="text-red-500 text-sm mt-1 font-poppins">{{ errors.manufYear }}</p>
+      </div>
       
       <div>
         <label class="block text-sm font-medium mb-2 text-gray-700 font-poppins">
@@ -63,12 +79,14 @@ interface FormData {
   vehicleMakeModel: string
   mileage: string
   previousDamage: string
+  manufYear?: string
 }
 
 interface Errors {
   vehicleMakeModel?: string
   mileage?: string
   previousDamage?: string
+  manufYear?: string
 }
 
 const props = defineProps<{
@@ -112,6 +130,12 @@ const validate = (): boolean => {
   if (!localFormData.value.previousDamage) {
     newErrors.previousDamage = csT('$vehicle.previousDamage.required')
   }
+
+  if (localFormData.value.manufYear?.toString().trim()) {
+    if (!isValidYear(localFormData.value.manufYear)) {
+      newErrors.manufYear = csT('$vehicle.manufYear.invalid')
+    }
+  }
   
   errors.value = newErrors
   return Object.keys(newErrors).length === 0
@@ -122,6 +146,11 @@ defineExpose({ validate })
 const isValidMileage = (mileage: string): boolean => {
   const mileageRegex = /^\d+\s*(km|miles?)?$/i
   return mileageRegex.test(mileage.trim())
+}
+
+const isValidYear = (year: string): boolean => {
+  const yearNumber = Number(year)
+  return Number.isInteger(yearNumber) && yearNumber >= 1900 && yearNumber <= new Date().getFullYear()
 }
 </script>
 

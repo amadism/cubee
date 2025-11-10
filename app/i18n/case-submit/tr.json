@@ -56,6 +56,33 @@
       "required": "Lütfen önceki hasar olup olmadığını seçin"
     }
   },
+  "$vehicle": {
+    "title": "Araç Bilgileri",
+    "vehicleMakeModel": {
+      "label": "Araç Marka / Model",
+      "placeholder": "örn. Toyota Camry",
+      "required": "Marka/model zorunludur",
+      "minLength": "Marka/model en az 1 karakter olmalı"
+    },
+    "mileage": {
+      "label": "Kilometre",
+      "placeholder": "örn. 50000 km",
+      "required": "Kilometre zorunludur",
+      "invalid": "Lütfen geçerli bir kilometre girin"
+    },
+    "manufYear": {
+      "label": "Üretim Yılı",
+      "placeholder": "örn. 2018",
+      "optional": "isteğe bağlı",
+      "invalid": "Lütfen geçerli bir üretim yılı girin"
+    },
+    "previousDamage": {
+      "label": "Önceki Hasar",
+      "yes": "Evet",
+      "no": "Hayır",
+      "required": "Lütfen önceki hasar olup olmadığını seçin"
+    }
+  },
   "$details": {
     "title": "Hasar Detayları",
     "detailedInformation": {
@@ -99,6 +126,10 @@
       "yes": "Evet",
       "no": "Hayır",
       "required": "Lütfen WhatsApp kullanılabilirliğini seçin"
+    },
+    "dataSharingConsent": {
+      "label": "Cubee'nin verilerimi vakayı işlemek için iş ortağı şirketlerle paylaşmasına onay veriyorum.",
+      "required": "Lütfen veri paylaşımına onay verin."
     }
   }
 }

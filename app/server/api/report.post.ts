@@ -10,7 +10,7 @@ type UploadedJsonFile = {
 type ReportBody = {
   step1?: { location?: { lat?: number; lng?: number; name?: string } }
   step2?: { reportType?: string; zuordnung?: string }
-  step3?: { vehicleMakeModel?: string; mileage?: string; previousDamage?: string }
+  step3?: { vehicleMakeModel?: string; mileage?: string; previousDamage?: string; manufYear?: string | number }
   step4?: { detailedInformation?: string; uploadedFiles?: UploadedJsonFile[] }
   step5?: { fullName?: string; email?: string; mobile?: string; onWhatsapp?: boolean; lat?: number; lon?: number; locationName?: string }
 }
@@ -80,12 +80,25 @@ export default defineEventHandler(async (event) => {
   }
   
 
+  const manufYearRaw = body?.step3?.manufYear;
+  const parsedManufYear =
+    typeof manufYearRaw === 'number'
+      ? manufYearRaw
+      : typeof manufYearRaw === 'string' && manufYearRaw.trim().length > 0
+        ? Number(manufYearRaw)
+        : null;
+  const manufYear =
+    parsedManufYear !== null && Number.isInteger(parsedManufYear)
+      ? parsedManufYear
+      : null;
+
   const payload = {
     report_type: body?.step2?.reportType ?? null,
     zuordnung: body?.step2?.zuordnung ?? null,
     vehicle_make_model: body?.step3?.vehicleMakeModel ?? null,
     mileage: body?.step3?.mileage ?? null,
     previous_damage: body?.step3?.previousDamage ?? null,
+    manuf_year: manufYear,
     detailed_information: body?.step4?.detailedInformation ?? null,
     attachments: uploadedFileUrls.length > 0 ? uploadedFileUrls : null,
     full_name: body?.step5?.fullName ?? null,
@@ -150,6 +163,7 @@ Mobilnummer: ${body.step5?.mobile || 'Nicht angegeben'}
 Schadensart: ${body.step2?.reportType || 'Nicht angegeben'}
 Fahrzeug: ${body.step3?.vehicleMakeModel || 'Nicht angegeben'}
 Kilometerstand: ${body.step3?.mileage || 'Nicht angegeben'}
+Baujahr: ${body.step3?.manufYear || 'Nicht angegeben'}
 Vorschäden: ${body.step3?.previousDamage || 'Nicht angegeben'}
 Standort: ${body.step5?.locationName || 'Nicht angegeben'}
 

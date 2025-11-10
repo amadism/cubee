@@ -206,6 +206,7 @@ const formData = reactive({
     vehicleMakeModel: "",
     mileage: "",
     previousDamage: "",
+    manufYear: "",
   },
   step4: {
     detailedInformation: "",
@@ -219,6 +220,7 @@ const formData = reactive({
     mobile: "",
     onWhatsapp: null as boolean | null,
     locationName: currentLocation?.value?.name || "",
+    dataSharingConsent: false,
   },
 });
 
@@ -308,6 +310,9 @@ const validateCurrentStep = async (): Promise<boolean> => {
       if (formData.step5.onWhatsapp === null) {
         newErrors.onWhatsapp = csT("$contact.whatsapp.required");
       }
+      if (!formData.step5.dataSharingConsent) {
+        newErrors.dataSharingConsent = csT("$contact.dataSharingConsent.required");
+      }
       errors.step5 = newErrors;
       if (Object.keys(newErrors).length > 0) {
         isValid = false;
@@ -364,6 +369,12 @@ const updateStep3Errors = () => {
     newErrors.previousDamage = csT("$vehicle.previousDamage.required");
   }
 
+  if (formData.step3.manufYear?.toString().trim()) {
+    if (!isValidYear(formData.step3.manufYear)) {
+      newErrors.manufYear = csT("$vehicle.manufYear.invalid");
+    }
+  }
+
   errors.step3 = newErrors;
 };
 
@@ -404,6 +415,10 @@ const updateStep5Errors = () => {
 
   if (formData.step5.onWhatsapp === null) {
     newErrors.onWhatsapp = csT("$contact.whatsapp.required");
+  }
+
+  if (!formData.step5.dataSharingConsent) {
+    newErrors.dataSharingConsent = csT("$contact.dataSharingConsent.required");
   }
 
   errors.step5 = newErrors;
@@ -452,6 +467,15 @@ const isValidGermanMobile = (mobile: string): boolean => {
   return pattern.test(normalized);
 };
 
+const isValidYear = (year: string): boolean => {
+  const yearNumber = Number(year);
+  if (!Number.isInteger(yearNumber)) {
+    return false;
+  }
+  const currentYear = new Date().getFullYear();
+  return yearNumber >= 1900 && yearNumber <= currentYear;
+};
+
 // removed: formatToE164DE helper is no longer needed
 
 async function filesToJson(files: File[]): Promise<Array<{ name: string; type: string; data: string }>> {
@@ -498,6 +522,7 @@ const submitForm = async () => {
         vehicleMakeModel: formData.step3.vehicleMakeModel,
         mileage: formData.step3.mileage,
         previousDamage: formData.step3.previousDamage,
+      manufYear: formData.step3.manufYear,
       },
       step4: {
         detailedInformation: formData.step4.detailedInformation,
@@ -531,6 +556,7 @@ const submitForm = async () => {
     formData.step3.vehicleMakeModel = "";
     formData.step3.mileage = "";
     formData.step3.previousDamage = "";
+    formData.step3.manufYear = "";
     formData.step4.detailedInformation = "";
     formData.step4.uploadedFiles = [];
     formData.step5.fullName = "";
@@ -540,6 +566,7 @@ const submitForm = async () => {
     formData.step5.lat = currentLocation?.value?.lat || 0;
     formData.step5.lon = currentLocation?.value?.lng || 0;
     formData.step5.locationName = currentLocation?.value?.name || "";
+    formData.step5.dataSharingConsent = false;
     
     currentStep.value = 1;
     

@@ -68,6 +68,12 @@
       "required": "Kilometerstand ist erforderlich",
       "invalid": "Bitte geben Sie einen gültigen Kilometerstand ein"
     },
+    "manufYear": {
+      "label": "Baujahr",
+      "placeholder": "z. B. 2018",
+      "optional": "optional",
+      "invalid": "Bitte ein gültiges Baujahr eingeben"
+    },
     "previousDamage": {
       "label": "Vorschäden",
       "yes": "Ja",
@@ -118,6 +124,10 @@
       "yes": "Ja",
       "no": "Nein",
       "required": "Bitte WhatsApp-Verfügbarkeit auswählen"
+    },
+    "dataSharingConsent": {
+      "label": "Ich stimme zu, dass Cubee meine Daten mit Partnerunternehmen zur Bearbeitung des Falls teilen darf.",
+      "required": "Bitte stimmen Sie der Datenweitergabe zu."
     }
   }
 }
