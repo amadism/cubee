@@ -52,7 +52,7 @@ const handleLocationSelected = (location: UserLocation) => {
 </script>
 
 <template>
-  <div class="flex flex-col lg:flex-row gap-4 p-4 lg:p-0">
+  <div class="flex flex-col lg:flex-row gap-4">
     <div class="lg:flex-1 overflow-y-auto">
       <CaseSubmit @location-selected="handleLocationSelected" />
     </div>

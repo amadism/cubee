@@ -140,7 +140,7 @@ function selectCurrentLocation() {
       size="lg" 
       @click="selectCurrentLocation"
       :disabled="isLoading"
-      class="w-full"
+      class="w-full text-xs md:text-base"
     >
       <svg
         v-if="!isLoading"

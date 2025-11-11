@@ -10,9 +10,10 @@
           <div class="flex justify-center mt-4 sm:mt-6 text-xs sm:text-sm lg:text-xs overflow-hidden px-2">
             <div class="flex items-center flex-wrap lg:justify-center md:justify-center gap-2 lg:gap-0 lg:flex-nowrap w-full max-w-3xl">
               <!-- Step 1 -->
-              <div class="flex items-center space-x-2 lg:flex-1">
+              <div class="flex items-center space-x-1 md:space-x-2 lg:flex-1 p-1 md:p-0 flex-1 md:flex-none justify-center"
+              :class="currentStep >= 1 ? 'bg-yellow-400/20 md:bg-transparent border border-yellow-400 md:border-0' : 'bg-gray-200/50 md:bg-transparent border border-transparent md:border-0'">
                 <span :class="[
-                  'w-6 h-6 flex items-center justify-center rounded-full border transition-all duration-300',
+                  'md:w-6 md:h-6 w-4 h-4 flex items-center justify-center rounded-full border transition-all duration-300',
                   currentStep >= 1
                     ? 'bg-yellow-400 text-gray-700 border-yellow-400'
                     : 'bg-white text-gray-500 border-gray-300',
@@ -28,9 +29,10 @@
               <div class="hidden lg:block flex-1 mx-2 h-px" :class="currentStep >= 2 ? 'bg-yellow-400' : 'bg-gray-300'"></div>
 
               <!-- Step 2 -->
-              <div class="flex items-center space-x-2 lg:flex-1 lg:justify-center">
+              <div class="flex items-center space-x-1 md:space-x-2 lg:flex-1 p-1 md:p-0 flex-1 md:flex-none justify-center"
+              :class="currentStep >= 2 ? 'bg-yellow-400/20 md:bg-transparent border border-yellow-400 md:border-0' : 'bg-gray-200/50 md:bg-transparent border border-transparent md:border-0'">
                 <span :class="[
-                  'w-6 h-6 flex items-center justify-center rounded-full border transition-all duration-300',
+                  'md:w-6 md:h-6 w-4 h-4 flex items-center justify-center rounded-full border transition-all duration-300',
                   currentStep >= 2
                     ? 'bg-yellow-400 text-gray-700 border-yellow-400'
                     : 'bg-white text-gray-500 border-gray-300',
@@ -46,9 +48,10 @@
               <div class="hidden lg:block flex-1 mx-2 h-px" :class="currentStep >= 3 ? 'bg-yellow-400' : 'bg-gray-300'"></div>
 
               <!-- Step 3 -->
-              <div class="flex items-center space-x-2 lg:flex-1 lg:justify-center">
+              <div class="flex items-center space-x-1 md:space-x-2 lg:flex-1 p-1 md:p-0 flex-1 md:flex-none justify-center"
+              :class="currentStep >= 3 ? 'bg-yellow-400/20 md:bg-transparent border border-yellow-400 md:border-0' : 'bg-gray-200/50 md:bg-transparent border border-transparent md:border-0'">
                 <span :class="[
-                  'w-6 h-6 flex items-center justify-center rounded-full border transition-all duration-300',
+                  'md:w-6 md:h-6 w-4 h-4 flex items-center justify-center rounded-full border transition-all duration-300',
                   currentStep >= 3
                     ? 'bg-yellow-400 text-gray-700 border-yellow-400'
                     : 'bg-white text-gray-500 border-gray-300',
@@ -64,9 +67,10 @@
               <div class="hidden lg:block flex-1 mx-2 h-px" :class="currentStep >= 4 ? 'bg-yellow-400' : 'bg-gray-300'"></div>
 
               <!-- Step 4 -->
-              <div class="flex items-center space-x-2 lg:flex-1">
+              <div class="flex items-center space-x-1 md:space-x-2 lg:flex-1 p-1 md:p-0 flex-1 md:flex-none justify-center"
+              :class="currentStep >= 4 ? 'bg-yellow-400/20 md:bg-transparent border border-yellow-400 md:border-0' : 'bg-gray-200/50 md:bg-transparent border border-transparent md:border-0'">
                 <span :class="[
-                  'w-6 h-6 flex items-center justify-center rounded-full border transition-all duration-300',
+                  'md:w-6 md:h-6 w-4 h-4 flex items-center justify-center rounded-full border transition-all duration-300',
                   currentStep >= 4
                     ? 'bg-yellow-400 text-gray-700 border-yellow-400'
                     : 'bg-white text-gray-500 border-gray-300',
@@ -82,9 +86,10 @@
               <div class="hidden lg:block flex-1 mx-2 h-px" :class="currentStep >= 5 ? 'bg-yellow-400' : 'bg-gray-300'"></div>
 
               <!-- Step 5 -->
-              <div class="flex items-center space-x-2 lg:flex-1 lg:justify-end">
+              <div class="flex items-center space-x-1 md:space-x-2 lg:flex-1 p-1 md:p-0 flex-1 md:flex-none justify-center"
+              :class="currentStep >= 5 ? 'bg-yellow-400/20 md:bg-transparent border border-yellow-400 md:border-0' : 'bg-gray-200/50 md:bg-transparent border border-transparent md:border-0'">
                 <span :class="[
-                  'w-6 h-6 flex items-center justify-center rounded-full border transition-all duration-300',
+                  'md:w-6 md:h-6 w-4 h-4 flex items-center justify-center rounded-full border transition-all duration-300',
                   currentStep >= 5
                     ? 'bg-yellow-400 text-gray-700 border-yellow-400'
                     : 'bg-white text-gray-500 border-gray-300',
