@@ -300,7 +300,7 @@ const validateCurrentStep = async (): Promise<boolean> => {
       }
       if (!formData.step5.mobile?.trim()) {
         newErrors.mobile = csT("$contact.mobile.required");
-      } else if (!isValidGermanMobile(formData.step5.mobile)) {
+      } else if (!isValidPhoneNumber(formData.step5.mobile)) {
         newErrors.mobile = csT("$contact.mobile.invalid");
       }
       if (formData.step5.onWhatsapp === false) {
@@ -414,7 +414,7 @@ const updateStep5Errors = () => {
 
   if (!formData.step5.mobile?.trim()) {
     newErrors.mobile = csT("$contact.mobile.required");
-  } else if (!isValidGermanMobile(formData.step5.mobile)) {
+  } else if (!isValidPhoneNumber(formData.step5.mobile)) {
     newErrors.mobile = csT("$contact.mobile.invalid");
   }
 
@@ -459,17 +459,9 @@ const isValidEmail = (email: string): boolean => {
   return emailRegex.test(email);
 };
 
-const isValidGermanMobile = (mobile: string): boolean => {
+const isValidPhoneNumber = (mobile: string): boolean => {
   const digitsOnly = String(mobile || '').replace(/\D/g, '');
-  let normalized = digitsOnly;
-  if (normalized.startsWith('49')) {
-    normalized = normalized.slice(2);
-  }
-  if (normalized.startsWith('0')) {
-    normalized = normalized.slice(1);
-  }
-  const pattern = /^(?:1(?:5|6|7)\d{8,9})$/;
-  return pattern.test(normalized);
+  return digitsOnly.length >= 7;
 };
 
 const isValidYear = (year: string): boolean => {

@@ -23,8 +23,6 @@
       "required": "Veuillez sélectionner un type de rapport",
       "options": {
         "haftpflichtgutachten": "Évaluation de responsabilité",
-        "accident": "Rapport d'accident et de dommage",
-        "repair": "Confirmation de réparation",
         "other": "Autre rapport"
       }
     },
@@ -118,8 +116,8 @@
       "label": "Numéro de mobile",
       "placeholder": "151 12345678",
       "required": "Numéro de mobile requis",
-      "invalid": "Veuillez saisir un numéro de mobile allemand valide",
-      "helper": "Saisir 10 chiffres sans 0 initial, ex. 151 2345678"
+      "invalid": "Veuillez saisir un numéro de téléphone valide",
+      "helper": "Ajoutez votre indicatif pays si nécessaire, ex. +49 151 2345678"
     },
     "whatsapp": {
       "label": "Disponible sur WhatsApp",
@@ -128,7 +126,8 @@
       "required": "Veuillez sélectionner la disponibilité WhatsApp"
     },
     "dataSharingConsent": {
-      "label": "J’accepte que Cubee partage mes données avec des entreprises partenaires pour le traitement du dossier.",
+      "label": "Consentement au partage des données",
+      "description": "J'accepte que les données que j'ai fournies puissent être transmises à des entreprises partenaires sélectionnées de Cubee Kfz-Schadengutachten dans le cadre du traitement du sinistre, dans la mesure où cela est nécessaire pour traiter ma demande.\nJe peux révoquer ce consentement à tout moment avec effet pour l'avenir.",
       "required": "Veuillez accepter le partage des données pour continuer."
     }
   }

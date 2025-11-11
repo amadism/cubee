@@ -25,8 +25,6 @@
       "required": "Bitte eine Meldungsart wählen",
       "options": {
         "haftpflichtgutachten": "Haftpflichtgutachten",
-        "accident": "Unfall- und Schadensmeldung",
-        "repair": "Reparaturbestätigung",
         "other": "Andere Meldung"
       }
     },
@@ -116,8 +114,8 @@
       "label": "Handynummer",
       "placeholder": "151 12345678",
       "required": "Handynummer ist erforderlich",
-      "invalid": "Bitte eine gültige deutsche Handynummer eingeben",
-      "helper": "10 Ziffern ohne führende 0, z. B. 151 2345678"
+      "invalid": "Bitte eine gültige Telefonnummer eingeben",
+      "helper": "Bitte geben Sie Ihre Telefonnummer inklusive Landesvorwahl an, falls erforderlich."
     },
     "whatsapp": {
       "label": "Bei WhatsApp erreichbar",
@@ -126,7 +124,8 @@
       "required": "Bitte WhatsApp-Verfügbarkeit auswählen"
     },
     "dataSharingConsent": {
-      "label": "Ich stimme zu, dass Cubee meine Daten mit Partnerunternehmen zur Bearbeitung des Falls teilen darf.",
+      "label": "Einwilligung zur Datenweitergabe",
+      "description": "Ich bin damit einverstanden, dass meine angegebenen Daten im Rahmen der\nSchadenabwicklung an ausgewählte Partnerunternehmen von Cubee Kfz-Schadengutachten\nweitergegeben werden dürfen, sofern dies für die Bearbeitung meines Anliegens erforderlich\nist.\nIch kann diese Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen.",
       "required": "Bitte stimmen Sie der Datenweitergabe zu."
     }
   }

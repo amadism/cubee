@@ -38,20 +38,15 @@
           {{ csT('$contact.mobile.label') }}
           <span class="text-red-500">*</span>
         </label>
-        <div class="flex items-center gap-2">
-          <div>+49</div>
-          <Input 
+        <Input 
           v-model="localFormData.mobile" 
           type="tel"
           :placeholder="'151 2345678'"
           class="w-full"
           :class="{ 'border-red-500': errors.mobile }"
-          inputmode="numeric"
-          pattern="^(?:0?(?:15|16|17)\\d{8,9})$"
-          :maxlength="11"
+          inputmode="tel"
           required
         />
-        </div>
         <p class="text-gray-500 text-xs mt-1 font-poppins">
           {{ csT('$contact.mobile.helper') }}
         </p>
@@ -92,10 +87,15 @@
           v-model="localFormData.dataSharingConsent"
           class="mt-1 h-4 w-4 rounded border-gray-300 text-yellow-500 focus:ring-yellow-400"
         />
-        <label for="dataSharingConsent" class="text-sm text-gray-700 font-poppins leading-5">
-          {{ csT('$contact.dataSharingConsent.label') }}
-          <span class="text-red-500">*</span>
-        </label>
+        <div>
+          <label for="dataSharingConsent" class="text-sm text-gray-700 font-poppins leading-5">
+            {{ csT('$contact.dataSharingConsent.label') }}
+            <span class="text-red-500">*</span>
+          </label>
+          <p class="text-sm text-gray-500 font-poppins leading-5 whitespace-pre-line">
+            {{ csT('$contact.dataSharingConsent.description') }}
+          </p>
+        </div>
       </div>
       <p v-if="errors.dataSharingConsent" class="text-red-500 text-sm mt-1 font-poppins">{{ errors.dataSharingConsent }}</p>
     </div>
@@ -145,18 +145,9 @@ const isValidEmail = (email: string): boolean => {
   return emailRegex.test(email)
 }
 
-const isValidGermanMobile = (mobile: string): boolean => {
+const isValidPhoneNumber = (mobile: string): boolean => {
   const digitsOnly = String(mobile || '').replace(/\D/g, '')
-  let normalized = digitsOnly
-  if (normalized.startsWith('49')) {
-    normalized = normalized.slice(2)
-  }
-  if (normalized.startsWith('0')) {
-    normalized = normalized.slice(1)
-  }
-
-  const pattern = /^(?:1(?:5|6|7)\d{8,9})$/
-  return pattern.test(normalized)
+  return digitsOnly.length >= 7
 }
 
 watch(localFormData, () => {
@@ -184,7 +175,7 @@ const validate = (): boolean => {
   
   if (!localFormData.value.mobile?.trim()) {
     newErrors.mobile = csT('$contact.mobile.required')
-  } else if (!isValidGermanMobile(localFormData.value.mobile)) {
+  } else if (!isValidPhoneNumber(localFormData.value.mobile)) {
     newErrors.mobile = csT('$contact.mobile.invalid')
   }
   

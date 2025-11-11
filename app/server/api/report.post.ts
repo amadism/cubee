@@ -30,24 +30,16 @@ export default defineEventHandler(async (event) => {
 
   const supabase = await serverSupabaseClient(event)
 
-  const tel = String(body?.step5?.mobile)
-  const digitsOnly = tel.replace(/\D/g, '')
-  let national = digitsOnly
-  if (national.startsWith('49')) national = national.slice(2)
-  if (national.startsWith('0')) national = national.slice(1)
-  const mobile = '+49' + national
+  const mobile = String(body?.step5?.mobile ?? '').trim()
   if (!mobile) return { success: false, message: 'Mobile number is required.' }
 
-  const isValidGermanMobile = (mobile: string): boolean => {
-    const digits = mobile.replace(/\D/g, '')
-    let normalized = digits
-    if (normalized.startsWith('49')) normalized = normalized.slice(2)
-    if (normalized.startsWith('0')) normalized = normalized.slice(1)
-    return /^(?:1(?:5|6|7)\d{8,9})$/.test(normalized)
+  const isValidPhoneNumber = (value: string): boolean => {
+    const digits = value.replace(/\D/g, '')
+    return digits.length >= 7
   }
 
-  if (!isValidGermanMobile(mobile)) {
-    return { success: false, message: 'Please enter a valid German mobile number.' }
+  if (!isValidPhoneNumber(mobile)) {
+    return { success: false, message: 'Please enter a valid phone number.' }
   }
 
   if (body?.step5?.onWhatsapp === null) {

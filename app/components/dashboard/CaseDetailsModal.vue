@@ -103,6 +103,44 @@
                             {{ item.zuordnung }}
                           </p>
                         </div>
+                        <div class="space-y-1" v-if="item.tel">
+                          <p
+                            class="text-xs font-medium text-gray-500 uppercase tracking-wide"
+                          >
+                            Phone
+                          </p>
+                          <p class="text-sm font-semibold text-gray-900 break-all">
+                            <a
+                              :href="`tel:${item.tel}`"
+                              class="hover:underline"
+                            >
+                              {{ item.tel }}
+                            </a>
+                          </p>
+                        </div>
+                        <div
+                          class="space-y-1"
+                          v-if="item.on_whatsapp !== null && item.on_whatsapp !== undefined"
+                        >
+                          <p
+                            class="text-xs font-medium text-gray-500 uppercase tracking-wide"
+                          >
+                            WhatsApp
+                          </p>
+                          <p class="text-sm font-semibold text-gray-900">
+                            {{ item.on_whatsapp ? "Yes" : "No" }}
+                          </p>
+                        </div>
+                        <div class="space-y-1" v-if="item.manuf_year">
+                          <p
+                            class="text-xs font-medium text-gray-500 uppercase tracking-wide"
+                          >
+                            Manufacturing Year
+                          </p>
+                          <p class="text-sm font-semibold text-gray-900">
+                            {{ item.manuf_year }}
+                          </p>
+                        </div>
                         <div class="space-y-1" v-if="item.mileage">
                           <p
                             class="text-xs font-medium text-gray-500 uppercase tracking-wide"
@@ -136,8 +174,7 @@
                         Location:
                       </h3>
                       <div class="flex flex-wrap items-center gap-2 text-xs break-words">
-                        {{ item.location_name }} - Lat: {{ item.lat }} · Lon:
-                        {{ item.lon }}
+                        {{ item.location_name }}
                       </div>
                     </div>
 
@@ -274,7 +311,7 @@
                         </div>
                         <div
                           v-else-if="nearestPartners.length"
-                          class="mt-2 space-y-2 max-h-64 overflow-y-auto"
+                          class="mt-2 space-y-2 max-h-64 overflow-y-auto min-h-[420px]"
                         >
                           <div
                             v-for="p in nearestPartners"
@@ -352,7 +389,62 @@
                           No partners found nearby
                         </div>
                       </div>
+
+                    <div class="mt-4">
+                      <Button
+                        variant="destructive"
+                        class="w-full"
+                        @click="showDeleteConfirm = true"
+                        :disabled="deletingCase"
+                      >
+                        {{ deletingCase ? "Deleting..." : "Delete Case" }}
+                      </Button>
+                      <p v-if="deleteError" class="text-xs text-red-500 mt-2">
+                        {{ deleteError }}
+                      </p>
+                    </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </Transition>
+
+          <Transition
+            enter-active-class="transition ease-out duration-200"
+            enter-from-class="opacity-0"
+            enter-to-class="opacity-100"
+            leave-active-class="transition ease-in duration-150"
+            leave-from-class="opacity-100"
+            leave-to-class="opacity-0"
+          >
+            <div
+              v-if="showDeleteConfirm"
+              class="fixed inset-0 z-[1100] flex items-center justify-center bg-black/50 p-4"
+            >
+              <div class="bg-white rounded-lg shadow-xl max-w-sm w-full p-6 space-y-4">
+                <h3 class="text-lg font-semibold text-gray-900">
+                  Delete Case
+                </h3>
+                <p class="text-sm text-gray-600">
+                  Are you sure you want to delete this case? This action cannot be undone.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-2">
+                  <Button
+                    variant="outline"
+                    class="flex-1"
+                    @click="showDeleteConfirm = false"
+                    :disabled="deletingCase"
+                  >
+                    Cancel
+                  </Button>
+                  <Button
+                    variant="destructive"
+                    class="flex-1"
+                    @click="deleteCase"
+                    :disabled="deletingCase"
+                  >
+                    {{ deletingCase ? "Deleting..." : "Delete" }}
+                  </Button>
                 </div>
               </div>
             </div>
@@ -381,6 +473,9 @@ const accepting = ref(false);
 const partners = ref([]);
 const loading = ref(false);
 const generatingInvoice = ref(false);
+const showDeleteConfirm = ref(false);
+const deletingCase = ref(false);
+const deleteError = ref("");
 
 const nearestPartners = computed(() => {
   
@@ -457,6 +552,10 @@ watch(
       }
       
       loading.value = false;
+    } else {
+      showDeleteConfirm.value = false;
+      deletingCase.value = false;
+      deleteError.value = "";
     }
   }
 );
@@ -590,6 +689,28 @@ const generateInvoice = async () => {
     await updateStatus('completed');
     generatingInvoice.value = false;
 
+  }
+};
+
+const deleteCase = async () => {
+  if (!props.item?.id) {
+    deleteError.value = "Missing case identifier.";
+    return;
+  }
+  deletingCase.value = true;
+  deleteError.value = "";
+  try {
+    await $fetch(`/api/cases/${props.item.id}`, {
+      method: "DELETE",
+    });
+    emit("status-updated", props.item.id);
+    showDeleteConfirm.value = false;
+    emit("update:open", false);
+  } catch (err) {
+    console.error("Failed to delete case:", err);
+    deleteError.value = err?.data?.message || err?.message || "Failed to delete the case. Please try again.";
+  } finally {
+    deletingCase.value = false;
   }
 };
 </script>

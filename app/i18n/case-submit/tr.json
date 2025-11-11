@@ -23,8 +23,6 @@
       "required": "Lütfen bir rapor türü seçin",
       "options": {
         "haftpflichtgutachten": "Sorumluluk Değerlendirmesi",
-        "accident": "Kaza ve Hasar Raporu",
-        "repair": "Onarım Onayı",
         "other": "Diğer Rapor"
       }
     },
@@ -118,8 +116,8 @@
       "label": "Cep Telefonu Numarası",
       "placeholder": "151 12345678",
       "required": "Cep telefonu numarası zorunludur",
-      "invalid": "Lütfen geçerli bir Alman cep telefonu numarası girin",
-      "helper": "Baştaki 0 olmadan 10 rakam girin, ör. 151 2345678"
+      "invalid": "Lütfen geçerli bir telefon numarası girin",
+      "helper": "Gerekliyse ülke kodunuzu ekleyin, ör. +49 151 2345678"
     },
     "whatsapp": {
       "label": "WhatsApp'ta Mevcut",
@@ -128,7 +126,8 @@
       "required": "Lütfen WhatsApp kullanılabilirliğini seçin"
     },
     "dataSharingConsent": {
-      "label": "Cubee'nin verilerimi vakayı işlemek için iş ortağı şirketlerle paylaşmasına onay veriyorum.",
+      "label": "Veri Paylaşım Onayı",
+      "description": "Sağladığım verilerin, talebimin işlenmesi için gerekli olduğu sürece Cubee Kfz-Schadengutachten'in seçilmiş iş ortaklarına hasar süreci kapsamında aktarılmasına izin veriyorum.\nBu onayı dilediğim zaman geleceğe etkili olacak şekilde geri çekebilirim.",
       "required": "Lütfen veri paylaşımına onay verin."
     }
   }

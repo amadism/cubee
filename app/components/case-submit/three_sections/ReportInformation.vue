@@ -12,8 +12,6 @@
           </SelectTrigger>
           <SelectContent>
             <SelectItem value="haftpflichtgutachten">{{ csT('$report.reportType.options.haftpflichtgutachten') }}</SelectItem>
-            <SelectItem value="accident">{{ csT('$report.reportType.options.accident') }}</SelectItem>
-            <SelectItem value="repair">{{ csT('$report.reportType.options.repair') }}</SelectItem>
             <SelectItem value="other">{{ csT('$report.reportType.options.other') }}</SelectItem>
           </SelectContent>
         </Select>
