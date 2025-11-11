@@ -17,6 +17,7 @@
     "desc": "Lütfen bir Cubee konteynerinde randevunuzu planlamak için aşağıdaki konumlardan birini seçin.",
     "distance": "{distance} uzaklıkta",
     "google-maps": "Google Haritalar'da aç",
+    "partner-label": "Cubee İş Ortağı",
     "name": "Eksper Merkezi {name}",
     "opening-hours": "{hours} saatleri arasında açık",
     "schedule-now": "Randevu al",

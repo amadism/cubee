@@ -17,6 +17,7 @@
     "desc": "Please select one of the locations below to schedule your appointment at a Cubee container.",
     "distance": "{distance} away",
     "google-maps": "Open in Google Maps",
+    "partner-label": "Cubee Partner",
     "name": "Appraiser Center {name}",
     "opening-hours": "open from {hours}",
     "schedule-now": "Schedule appointment",

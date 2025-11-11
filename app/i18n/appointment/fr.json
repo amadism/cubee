@@ -17,6 +17,7 @@
     "desc": "Veuillez choisir l'un des emplacements ci-dessous pour planifier votre rendez-vous dans un conteneur Cubee.",
     "distance": "{distance} de distance",
     "google-maps": "Ouvrir dans Google Maps",
+    "partner-label": "Partenaire Cubee",
     "name": "Centre d'expertise {name}",
     "opening-hours": "ouvert de {hours}",
     "schedule-now": "Planifier un rendez-vous",

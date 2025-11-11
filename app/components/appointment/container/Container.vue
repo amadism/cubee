@@ -49,16 +49,15 @@ const appointmentLink = computed(() =>
   >
     <CardHeader>
       <CardTitle>
-         <template v-if="props.partner">
+        <template v-if="props.partner">
           <div class="inline-flex items-center gap-2">
             <BrandLogoBee class="h-8" />
-            {{ props.partner?.name }}
+            <span>
+              {{ t('$stations.partner-label') }} {{ props.partner?.location_name?.replace(/, Germany$/, '') }}
+            </span>
           </div>
         </template>
       </CardTitle>
-      <CardDescription class="font-semibold" v-if="props.partner?.location_name">
-        {{ props.partner?.location_name }}
-      </CardDescription>
     </CardHeader>
 
     <CardContent class="space-y-4 -mt-6">
@@ -89,7 +88,7 @@ const appointmentLink = computed(() =>
             </Button>
           </NuxtLink>
 
-          <NuxtLink
+          <!-- <NuxtLink
             :to="`https://maps.google.com/?daddr=${props.station.address}`"
             target="_blank"
             external
@@ -99,7 +98,7 @@ const appointmentLink = computed(() =>
               <Icon :icon="faLocationDot" />
               {{ t('$stations.google-maps') }}
             </Button>
-          </NuxtLink>
+          </NuxtLink> -->
         </template>
         <template v-else>
           <NuxtLink :to="localePath({ name: 'partner-partnerId', params: { partnerId: String(props.partner?.id) } })" external class="block">
@@ -109,7 +108,7 @@ const appointmentLink = computed(() =>
             </Button>
           </NuxtLink>
 
-          <NuxtLink
+          <!-- <NuxtLink
             :to="`https://www.google.com/maps/search/?api=1&query=${props.partner?.location.lat},${props.partner?.location.lng}`"
             target="_blank"
             external
@@ -119,7 +118,7 @@ const appointmentLink = computed(() =>
               <Icon :icon="faLocationDot" />
               {{ t('$stations.google-maps') }}
             </Button>
-          </NuxtLink>
+          </NuxtLink> -->
         </template>
       </div>
     </CardContent>

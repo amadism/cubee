@@ -27,6 +27,7 @@
   "$stations": {
     "title": "Terminvereinbarung",
     "desc": "Bitte wähle einen der unten stehenden Standorte aus, um deinen Termin bei einem Cubee-Container zu planen.",
+    "partner-label": "Cubee Partner",
     "name": "{name}",
     "opening-hours": "geöffnet von {hours}",
     "distance": "{distance} entfernt",

@@ -17,6 +17,7 @@
     "desc": "Пожалуйста, выберите одно из местоположений ниже, чтобы запланировать встречу в контейнере Cubee.",
     "distance": "{distance} от вас",
     "google-maps": "Открыть в Google Maps",
+    "partner-label": "Партнер Cubee",
     "name": "Центр оценки {name}",
     "opening-hours": "открыто с {hours}",
     "schedule-now": "Запланировать встречу",
