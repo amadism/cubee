@@ -35,10 +35,12 @@
     "title": "Where is your vehicle located?",
     "use-current": "Use my current location",
     "locating": "Locating...",
-    "error.not-supported": "Geolocation is not supported by this browser.",
-    "error.permission-denied": "Location permission denied. Please enable location access in your browser settings.",
-    "error.timeout": "Location request timed out. Please try again or enter your location manually.",
-    "error.unavailable": "Unable to determine your location. Please try again or enter your location manually."
+    "error": {
+      "not-supported": "Geolocation is not supported by this browser.",
+      "permission-denied": "Location permission denied. Please enable location access in your browser settings.",
+      "timeout": "Location request timed out. Please try again or enter your location manually.",
+      "unavailable": "Unable to determine your location. Please try again or enter your location manually."
+    }
   },
   "back": "Back"
 }

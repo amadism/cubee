@@ -41,7 +41,7 @@
         <Input 
           v-model="localFormData.mobile" 
           type="tel"
-          :placeholder="'151 2345678'"
+          :placeholder="'+49 151 2345678'"
           class="w-full"
           :class="{ 'border-red-500': errors.mobile }"
           inputmode="tel"

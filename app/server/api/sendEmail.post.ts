@@ -90,9 +90,11 @@ export default defineEventHandler(async (event) => {
 
     const htmlContent = body.html ? body.html : createEmailTemplate(body.message || '');
 
+    const recipients = Array.isArray(body.to) ? body.to : [body.to];
+
     const { data, error } = await resend.emails.send({
       from: 'Cubee <support@cubee.expert>',
-      to: [body.to],
+      to: recipients,
       subject: body.subject,
       html: htmlContent,
     });

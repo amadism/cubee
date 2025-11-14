@@ -146,6 +146,7 @@ Ihr Cubee Support-Team`,
   }
 
   const adminEmails = ['becker@cubee.expert', 'saad@modernice.design'];
+
   
   const adminMessage = `Es wurde eine neue Schadensmeldung eingereicht.
 

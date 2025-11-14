@@ -10,10 +10,12 @@
     "use-current": "Meinen aktuellen Standort verwenden",
     "custom": "Standort eingeben",
     "locating": "Standort wird ermittelt...",
-    "error.not-supported": "Geolokalisierung wird von diesem Browser nicht unterstützt.",
-    "error.permission-denied": "Standortberechtigung verweigert. Bitte aktivieren Sie den Standortzugriff in Ihren Browsereinstellungen.",
-    "error.timeout": "Standortanfrage hat das Zeitlimit überschritten. Bitte versuchen Sie es erneut oder geben Sie Ihren Standort manuell ein.",
-    "error.unavailable": "Standort konnte nicht ermittelt werden. Bitte versuchen Sie es erneut oder geben Sie Ihren Standort manuell ein."
+    "error": {
+      "not-supported": "Geolokalisierung wird von diesem Browser nicht unterstützt.",
+      "permission-denied": "Standortberechtigung verweigert. Bitte aktivieren Sie den Standortzugriff in Ihren Browsereinstellungen.",
+      "timeout": "Standortanfrage hat das Zeitlimit überschritten. Bitte versuchen Sie es erneut oder geben Sie Ihren Standort manuell ein.",
+      "unavailable": "Standort konnte nicht ermittelt werden. Bitte versuchen Sie es erneut oder geben Sie Ihren Standort manuell ein."
+    }
   },
   "$drivers": {
     "title": "Mobile Gutachter in deiner Nähe",
