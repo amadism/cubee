@@ -248,13 +248,17 @@ function goHome() {
           <div v-if="successOpen" class="bg-white border border-green-300 rounded-xl shadow-xl p-4 sm:p-6 max-w-2xl w-full">
             <div class="text-center space-y-4">
               <h2 class="text-xl sm:text-2xl font-bold text-green-700">
-                Fall erfolgreich übernommen!
+                Herzlichen Glückwunsch!
               </h2>
               <p class="text-sm sm:text-base text-gray-700 leading-relaxed">
-                Vielen Dank für Ihre Zusage. Sie erhalten in Kürze weitere Informationen zur Bearbeitung des Falls per E-Mail und WhatsApp.
+                Sie haben diesen Fall erfolgreich übernommen.
               </p>
               <p class="text-sm text-green-700">
                 Fall-ID: <span class="font-mono bg-green-50 px-2 py-1 rounded">{{ caseId }}</span>
+              </p>
+              <p class="text-sm">
+                Wir freuen uns auf die Zusammenarbeit.
+Die weiteren Informationen zu diesem Fall erhalten Sie in Kürze per E-Mail oder WhatsApp.
               </p>
               <Button 
                 variant="primary" 

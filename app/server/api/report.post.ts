@@ -111,7 +111,7 @@ export default defineEventHandler(async (event) => {
   await $fetch("/api/send-whatsapp", {
         method: "POST",
         body: {
-          templateId: 'tn_9JsXUf8OVOrksaAX1Uqoo',
+          templateId: 'tn_cPRj1wT4p2N7kHB4SOoUG',
           to: mobile,
           variables: [
             { position: 1, value: body.step5.fullName }

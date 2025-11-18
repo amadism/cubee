@@ -33,12 +33,37 @@ if(data.success){
       },
     });
 
-  if (caseData?.email) {
+   if(caseData?.case_on_whatsapp) {
+    await $fetch("/api/send-whatsapp", {
+      method: "POST",
+      body: {
+        templateId: 'tn_cNOSsE5gtxI29tuXOpYRV',
+        to: caseData.case_tel,
+        variables: [
+          { position: 1, value: caseData.case_name }
+        ],
+      },
+    });
+   }
+
+   await $fetch("/api/send-whatsapp", {
+    method: "POST",
+    body: {
+      templateId: 'tn_KDujYUuW8oiJHhG3G6nRI',
+      to: caseData.partner_tel,
+      variables: [
+        { position: 1, value: case_id },
+        { position: 2, value: `Name: ${caseData.case_name} - Tel: ${caseData.case_tel} - Email: ${caseData.case_email} - Vehicle Make Model: ${caseData.vehicle_make_model} - Location: ${caseData.location_name} - Zuordnung: ${caseData.zuordnung} - Mileage: ${caseData.mileage} - Previous Damage: ${caseData.previous_damage} - Manuf Year: ${caseData.manuf_year} - Detailed Information: ${caseData.detailed_information}` }, 
+      ],
+    },
+  });
+
+  if (caseData?.case_email) {
     try {
       const emailResponse = await $fetch('/api/sendEmail', {
         method: 'POST',
         body: {
-          to: [`${caseData.email}`],
+          to: [`${caseData.case_email}`],
           subject: 'Ihr Fall wurde einem Partner zugewiesen',
           message: `Ihr Fall wurde einem unserer Partner zugewiesen.\nSie werden in Kürze kontaktiert.`,
         },
@@ -59,7 +84,9 @@ Partner: ${caseData?.partner_name || 'Nicht angegeben'}
 Schadensart: ${caseData?.report_type || 'Nicht angegeben'}
 Fahrzeug: ${caseData?.vehicle_make_model || 'Nicht angegeben'}
 Standort: ${caseData?.location_name || 'Nicht angegeben'}
-Telefon: ${caseData?.tel || 'Nicht angegeben'}
+Case Telefon: ${caseData?.case_tel || 'Nicht angegeben'},
+Assistant Telefon: ${caseData?.partner_tel || 'Nicht angegeben'},
+Assistant Name: ${caseData?.partner_name || 'Nicht angegeben'},
 
 Weitere Details:
 ${caseData?.detailed_information || 'Keine zusätzlichen Informationen'}

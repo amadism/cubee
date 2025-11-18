@@ -84,12 +84,11 @@ export default defineEventHandler(async (event) => {
     const whatsappResponse = await $fetch("/api/send-whatsapp", {
       method: "POST",
       body: {
-        templateId: 'tn_rWNIbdvDGXPsNk8dzYa3Q',
+        templateId: 'tn_yxL1LXQKBXj7l6Qrvun1h',
         to: telString,
         variables: [
           { position: 1, value: partnerName },
-          { position: 2, value: "Cubee" },
-          { position: 3, value: `https://cubee-expert.vercel.app/claim-a-case/${caseId}?id=${partnerId}&code=${claimCode}` },
+          { position: 2, value: `https://cubee-expert.vercel.app/claim-a-case/${caseId}?id=${partnerId}&code=${claimCode}` },
         ],
       },
     });
